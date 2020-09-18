@@ -21,5 +21,5 @@ This PR resolves #22
 -->
 
 <!--
-Thank you for your contribution to dynamic-season!
+Thank you for your contribution to site-v2!
 -->
