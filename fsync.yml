@@ -1,0 +1,29 @@
+commit_message: 🔄 Update file via sync
+replace:
+  - before: project_name
+    after: dynamic-season
+  - before: project_description
+    after: 🕸 My website written in Next.js
+  - before: github_username
+    after: Matt-Gleich
+  - before: project_author_email
+    after: matthewgleich@gmail.com
+  - before: docker_username
+    after: mattgleich
+  - before: project_author_full_name
+    after: Matthew Gleich
+files:
+  - path: LICENSE.md
+    source: https://github.com/Matt-Gleich/Matt-Gleich/blob/master/standard_documents/licenses/MIT_LICENSE.md
+  - path: CODE_OF_CONDUCT.md
+    source: https://github.com/Matt-Gleich/Matt-Gleich/blob/master/standard_documents/CODE_OF_CONDUCT.md
+  - path: .github/PULL_REQUEST_TEMPLATE.md
+    source: https://github.com/Matt-Gleich/Matt-Gleich/blob/master/standard_documents/templates/pull_request.md
+  - path: .github/ISSUE_TEMPLATE/bug_report.md
+    source: https://github.com/Matt-Gleich/Matt-Gleich/blob/master/standard_documents/templates/issue_bug.md
+  - path: .github/ISSUE_TEMPLATE/feature_request.md
+    source: https://github.com/Matt-Gleich/Matt-Gleich/blob/master/standard_documents/templates/issue_feature.md
+  - path: .github/workflows/contributors.yml
+    source: https://github.com/Matt-Gleich/Matt-Gleich/blob/master/standard_documents/workflows/contributors.yml
+  - path: .github/workflows/fsync.yml
+    source: https://github.com/Matt-Gleich/Matt-Gleich/blob/master/standard_documents/workflows/fsync.yml
