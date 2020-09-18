@@ -1,7 +1,7 @@
 commit_message: 🔄 Update file via sync
 replace:
   - before: project_name
-    after: dynamic-season
+    after: site-v2
   - before: project_description
     after: 🕸 My website written in Next.js
   - before: github_username
