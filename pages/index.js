@@ -21,19 +21,18 @@ const Header = () => {
 
 const Main = () => {
   return (
-    <main className={styles.main}>
+    <main className={styles.body}>
       <h1 className={styles.title}> 👋🏼 Hello!</h1>
-      <h2 className={styles.description}>
+      <h2 className={styles.subtitle}>
         🚧 I'm currently{' '}
         <a href="https://github.com/Matt-Gleich/site-v2">building</a> this site
         🚧
       </h2>
-      <p>
+      <p className={styles.description}>
         In the mean time you can go checkout my{' '}
         <a href="https://github.mattglei.ch" target="_blank">
           GitHub account
         </a>{' '}
-        <br />
         or my{' '}
         <a href="https://old.mattglei.ch" target="_blank">
           old site built with flutter
