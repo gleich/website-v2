@@ -9,15 +9,6 @@
   color: white;
 }
 
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .body a {
   color: #00f396db;
   text-decoration: none;
