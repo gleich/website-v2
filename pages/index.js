@@ -33,8 +33,10 @@ const Main = () => {
       <h1 className={styles.title}> 👋🏼 Hello!</h1>
       <h2 className={styles.subtitle}>
         🚧 I'm currently{' '}
-        <a href="https://github.com/Matt-Gleich/site-v2">building</a> this site
-        🚧
+        <a href="https://github.com/Matt-Gleich/site-v2" target="_blank">
+          building
+        </a>{' '}
+        this site 🚧
       </h2>
       <p className={styles.description}>
         In the mean time you can go checkout my{' '}
