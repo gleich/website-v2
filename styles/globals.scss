@@ -1,0 +1,45 @@
+$secondary-color: #00f396db;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body::selection {
+  background-color: $secondary-color;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary-color;
+}
+
+a::selection {
+  color: white;
+  background-color: $secondary-color;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-decoration: underline;
+}
+
+.subtitle {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
