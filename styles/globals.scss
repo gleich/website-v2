@@ -8,24 +8,27 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-body::selection {
-  background-color: $secondary-color;
-}
-
 a {
   text-decoration: none;
   color: $secondary-color;
 }
 
+h1::selection,
+h2::selection,
+p::selection,
+a::selection {
+  background-color: $secondary-color;
+}
+
 a::selection {
   color: white;
-  background-color: $secondary-color;
 }
 
 a:hover,
 a:focus,
 a:active {
   text-decoration: underline;
+  text-decoration-color: white;
 }
 
 * {
