@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <Head>
       <title>👋🏼 Matthew Gleich</title>
-      <link rel="icon" href="/logo.png" />
+      <link rel="icon" href="/me.png" />
       <meta
         name="description"
         content="Matthew Gleich is a 16-year-old thats building scalable, multi-platform applications using cutting edge frameworks and technologies. 100% self taught 🚀"
