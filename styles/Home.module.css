@@ -1,23 +1,23 @@
 .body {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: black;
   color: white;
-  text-align: center;
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
   font-size: 4rem;
-  text-decoration: underline;
 }
 
-.subtitle {
-  line-height: 1.5;
+.greenUnderline {
+  display: inline;
+  text-decoration: underline;
+  text-decoration-color: #00f396db;
+}
+
+.about {
   font-size: 1.5rem;
+  max-width: 1000px;
 }
