@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import JobTitle from '../components/jobTitle'
 
 export default function Home() {
   return (
