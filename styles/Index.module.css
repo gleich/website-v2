@@ -27,4 +27,10 @@
   margin-right: auto;
   font-size: 7rem;
   text-decoration: underline;
+  text-decoration-color: #00f396db;
+}
+
+.description {
+  padding-top: 10px;
+  font-size: 1.7rem;
 }
