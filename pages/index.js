@@ -14,9 +14,7 @@ const Main = () => {
   return (
     <main className={styles.main}>
       <h2 className={styles.top}>
-        <span className={`animate__animated animate__wobble ${styles.wave}`}>
-          👋🏼
-        </span>
+        <span className="animate__animated animate__wobble">👋🏼 </span>
         <span className={styles.hey}>Hey! I'm</span>
       </h2>
       <h1 className={styles.name}>Matthew Gleich</h1>
