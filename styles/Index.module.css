@@ -9,7 +9,7 @@
 .top {
   font-size: 3rem;
   margin-right: auto;
-  font-family: 'Victor Mono', monospace;
+  font-family: Victor Mono, monospace;
   font-weight: 500;
 }
 
@@ -28,6 +28,7 @@
   font-size: 7rem;
   text-decoration: underline;
   text-decoration-color: #00f396db;
+  font-weight: bold;
 }
 
 .description {
