@@ -1,0 +1,20 @@
+@import url('https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css');
+
+body {
+  background: black;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+::selection {
+  color: white;
+  background-color: #00f396db;
+}
+
+a {
+  color: #00f396db;
+}

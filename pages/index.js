@@ -1,12 +1,26 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Index.module.css'
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
       <Header />
       <Main />
     </div>
+  )
+}
+
+const Main = () => {
+  return (
+    <main className={styles.main}>
+      <h2 className={styles.top}>
+        <span className={`animate__animated animate__wobble ${styles.wave}`}>
+          👋🏼
+        </span>
+        <span className={styles.hey}>Hey! I'm</span>
+      </h2>
+      <h1 className={styles.name}>Matthew Gleich</h1>
+    </main>
   )
 }
 
@@ -46,42 +60,4 @@ const Header = () => {
   )
 }
 
-const Main = () => {
-  return (
-    <main className={styles.body}>
-      <h1 className={styles.title}>
-        <div
-          className="animate__animated animate__wobble"
-          style={{ display: 'inline-block' }}
-        >
-          👋🏼
-        </div>{' '}
-        Hello!
-        <br />
-        I'm <div className={styles.greenUnderline}>Matthew Gleich</div>
-      </h1>
-      <h2>16-year-old developer from New Hampshire</h2>
-      <p className={styles.about}>
-        Ever since I was a little kid I've always been looking to make things,
-        especially when it can help someone or automate something. In January
-        2019 I started programming on my{' '}
-        <a href="https://www.firstinspires.org/robotics/frc">FIRST robotics</a>{' '}
-        team,{' '}
-        <a href="https://github.com/Team-501-The-PowerKnights">
-          501 The PowerKnights
-        </a>{' '}
-        as a{' '}
-        <a href="https://github.com/Team-501-The-PowerKnights/Vision2020">
-          computer vision programmer
-        </a>
-        . Since then I have been fascinated with programming, trying to learn as
-        much as possible. Besides programming I enjoy{' '}
-        <a href="https://lightroom.adobe.com/shares/71921c41321440ed968321b930b1c7e7">
-          📷 photography
-        </a>
-        , 🚵🏼‍♂️ riding my bike, 🚶🏼‍♂️ hiking, and hanging out with friends. You should
-        check out <a href="https://hackclub.com/">hackclub</a>!
-      </p>
-    </main>
-  )
-}
+export default Home

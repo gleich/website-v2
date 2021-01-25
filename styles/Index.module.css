@@ -1,0 +1,32 @@
+.main {
+  display: inline-flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.top {
+  font-size: 35pt;
+  margin-right: auto;
+}
+
+.wave {
+  margin-right: auto;
+  padding-right: 10px;
+}
+
+.hey {
+  background-color: #00f396db;
+}
+
+.hey::selection {
+  color: #00f396db;
+  background-color: white;
+}
+
+.name {
+  margin-right: auto;
+  font-size: 7rem;
+  text-decoration: underline;
+}
