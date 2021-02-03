@@ -14,7 +14,12 @@ const Main = () => {
   return (
     <main className={styles.main}>
       <div className={styles.top}>
-        <span className="animate__animated animate__wobble">👋🏼 </span>
+        <span
+          className="animate__animated animate__wobble animate__infinite"
+          style={{ display: 'inline-block' }}
+        >
+          👋🏼
+        </span>{' '}
         <span className={styles.hey}>Hey! I'm</span>
       </div>
       <p className={styles.name}>Matthew Gleich</p>
