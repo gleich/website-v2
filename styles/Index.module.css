@@ -4,10 +4,11 @@
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
+  min-width: 0;
 }
 
 .top {
-  font-size: 3rem;
+  font-size: 6vw;
   margin-right: auto;
   font-family: Victor Mono, monospace;
   font-weight: 500;
@@ -25,7 +26,7 @@
 
 .name {
   margin-right: auto;
-  font-size: 7rem;
+  font-size: 13vw;
   text-decoration: underline;
   text-decoration-color: #00f396db;
   font-weight: bold;
@@ -33,5 +34,19 @@
 
 .description {
   padding-top: 10px;
-  font-size: 1.7rem;
+  font-size: 4vw;
+}
+
+@media screen and (min-width: 800px) {
+  .name {
+    font-size: 7rem;
+  }
+
+  .description {
+    font-size: 1.7rem;
+  }
+
+  .top {
+    font-size: 3rem;
+  }
 }
