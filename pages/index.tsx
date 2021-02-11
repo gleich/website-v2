@@ -33,6 +33,7 @@ const Header = () => {
     <Head>
       <title>👋🏼 Matthew Gleich</title>
       <link rel="icon" href="/favicon.ico" />
+      <link rel="preload" href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css" as="style"/>
       <link
         rel="apple-touch-icon"
         sizes="180x180"
