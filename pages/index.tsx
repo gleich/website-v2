@@ -18,6 +18,9 @@ const Main = () => {
       </div>
       <p className={styles.name}>Matthew Gleich</p>
       <p className={styles.description}>16-year-old open-source developer</p>
+      <footer className={styles.footer}>
+        © Matthew Gleich {new Date().getFullYear()}
+      </footer>
     </main>
   )
 }

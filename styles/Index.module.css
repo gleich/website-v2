@@ -37,6 +37,18 @@
   font-size: 4vw;
 }
 
+.footer {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-top: 1px solid;
+  padding-top: 30px;
+  border-color: #232323;
+  text-align: center;
+}
+
 @media screen and (min-width: 800px) {
   .name {
     font-size: 7rem;
