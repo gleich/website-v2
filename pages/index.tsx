@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import SocialMediaButton from '../components/buttons/socials'
 import styles from '../styles/Index.module.css'
 
 const Home = () => {
@@ -18,6 +19,23 @@ const Main = () => {
       </div>
       <p className={styles.name}>Matthew Gleich</p>
       <p className={styles.description}>16-year-old open-source developer</p>
+      <div className={styles.socials}>
+        <SocialMediaButton
+          name="GitHub"
+          icon="github"
+          url="https://github.com/Matt-Gleich"
+        />
+        <SocialMediaButton
+          name="Twitter"
+          icon="twitter"
+          url="https://twitter.com/MattGleich"
+        />
+        <SocialMediaButton
+          name="LinkedIn"
+          icon="linkedin"
+          url="https://www.linkedin.com/in/matthew-gleich/"
+        />
+      </div>
       <footer className={styles.footer}>
         © Matthew Gleich {new Date().getFullYear()}
       </footer>

@@ -47,6 +47,11 @@
   padding-top: 30px;
   border-color: #232323;
   text-align: center;
+  background-color: black;
+}
+
+.socials {
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 800px) {
