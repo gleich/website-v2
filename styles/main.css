@@ -21,3 +21,12 @@ body {
 a {
   color: #00f396db;
 }
+
+/* fonts */
+@font-face {
+  font-family: 'Victor Mono';
+  src: url('/fonts/Victor Mono/regular.otf');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
