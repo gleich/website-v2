@@ -11,6 +11,7 @@ const SocialMediaButton = ({
 }) => {
   const lowerCaseName = name.toLowerCase()
   const iconName = icon == '' ? icon : lowerCaseName
+  const size = '30px'
   return (
     <a
       href={urls['data']['socials'][lowerCaseName]['url']}
@@ -20,6 +21,8 @@ const SocialMediaButton = ({
       <img
         className={styles.icon}
         src={`https://unpkg.com/simple-icons@v4/icons/${iconName}.svg`}
+        height={size}
+        width={size}
         alt={name}
       />
     </a>
