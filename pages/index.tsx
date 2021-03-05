@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import SocialMediaButton from '../src/components/buttons/socials'
 import styles from '../styles/Index.module.css'
+import constants from '../src/data/constants'
+import age from '../src/data/age'
 
 const Home = () => {
   return (
@@ -17,8 +19,8 @@ const Main = () => {
       <div className={styles.top}>
         👋🏼 <span className={styles.hey}>Hey! I'm</span>
       </div>
-      <p className={styles.name}>Matthew Gleich</p>
-      <p className={styles.description}>16-year-old open-source developer</p>
+      <p className={styles.name}>{constants.name}</p>
+      <p className={styles.description}>{`${age.full} ${constants.title}`}</p>
       <div className={styles.socials}>
         <SocialMediaButton
           name="GitHub"
@@ -36,9 +38,7 @@ const Main = () => {
           url="https://www.linkedin.com/in/matthew-gleich/"
         />
       </div>
-      <footer className={styles.footer}>
-        © Matthew Gleich {new Date().getFullYear()}
-      </footer>
+      <footer className={styles.footer}>{constants.copyright}</footer>
     </main>
   )
 }
