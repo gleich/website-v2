@@ -39,12 +39,13 @@
 
 .footer {
   position: absolute;
-  bottom: 30px;
+  bottom: 0px;
   left: 0;
   right: 0;
   width: 100%;
   border-top: 1px solid;
   padding-top: 30px;
+  padding: 30px 0;
   border-color: #232323;
   text-align: center;
   background-color: black;
