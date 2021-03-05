@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import SocialMediaButton from '../components/buttons/socials'
+import SocialMediaButton from '../src/components/buttons/socials'
 import styles from '../styles/Index.module.css'
 
 const Home = () => {

@@ -1,4 +1,4 @@
-import styles from '../../styles/components/buttons/Socials.module.css'
+import styles from '../../../styles/components/buttons/Socials.module.css'
 
 const SocialMediaButton = ({
   name,
