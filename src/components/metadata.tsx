@@ -8,13 +8,6 @@ const Metadata = ({ title }: { title: string }) => {
       <title>{title}</title>
       <link rel="icon" href="/favicon.ico" />
 
-      {/* CSS Preloading */}
-      <link
-        rel="preload"
-        href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css"
-        as="style"
-      />
-
       {/* Social Displays */}
       <link
         rel="apple-touch-icon"
