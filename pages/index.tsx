@@ -3,17 +3,19 @@ import SocialMediaButton from '../src/components/buttons/socials'
 import styles from '../styles/Index.module.css'
 import constants from '../src/data/constants'
 import age from '../src/data/age'
+import social from '../src/data/social'
+import { GetStaticProps } from 'next'
 
-const Home = () => {
+const Home = ({ urls }) => {
   return (
     <div>
       <Header />
-      <Main />
+      <Main urls={urls} />
     </div>
   )
 }
 
-const Main = () => {
+const Main = ({ urls }) => {
   return (
     <main className={styles.main}>
       <div className={styles.top}>
@@ -22,21 +24,9 @@ const Main = () => {
       <p className={styles.name}>{constants.name}</p>
       <p className={styles.description}>{`${age.full} ${constants.title}`}</p>
       <div className={styles.socials}>
-        <SocialMediaButton
-          name="GitHub"
-          icon="github"
-          url="https://github.com/Matt-Gleich"
-        />
-        <SocialMediaButton
-          name="Twitter"
-          icon="twitter"
-          url="https://twitter.com/MattGleich"
-        />
-        <SocialMediaButton
-          name="LinkedIn"
-          icon="linkedin"
-          url="https://www.linkedin.com/in/matthew-gleich/"
-        />
+        <SocialMediaButton name={social.github} urls={urls} />
+        <SocialMediaButton name={social.twitter} urls={urls} />
+        <SocialMediaButton name={social.linkedin} urls={urls} />
       </div>
       <footer className={styles.footer}>{constants.copyright}</footer>
     </main>
@@ -46,7 +36,7 @@ const Main = () => {
 const Header = () => {
   return (
     <Head>
-      <title>👋🏼 Matthew Gleich</title>
+      <title>👋🏼 {constants.name}</title>
       <link rel="icon" href="/favicon.ico" />
       <link
         rel="preload"
@@ -74,14 +64,37 @@ const Header = () => {
 
       <meta
         name="description"
-        content="Matthew Gleich is a 16-year-old thats building scalable, multi-platform applications using cutting edge frameworks and technologies. 100% self taught 🚀"
+        content={`${constants.name} is a ${age.full} thats building scalable, multi-platform applications using cutting edge frameworks and technologies. 100% self taught 🚀`}
       />
       <meta
         name="keywords"
-        content="Matthew Gleich, Gleich, Matthew, photography, goffstown, coding, cycling, hampshire, golang, swift, flutter, dart, github, rpi, ghs, import_sorter, ios, hackclub"
+        content={`${constants.name}, Gleich, Matthew, photography, goffstown, coding, cycling, hampshire, golang, swift, flutter, dart, github, rpi, ghs, import_sorter, ios, hackclub`}
       />
     </Head>
   )
+}
+
+// Getting social media urls
+export const getStaticProps: GetStaticProps = async () => {
+  // Formulating the query
+  let query = 'query { socials {'
+  for (const account of Object.values(social)) {
+    query += account.toLowerCase() + ' { url }'
+  }
+  query += '} }'
+
+  // Making the request
+  let res = await fetch('https://gql.api.mattglei.ch', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query: query }),
+  })
+  const urls = await res.json()
+
+  return {
+    props: { urls },
+    revalidate: 3600, // Update every hour
+  }
 }
 
 export default Home
