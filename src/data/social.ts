@@ -1,7 +1,7 @@
 enum social {
-    github = "GitHub",
-    twitter = "Twitter",
-    linkedin = "LinkedIn",
+  github = 'GitHub',
+  twitter = 'Twitter',
+  linkedin = 'LinkedIn',
 }
 
 export default social
