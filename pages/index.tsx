@@ -4,8 +4,18 @@ import constants from '../src/data/constants'
 import age from '../src/data/age'
 import social from '../src/data/social'
 import { GetStaticProps } from 'next'
+import Metadata from '../src/components/metadata'
 
 const Home = ({ urls }) => {
+  return (
+    <div>
+      <Metadata title={'👋🏼 ' + constants.name} />
+      <Main urls={urls} />
+    </div>
+  )
+}
+
+const Main = ({ urls }) => {
   return (
     <main className={styles.main}>
       <div className={styles.top}>
