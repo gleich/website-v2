@@ -20,7 +20,7 @@ const SocialMediaButton = ({
     >
       <img
         className={styles.icon}
-        src={`https://unpkg.com/simple-icons@v4/icons/${iconName}.svg`}
+        src={`/images/socials/${iconName}.svg`}
         height={size}
         width={size}
         alt={name}
