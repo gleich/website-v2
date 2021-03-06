@@ -1,0 +1,15 @@
+.main {
+  display: inline-flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 0;
+}
+
+.turtleBox {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 300px;
+}

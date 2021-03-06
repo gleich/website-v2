@@ -1,0 +1,19 @@
+.turtle {
+  animation: rotating 4s linear infinite;
+  -webkit-animation: rotating 4s linear infinite;
+  font-size: 2rem;
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.herd {
+  display: inline-flex;
+  flex-direction: column;
+}

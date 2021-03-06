@@ -6,17 +6,9 @@ import social from '../data/social'
 import { GetStaticProps } from 'next'
 import Metadata from '../components/metadata'
 
-const Home = ({ urls }) => {
-  return (
-    <div>
-      <Metadata title={'👋🏼 ' + constants.name} />
-      <Main urls={urls} />
-    </div>
-  )
-}
-
-const Main = ({ urls }) => {
-  return (
+const Index = ({ urls }) => (
+  <div>
+    <Metadata title={'👋🏼 ' + constants.name} />
     <main className={styles.main}>
       <div className={styles.top}>
         👋🏼 <span className={styles.hey}>Hey! I'm</span>
@@ -31,12 +23,14 @@ const Main = ({ urls }) => {
         <SocialMediaButton name={social.productHunt} urls={urls} />
       </div>
       <footer className={styles.footer}>
-        🐢 🐢 🐢 &nbsp; {constants.copyright} &nbsp; 🐢 🐢 🐢
+        🐢 🐢 🐢 &nbsp; {constants.copyright} &nbsp; 🐢 🐢{' '}
+        <a className={styles.secretTurtle} href="/turtles">
+          🐢
+        </a>
       </footer>
     </main>
-  )
-}
-
+  </div>
+)
 // Getting social media urls
 export const getStaticProps: GetStaticProps = async () => {
   // Formulating the query
@@ -60,4 +54,4 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 
-export default Home
+export default Index
