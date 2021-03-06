@@ -24,7 +24,7 @@ const Index = ({ urls }) => (
       </div>
       <footer className={styles.footer}>
         🐢 🐢 🐢 &nbsp; {constants.copyright} &nbsp; 🐢 🐢{' '}
-        <a className={styles.secretTurtle} href="/turtles">
+        <a className={styles.secretTurtle} href="/herd">
           🐢
         </a>
       </footer>

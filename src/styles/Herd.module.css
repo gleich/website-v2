@@ -7,7 +7,7 @@
   min-width: 0;
 }
 
-.turtleBox {
+.emojiBox {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
