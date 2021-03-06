@@ -24,9 +24,9 @@ a {
 
 /* fonts */
 @font-face {
-  font-family: 'victormono';
-  src: url('/fonts/victormono/regular.otf');
-  font-style: normal;
-  font-weight: 500;
+  font-family: 'Victor Mono';
+  src: url('/fonts/victormono/mediumItalic.otf');
+  font-style: italic;
+  font-weight: 600;
   font-display: swap;
 }
