@@ -5,6 +5,7 @@ import age from '../data/age'
 import social from '../data/social'
 import { GetStaticProps } from 'next'
 import Metadata from '../components/metadata'
+import Link from 'next/link'
 
 const Index = ({ urls }) => (
   <div>
@@ -24,9 +25,9 @@ const Index = ({ urls }) => (
       </div>
       <footer className={styles.footer}>
         🐢 🐢 🐢 &nbsp; {constants.copyright} &nbsp; 🐢 🐢{' '}
-        <a className={styles.secretTurtle} href="/herd">
-          🐢
-        </a>
+        <Link href="/herd" passHref>
+          <a className={styles.secretTurtle}>🐢</a>
+        </Link>
       </footer>
     </main>
   </div>
