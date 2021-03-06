@@ -1,10 +1,10 @@
-import SocialMediaButton from '../src/components/buttons/socials'
+import SocialMediaButton from '../components/buttons/socials'
 import styles from '../styles/Index.module.css'
-import constants from '../src/data/constants'
-import age from '../src/data/age'
-import social from '../src/data/social'
+import constants from '../data/constants'
+import age from '../data/age'
+import social from '../data/social'
 import { GetStaticProps } from 'next'
-import Metadata from '../src/components/metadata'
+import Metadata from '../components/metadata'
 
 const Home = ({ urls }) => {
   return (
