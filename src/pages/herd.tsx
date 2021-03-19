@@ -3,7 +3,7 @@ import HerdOfEmojis from '../components/pages/herd/herd'
 import styles from '../styles/Herd.module.css'
 import Link from 'next/link'
 
-const Herd = () => (
+const Herd: React.FC = () => (
   <div>
     <Metadata title="👁️ 👁️" />
     <main className={styles.main}>

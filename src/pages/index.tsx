@@ -3,16 +3,20 @@ import styles from '../styles/Index.module.css'
 import constants from '../data/constants'
 import age from '../data/age'
 import social from '../data/social'
-import { GetStaticProps } from 'next'
 import Metadata from '../components/metadata'
 import Link from 'next/link'
+import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 
-const Index = ({ urls }) => (
+const Index: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  urls,
+}: {
+  urls: Record<string, Record<string, Record<string, Record<string, string>>>>
+}) => (
   <div>
     <Metadata title={'👋🏼 ' + constants.name} />
     <main className={styles.main}>
       <div className={styles.top}>
-        👋🏼 <span className={styles.hey}>Hey! I'm</span>
+        👋🏼 <span className={styles.hey}>Hey! I&apos;m</span>
       </div>
       <p className={styles.name}>{constants.name}</p>
       <p className={styles.description}>{`${age.full} ${constants.title}`}</p>
@@ -32,6 +36,7 @@ const Index = ({ urls }) => (
     </main>
   </div>
 )
+
 // Getting social media urls
 export const getStaticProps: GetStaticProps = async () => {
   // Formulating the query
@@ -42,12 +47,15 @@ export const getStaticProps: GetStaticProps = async () => {
   query += '} }'
 
   // Making the request
-  let res = await fetch('https://gql.api.mattglei.ch', {
+  const res = await fetch('https://gql.api.mattglei.ch', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ query: query }),
   })
-  const urls = await res.json()
+  const urls: Record<
+    string,
+    Record<string, Record<string, Record<string, string>>>
+  > = await res.json()
 
   return {
     props: { urls },

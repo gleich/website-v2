@@ -1,3 +1,4 @@
+import { ReactElement } from 'react'
 import styles from '../../styles/components/buttons/Socials.module.css'
 
 const SocialMediaButton = ({
@@ -7,8 +8,8 @@ const SocialMediaButton = ({
 }: {
   name: string
   icon?: string
-  urls: any
-}) => {
+  urls: Record<string, Record<string, Record<string, Record<string, string>>>>
+}): ReactElement => {
   const lowerCaseName = name.toLowerCase()
   const iconName = icon == '' ? icon : lowerCaseName
   const size = '30px'
@@ -17,6 +18,7 @@ const SocialMediaButton = ({
       href={urls['data']['socials'][lowerCaseName]['url']}
       title={name}
       target="_blank"
+      rel="noreferrer"
     >
       <img
         className={styles.icon}

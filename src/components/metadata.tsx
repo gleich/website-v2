@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import constants from '../data/constants'
 import age from '../data/age'
+import { ReactElement } from 'react'
 
-const Metadata = ({ title }: { title: string }) => {
+const Metadata = ({ title }: { title: string }): ReactElement => {
   return (
     <Head>
       <title>{title}</title>
