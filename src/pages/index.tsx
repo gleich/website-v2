@@ -16,7 +16,8 @@ const Index: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
     <Metadata title={'👋🏼 ' + constants.name} />
     <main className={styles.main}>
       <div className={styles.top}>
-        👋🏼 <span className={styles.hey}>Hey! I&apos;m</span>
+        <span className={styles.wave}>👋🏼</span>{' '}
+        <span className={styles.hey}>Hey! I&apos;m</span>
       </div>
       <p className={styles.name}>{constants.name}</p>
       <p className={styles.description}>{`${age.full} ${constants.title}`}</p>
