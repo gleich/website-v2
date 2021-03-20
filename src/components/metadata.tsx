@@ -36,7 +36,7 @@ const Metadata = ({ title }: { title: string }): ReactElement => {
       />
       <meta
         name="keywords"
-        content={`${constants.name}, Gleich, Matthew, photography, goffstown, coding, cycling, hampshire, golang, swift, flutter, dart, github, rpi, ghs, import_sorter, ios, hackclub`}
+        content={`${constants.name}, Gleich, Matthew, photography, ${constants.title}, coding, cycling, hampshire, golang, swift, flutter, dart, github, rpi, ghs, import_sorter, ios, hackclub`}
       />
       <meta name="author" content="Matthew Gleich" />
     </Head>
