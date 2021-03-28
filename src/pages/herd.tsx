@@ -1,9 +1,10 @@
-import Metadata from '../components/metadata'
-import HerdOfEmojis from '../components/pages/herd/herd'
+import { Metadata } from '../components/metadata'
+import { HerdOfEmojis } from '../components/pages/herd/herd'
 import styles from '../styles/Herd.module.css'
 import Link from 'next/link'
+import { ReactElement } from 'react'
 
-const Herd: React.FC = () => {
+export default function Herd(): ReactElement {
   const rows: JSX.Element[] = []
   for (let i = 0; i < 5; i++) {
     rows.push(<HerdOfEmojis />)
@@ -20,5 +21,3 @@ const Herd: React.FC = () => {
     </div>
   )
 }
-
-export default Herd

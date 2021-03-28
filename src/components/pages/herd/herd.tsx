@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 import styles from '../../../styles/components/pages/herd/HerdOfEmojis.module.css'
 
-const HerdOfEmojis = (): ReactElement => {
+export function HerdOfEmojis(): ReactElement {
   const emojis = ['🐢', '🐄', '🦎']
   const column: JSX.Element[] = []
   for (let i = 0; i < 9; i++) {
@@ -10,5 +10,3 @@ const HerdOfEmojis = (): ReactElement => {
   }
   return <div className={styles.herd}>&nbsp;{column}</div>
 }
-
-export default HerdOfEmojis

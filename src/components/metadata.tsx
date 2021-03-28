@@ -3,7 +3,7 @@ import constants from '../data/constants'
 import age from '../data/age'
 import { ReactElement } from 'react'
 
-const Metadata = ({ title }: { title: string }): ReactElement => {
+export function Metadata({ title }: { title: string }): ReactElement {
   return (
     <Head>
       <title>{title}</title>
@@ -42,5 +42,3 @@ const Metadata = ({ title }: { title: string }): ReactElement => {
     </Head>
   )
 }
-
-export default Metadata

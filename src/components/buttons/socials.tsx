@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 import styles from '../../styles/components/buttons/Socials.module.css'
 
-const SocialMediaButton = ({
+export function SocialMediaButton({
   name,
   icon,
   urls,
@@ -9,7 +9,7 @@ const SocialMediaButton = ({
   name: string
   icon?: string
   urls: Record<string, Record<string, Record<string, Record<string, string>>>>
-}): ReactElement => {
+}): ReactElement {
   const lowerCaseName = name.toLowerCase()
   const iconName = icon == '' ? icon : lowerCaseName
   const size = '30px'
@@ -30,5 +30,3 @@ const SocialMediaButton = ({
     </a>
   )
 }
-
-export default SocialMediaButton
