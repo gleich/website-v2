@@ -4,22 +4,27 @@ import styles from '../../styles/components/buttons/Socials.module.css'
 export function SocialMediaButton({
   name,
   icon,
-  urls,
+  socials,
 }: {
   name: string
   icon?: string
-  urls: Record<string, Record<string, Record<string, Record<string, string>>>>
+  socials: Record<string, string>[]
 }): ReactElement {
   const lowerCaseName = name.toLowerCase()
   const iconName = icon == '' ? icon : lowerCaseName
   const size = '30px'
+
+  // Getting URL
+  let url: string
+  for (let i = 0; i < socials.length; i++) {
+    const account = socials[i]
+    if (account['name'] == name) {
+      url = account['url']
+    }
+  }
+
   return (
-    <a
-      href={urls['data']['socials'][lowerCaseName]['url']}
-      title={name}
-      target="_blank"
-      rel="noreferrer"
-    >
+    <a href={url} title={name} target="_blank" rel="noreferrer">
       <img
         className={styles.icon}
         src={`/images/socials/${iconName}.svg`}

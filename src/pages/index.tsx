@@ -9,9 +9,9 @@ import type { GetStaticProps } from 'next'
 import { ReactElement } from 'react'
 
 export default function Index({
-  urls,
+  socials,
 }: {
-  urls: Record<string, Record<string, Record<string, Record<string, string>>>>
+  socials: Record<string, string>[]
 }): ReactElement {
   return (
     <div>
@@ -24,11 +24,11 @@ export default function Index({
         <p className={styles.name}>{constants.name}</p>
         <p className={styles.description}>{`${age.full} ${constants.title}`}</p>
         <div className={styles.socials}>
-          <SocialMediaButton name={social.github} urls={urls} />
-          <SocialMediaButton name={social.twitter} urls={urls} />
-          <SocialMediaButton name={social.linkedin} urls={urls} />
-          <SocialMediaButton name={social.wakatime} urls={urls} />
-          <SocialMediaButton name={social.productHunt} urls={urls} />
+          <SocialMediaButton name={social.github} socials={socials} />
+          <SocialMediaButton name={social.twitter} socials={socials} />
+          <SocialMediaButton name={social.linkedin} socials={socials} />
+          <SocialMediaButton name={social.wakatime} socials={socials} />
+          <SocialMediaButton name={social.productHunt} socials={socials} />
         </div>
         <footer className={styles.footer}>
           🐢 🐢 🐢 &nbsp; {constants.copyright} &nbsp; 🐢 🐢{' '}
@@ -43,26 +43,20 @@ export default function Index({
 
 // Getting social media urls
 export const getStaticProps: GetStaticProps = async () => {
-  // Formulating the query
-  let query = 'query { socials {'
-  for (const account of Object.values(social)) {
-    query += account.toLowerCase() + ' { url }'
-  }
-  query += '} }'
-
   // Making the request
-  const res = await fetch('https://gql.api.mattglei.ch', {
+  const resp = await fetch('https://gql.api.mattglei.ch', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ query: query }),
+    body: JSON.stringify({
+      query: 'query { socials { accounts { name, url } } }',
+    }),
   })
-  const urls: Record<
-    string,
-    Record<string, Record<string, Record<string, string>>>
-  > = await res.json()
+
+  const resp_body = await resp.json()
+  const socials = resp_body['data']['socials']['accounts']
 
   return {
-    props: { urls },
+    props: { socials },
     revalidate: 3600, // Update every hour
   }
 }
