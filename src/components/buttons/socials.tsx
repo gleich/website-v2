@@ -16,9 +16,8 @@ export function SocialMediaButton({
 
   // Getting URL
   let url: string
-  for (let i = 0; i < socials.length; i++) {
-    const account = socials[i]
-    if (account['name'] == name) {
+  for (const account of socials) {
+    if (account['name'] == lowerCaseName) {
       url = account['url']
     }
   }
