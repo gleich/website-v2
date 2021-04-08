@@ -1,4 +1,4 @@
-const bday = new Date(2004, 4, 8, 5, 14, 0, 0)
+const bday = new Date(2004, 4, 8, 2, 20, 0, 0)
 
 const getAge = (): number => {
   const ageDiff = new Date(new Date().getTime() - bday.getTime())
