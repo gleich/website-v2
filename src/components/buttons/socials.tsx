@@ -1,5 +1,15 @@
 import { ReactElement } from 'react'
-import styles from '../../styles/components/buttons/Socials.module.css'
+import styled from 'styled-components'
+
+const Icon = styled.img`
+  filter: invert(100%) saturate(0%);
+  margin-right: 20px;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+`
 
 export function SocialMediaButton({
   name,
@@ -24,8 +34,7 @@ export function SocialMediaButton({
 
   return (
     <a href={url} title={name} target="_blank" rel="noreferrer">
-      <img
-        className={styles.icon}
+      <Icon
         src={`/images/socials/${iconName}.svg`}
         height={size}
         width={size}
