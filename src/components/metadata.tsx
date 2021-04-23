@@ -32,7 +32,7 @@ export function Metadata({ title }: { title: string }): ReactElement {
       {/* SEO */}
       <meta
         name="description"
-        content={`${constants.name} is a ${age.full} thats building scalable, multi-platform applications using cutting edge frameworks and technologies. 100% self taught 🚀`}
+        content={`${constants.name} is a ${age.full} thats building scalable, multi-platform applications using cutting-edge frameworks and technologies. 100% self-taught 🚀`}
       />
       <meta
         name="keywords"
