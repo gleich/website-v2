@@ -1,8 +1,8 @@
 <!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich", "cjdenio", "ImgBotApp"]:end -->
 
-# site-v2
+# website
 
-🕸 My website written in Next.js
+🕸 My website
 
 ![format status](https://github.com/Matt-Gleich/site-v2/workflows/format/badge.svg)
 
