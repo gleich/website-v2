@@ -31,7 +31,7 @@ export default function Index({
           <SocialMediaButton name={social.productHunt} socials={socials} />
         </div>
         <footer className={styles.footer}>
-          🐢 🐢 🐢 &nbsp; {constants.copyright} &nbsp; 🐢 🐢{' '}
+          &nbsp; {constants.copyright} &nbsp;{' '}
           <Link href="/herd" passHref>
             <a className={styles.secretTurtle}>🐢</a>
           </Link>
