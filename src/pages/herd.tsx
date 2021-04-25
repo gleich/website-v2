@@ -1,8 +1,8 @@
 import { Metadata } from '../components/metadata'
 import { HerdOfEmojis } from '../components/pages/herd/herd'
 import styles from '../styles/Herd.module.css'
-import Link from 'next/link'
 import { ReactElement } from 'react'
+import { BackToIndex } from '../components/links/backToIndex'
 
 export default function Herd(): ReactElement {
   const rows: JSX.Element[] = []
@@ -13,9 +13,9 @@ export default function Herd(): ReactElement {
     <div>
       <Metadata title="👁️ 👁️" />
       <main className={styles.main}>
-        <p>You found the sacred pasture!</p>
+        <p className={styles.welcome}>You found the sacred pasture!</p>
         <br />
-        <Link href="/">← Back to the mainland</Link>
+        <BackToIndex />
         <div className={styles.emojiBox}>{rows}</div>
       </main>
     </div>

@@ -1,16 +1,52 @@
 .main {
-  display: inline-flex;
+  display: flex;
   margin: 0 auto;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
   min-height: 100vh;
-  min-width: 0;
+  min-width: 80%;
+  max-width: 80%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-self: space-around;
+  flex-wrap: wrap;
+  margin: 0 15px;
+}
+
+.buttons > button {
+  margin-bottom: 10px;
+}
+
+.buttons:last-child > button {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .buttons {
+    flex-direction: row;
+    margin: 0 -15px;
+  }
+
+  .buttons > button {
+    margin-right: 10px;
+  }
 }
 
 .top {
   font-size: 6vw;
   margin-right: auto;
-  font-family: 'Victor Mono', monospace;
+  font-family: 'Victor Mono', -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
 }
 
 .hey {
@@ -58,6 +94,25 @@
 
 .socials {
   margin-top: 20px;
+}
+
+.socials > a {
+  margin-right: 20px;
+}
+
+.socials:last-child {
+  margin-right: 0;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 @media screen and (min-width: 800px) {

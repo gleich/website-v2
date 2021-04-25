@@ -1,4 +1,5 @@
 import { SocialMediaButton } from '../components/buttons/socials'
+import { PageButton } from '../components/buttons/page'
 import styles from '../styles/Index.module.css'
 import constants from '../data/constants'
 import age from '../data/age'
@@ -17,19 +18,31 @@ export default function Index({
     <div>
       <Metadata title={'👋🏼 ' + constants.name} />
       <main className={styles.main}>
-        <div className={styles.top}>
-          <span className={styles.wave}>👋🏼</span>{' '}
-          <span className={styles.hey}>Hey! I&apos;m</span>
+        <div>
+          <div className={styles.top}>
+            <span className={styles.wave}>👋🏼</span>{' '}
+            <span className={styles.hey}>Hey! I&apos;m</span>
+          </div>
+          <p className={styles.name}>{constants.name}</p>
+          <p
+            className={styles.description}
+          >{`${age.full} ${constants.title}`}</p>
+          <div className={styles.socials}>
+            <SocialMediaButton name={social.github} socials={socials} />
+            <SocialMediaButton name={social.twitter} socials={socials} />
+            <SocialMediaButton name={social.linkedin} socials={socials} />
+            <SocialMediaButton name={social.wakatime} socials={socials} />
+            <SocialMediaButton name={social.productHunt} socials={socials} />
+          </div>
         </div>
-        <p className={styles.name}>{constants.name}</p>
-        <p className={styles.description}>{`${age.full} ${constants.title}`}</p>
-        <div className={styles.socials}>
-          <SocialMediaButton name={social.github} socials={socials} />
-          <SocialMediaButton name={social.twitter} socials={socials} />
-          <SocialMediaButton name={social.linkedin} socials={socials} />
-          <SocialMediaButton name={social.wakatime} socials={socials} />
-          <SocialMediaButton name={social.productHunt} socials={socials} />
-        </div>
+        <nav className={styles.buttons}>
+          <PageButton path={'wip'} name={'About Me'} />
+          <PageButton path={'wip'} name={'Skills'} />
+          <PageButton path={'wip'} name={'Blog'} />
+          <PageButton path={'wip'} name={'Projects'} />
+          <PageButton path={'wip'} name={'Photography'} />
+          <PageButton path={'wip'} name={'Stats'} />
+        </nav>
         <footer className={styles.footer}>
           &nbsp; {constants.copyright} &nbsp;{' '}
           <Link href="/herd" passHref>
