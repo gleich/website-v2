@@ -8,6 +8,7 @@ import { Metadata } from '../components/metadata'
 import Link from 'next/link'
 import type { GetStaticProps } from 'next'
 import { ReactElement } from 'react'
+import { Title } from '../components/text/title'
 
 export default function Index({
   socials,
@@ -23,7 +24,7 @@ export default function Index({
             <span className={styles.wave}>👋🏼</span>{' '}
             <span className={styles.hey}>Hey! I&apos;m</span>
           </div>
-          <p className={styles.name}>{constants.name}</p>
+          <Title name={constants.name} />
           <p
             className={styles.description}
           >{`${age.full} ${constants.title}`}</p>
@@ -36,7 +37,7 @@ export default function Index({
           </div>
         </div>
         <nav className={styles.buttons}>
-          <PageButton path={'wip'} name={'About Me'} />
+          <PageButton path={'about'} name={'About Me'} />
           <PageButton path={'wip'} name={'Skills'} />
           <PageButton path={'wip'} name={'Blog'} />
           <PageButton path={'wip'} name={'Projects'} />

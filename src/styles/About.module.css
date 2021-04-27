@@ -1,0 +1,36 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-height: 100vh;
+  padding: 0 5vw;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  padding-top: 20px;
+  font-size: 150%;
+  max-width: 1200px;
+}
+
+.picture {
+  margin: 70px;
+  width: 30vw;
+  max-width: 400px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .picture {
+    width: 50vw;
+  }
+}
