@@ -1,15 +1,11 @@
 import { ReactElement } from 'react'
 import Link from 'next/link'
-import styled from 'styled-components'
-
-const Style = styled.div`
-  font-size: 1.5rem;
-`
+import styles from '@styles/components/links/backToIndex.module.css'
 
 export function BackToIndex(): ReactElement {
   return (
-    <Style>
+    <div className={styles.link}>
       <Link href="/">← Back to the mainland</Link>
-    </Style>
+    </div>
   )
 }

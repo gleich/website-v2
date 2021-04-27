@@ -1,8 +1,8 @@
-import { Metadata } from '../components/metadata'
-import { HerdOfEmojis } from '../components/pages/herd/herd'
-import styles from '../styles/Herd.module.css'
+import { Metadata } from '@components/metadata'
+import { HerdOfEmojis } from '@components/pages/herd/herd'
+import styles from '@styles/pages/herd.module.css'
 import { ReactElement } from 'react'
-import { BackToIndex } from '../components/links/backToIndex'
+import { BackToIndex } from '@components/links/backToIndex'
 
 export default function Herd(): ReactElement {
   const rows: JSX.Element[] = []

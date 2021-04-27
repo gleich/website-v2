@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app'
 import { ReactElement } from 'react'
-import '../styles/main.css'
+import '@styles/main.css'
 
 export default function MyApp({
   Component,

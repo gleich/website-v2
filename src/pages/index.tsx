@@ -1,14 +1,14 @@
-import { SocialMediaButton } from '../components/buttons/socials'
-import { PageButton } from '../components/buttons/page'
-import styles from '../styles/Index.module.css'
-import constants from '../data/constants'
-import age from '../data/age'
-import social from '../data/social'
-import { Metadata } from '../components/metadata'
+import { SocialMediaButton } from '@components/buttons/socials'
+import { PageButton } from '@components/buttons/page'
+import styles from '@styles/pages/index.module.css'
+import constants from '@data/constants'
+import age from '@data/age'
+import social from '@data/social'
+import { Metadata } from '@components/metadata'
 import Link from 'next/link'
 import type { GetStaticProps } from 'next'
 import { ReactElement } from 'react'
-import { Title } from '../components/text/title'
+import { Title } from '@components/text/title'
 
 export default function Index({
   socials,

@@ -1,0 +1,13 @@
+.button {
+  background-color: white;
+  border: 0;
+  font-size: 1.2rem;
+  padding: 0.5em;
+  font-family: 'Victor Mono';
+}
+
+.button:hover {
+  background-color: #00f396db;
+  color: white;
+  cursor: pointer;
+}

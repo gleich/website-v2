@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
-import styles from '../styles/About.module.css'
-import { Metadata } from '../components/metadata'
-import { Title } from '../components/text/title'
+import styles from '@styles/pages/about.module.css'
+import { Metadata } from '@components/metadata'
+import { Title } from '@components/text/title'
 
 export default function About(): ReactElement {
   return (
