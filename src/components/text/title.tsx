@@ -2,7 +2,7 @@ import { ReactElement } from 'react'
 import styled from 'styled-components'
 
 const Style = styled.h1`
-  font-size: 700%;
+  font-size: 550%;
   text-decoration: underline;
   text-decoration-color: #00f396db;
 `
