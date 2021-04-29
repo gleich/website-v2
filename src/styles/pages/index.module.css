@@ -1,7 +1,7 @@
 .main {
   display: flex;
   margin: 0 auto;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
@@ -15,7 +15,7 @@
   flex-direction: column;
   justify-self: space-around;
   flex-wrap: wrap;
-  margin: 0 15px;
+  padding-left: 70px;
 }
 
 .buttons > button {
@@ -23,7 +23,7 @@
 }
 
 .buttons:last-child > button {
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -33,7 +33,8 @@
 
   .buttons {
     flex-direction: row;
-    margin: 0 -15px;
+    padding-top: 70px;
+    padding-left: 0;
   }
 
   .buttons > button {
@@ -42,7 +43,7 @@
 }
 
 .top {
-  font-size: 6vw;
+  font-size: 8vw;
   margin-right: auto;
   font-family: 'Victor Mono', -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
@@ -61,10 +62,7 @@
 
 .name {
   margin-right: auto;
-  font-size: 13vw;
-  text-decoration: underline;
-  text-decoration-color: #00f396db;
-  font-weight: bold;
+  font-size: 18vw;
 }
 
 .description {
@@ -74,7 +72,7 @@
 
 .footer {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
@@ -117,11 +115,11 @@
 
 @media screen and (min-width: 800px) {
   .name {
-    font-size: 7rem;
+    font-size: 8rem;
   }
 
   .description {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
 
   .top {

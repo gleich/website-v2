@@ -24,7 +24,7 @@ export default function Index({
             <span className={styles.wave}>👋🏼</span>{' '}
             <span className={styles.hey}>Hey! I&apos;m</span>
           </div>
-          <Title name={constants.name} />
+          <Title name={constants.name} className={styles.name} />
           <p
             className={styles.description}
           >{`${age.full} ${constants.title}`}</p>
