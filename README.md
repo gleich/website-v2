@@ -1,16 +1,16 @@
-<!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich", "ImgBotApp", "cjdenio"]:end -->
+<!-- DO NOT REMOVE - contributor_list:data:start:["gleich", "ImgBotApp", "cjdenio"]:end -->
 
 # website
 
 🕸 My website
 
-![format status](https://github.com/Matt-Gleich/site-v2/workflows/format/badge.svg)
+![format status](https://github.com/gleich/site-v2/workflows/format/badge.svg)
 
 <!-- DO NOT REMOVE - contributor_list:start -->
 
 ## 👥 Contributors
 
-- **[@Matt-Gleich](https://github.com/Matt-Gleich)**
+- **[@gleich](https://github.com/gleich)**
 
 - **[@ImgBotApp](https://github.com/ImgBotApp)**
 
