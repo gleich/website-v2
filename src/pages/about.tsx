@@ -1,4 +1,5 @@
 import { ReactElement } from 'react'
+import constants from '@data/constants'
 import styles from '@styles/pages/about.module.css'
 import { Metadata } from '@components/metadata'
 import { Title } from '@components/text/title'
@@ -6,7 +7,7 @@ import { Title } from '@components/text/title'
 export default function About(): ReactElement {
   return (
     <div>
-      <Metadata title={'About Matt Gleich'} />
+      <Metadata title={`About ${constants.name}`} />
       <main className={styles.main}>
         <div className={styles.text}>
           <Title name={'About'} />
@@ -30,7 +31,7 @@ export default function About(): ReactElement {
         <img
           className={styles.picture}
           src="/images/me.jpg"
-          alt="Picture of Matthew Gleich"
+          alt={`Picture of ${constants.name}`}
         />
       </main>
     </div>
