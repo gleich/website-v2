@@ -6,8 +6,8 @@
   align-items: center;
   flex-wrap: wrap;
   min-height: 100vh;
-  min-width: 80%;
-  max-width: 80%;
+  min-width: 90%;
+  max-width: 90%;
 }
 
 .buttons {
@@ -67,7 +67,7 @@
 
 .description {
   padding-top: 10px;
-  font-size: 4vw;
+  font-size: max(4vw, 30px);
 }
 
 .footer {
