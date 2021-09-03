@@ -51,12 +51,12 @@
 }
 
 .hey {
-  background-color: #00f396db;
+  background-color: #e92741;
   font-style: italic;
 }
 
 .hey::selection {
-  color: #00f396db;
+  color: #e92741;
   background-color: white;
 }
 

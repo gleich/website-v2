@@ -12,11 +12,11 @@ body {
 
 ::selection {
   color: white;
-  background-color: #00f396db;
+  background-color: #e92741;
 }
 
 a {
-  color: #00f396db;
+  color: #e92741;
 }
 
 /* fonts */
