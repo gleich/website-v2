@@ -4,7 +4,7 @@
 
 🕸 My website
 
-![format status](https://github.com/gleich/site-v2/workflows/format/badge.svg)
+![format](https://github.com/gleich/website/workflows/format/badge.svg)
 
 <!-- DO NOT REMOVE - contributor_list:start -->
 
