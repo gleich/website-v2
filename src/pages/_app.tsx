@@ -1,6 +1,6 @@
 import { ThemeProvider } from '@theme-ui/theme-provider'
 import type { AppProps } from 'next/app'
-import { theme } from './theme'
+import { theme } from '@data/theme'
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 const MyApp = ({ Component, pageProps }: AppProps) => {
