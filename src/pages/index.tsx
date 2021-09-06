@@ -1,9 +1,10 @@
 import { NextPage } from 'next'
+import { Heading } from '@theme-ui/components'
 
 const Index: NextPage = () => {
   return (
     <div>
-      <p>Hello World!</p>
+      <Heading>Hello World!</Heading>
     </div>
   )
 }
