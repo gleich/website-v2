@@ -7,8 +7,16 @@ export const theme: Theme = {
     monospace: 'Menlo, monospace',
   },
   colors: {
+    initialColorModeName: 'dark',
     text: '#000',
     background: '#fff',
-    primary: '#33e',
+    primary: '#e92741',
+    modes: {
+      dark: {
+        text: '#fff',
+        background: '#000',
+        primary: '#e92741',
+      },
+    },
   },
 }
