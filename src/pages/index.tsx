@@ -1,11 +1,15 @@
-import { NextPage } from 'next'
-import { Heading } from '@theme-ui/components'
+import Meta from '@components/Meta'
+import type { NextPage } from 'next'
+import Head from 'next/head'
 
 const Index: NextPage = () => {
   return (
-    <div>
-      <Heading>Hello World!</Heading>
-    </div>
+    <>
+      <Meta
+        title="Matt Gleich"
+        description="17-year-old open-source developer from New Hampshire"
+      />
+    </>
   )
 }
 
