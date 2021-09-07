@@ -55,6 +55,7 @@ const Meta = ({
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content="/images/me.jpg" />
+    <meta property="twitter:url" content="https://mattglei.ch" />
   </Head>
 )
 
