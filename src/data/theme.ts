@@ -12,7 +12,7 @@ export const theme: Theme = {
     },
     heading: {
       color: 'text',
-      fontSize: ['90px', '10vw'],
+      fontSize: ['90px', '9vw'],
       fontFamily: 'body',
     },
     subheading: {
