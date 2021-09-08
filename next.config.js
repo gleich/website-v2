@@ -6,4 +6,14 @@ module.exports = {
     config.resolve.alias['~'] = path.resolve('./src')
     return config
   },
+
+  async redirects() {
+    return [
+      {
+        source: '/gh/:name*',
+        destination: 'https://github.com/gleich/:name*',
+        permanent: true,
+      },
+    ]
+  },
 }
