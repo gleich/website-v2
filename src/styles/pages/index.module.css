@@ -2,7 +2,7 @@
   padding-bottom: 4px;
   position: relative;
   text-decoration: none;
-  font-size: clamp(45px, 5vw, 80px);
+  font-size: clamp(45px, 5vw, 80px) !important;
 }
 
 .hey::after {
