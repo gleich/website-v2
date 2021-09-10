@@ -12,12 +12,7 @@ export const theme: Theme = {
     },
     heading: {
       color: 'text',
-      fontSize: ['90px', '9vw'],
-      fontFamily: 'body',
-    },
-    subheading: {
-      color: 'text',
-      fontSize: ['60px', '7vw'],
+      fontSize: 'clamp(40px, 10vw, 150px)',
       fontFamily: 'body',
     },
   },

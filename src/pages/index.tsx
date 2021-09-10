@@ -15,7 +15,10 @@ const Index: NextPage = () => {
       <main style={{ padding: '0 15px' }}>
         <Center root>
           <Flex sx={{ flexDirection: 'column' }}>
-            <Text className={styles.hey} sx={{ fontSize: ['50px', '6vw'] }}>
+            <Text
+              className={styles.hey}
+              sx={{ fontSize: 'clamp(30px, 5vw, 100px)' }}
+            >
               Hey, I&apos;m
             </Text>
             <Heading>Matt Gleich</Heading>
