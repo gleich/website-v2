@@ -12,12 +12,11 @@ export const theme: Theme = {
     },
     heading: {
       color: 'text',
-      fontSize: 'clamp(40px, 10vw, 150px)',
+      fontSize: 'clamp(65px, 10vw, 130px)',
       fontFamily: 'body',
     },
   },
   config: {
-    initialColorModeName: 'light',
     printColorModeName: 'light',
   },
   colors: {

@@ -2,6 +2,7 @@
   padding-bottom: 4px;
   position: relative;
   text-decoration: none;
+  font-size: clamp(45px, 5vw, 80px);
 }
 
 .hey::after {
@@ -18,4 +19,15 @@
   left: 0;
   height: 2px;
   width: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  .hey::after {
+    background: linear-gradient(
+      to right,
+      rgb(20, 20, 20) 0%,
+      #fff 50%,
+      transparent 100%
+    );
+  }
 }

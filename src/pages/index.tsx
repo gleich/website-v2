@@ -12,15 +12,10 @@ const Index: NextPage = () => {
         title="Matt Gleich"
         description="17-year-old open-source developer from New Hampshire"
       />
-      <main style={{ padding: '0 15px' }}>
+      <main>
         <Center root>
           <Flex sx={{ flexDirection: 'column' }}>
-            <Text
-              className={styles.hey}
-              sx={{ fontSize: 'clamp(30px, 5vw, 100px)' }}
-            >
-              Hey, I&apos;m
-            </Text>
+            <Text className={styles.hey}>Hey, I&apos;m</Text>
             <Heading>Matt Gleich</Heading>
           </Flex>
         </Center>
