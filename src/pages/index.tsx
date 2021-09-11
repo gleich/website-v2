@@ -1,9 +1,8 @@
 import Center from '@components/Center'
 import Copyright from '@components/Copyright'
 import Meta from '@components/Meta'
-import { Flex, Heading, Text } from '@theme-ui/components'
+import Hey from '@components/pages/index/Hey'
 import type { NextPage } from 'next'
-import styles from '@styles/pages/index.module.css'
 
 const Index: NextPage = () => {
   return (
@@ -14,10 +13,10 @@ const Index: NextPage = () => {
       />
       <main>
         <Center root>
-          <Flex sx={{ flexDirection: 'column' }}>
-            <Text className={styles.hey}>Hey, I&apos;m</Text>
-            <Heading>Matt Gleich</Heading>
-          </Flex>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <Hey />
+            <h1>Matt Gleich</h1>
+          </div>
         </Center>
       </main>
       <footer>
