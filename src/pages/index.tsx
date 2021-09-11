@@ -14,9 +14,9 @@ const Index: NextPage = () => (
       <Center root>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <GradientUnderline>
-            <p style={{ fontSize: 'clamp(45px, 5vw, 80px)' }}>Hey, I&apos;m</p>
+            <h2>Hey there, I&apos;m</h2>
           </GradientUnderline>
-          <GradientUnderline direction="left">
+          <GradientUnderline direction="left" delay={3}>
             <h1>Matt Gleich</h1>
           </GradientUnderline>
         </div>

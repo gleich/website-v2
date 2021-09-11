@@ -1,43 +1,47 @@
 const GradientUnderline = ({
   children,
   direction = 'right',
+  delay = 0,
 }: {
   children: React.ReactNode
   direction?: string
+  delay?: number
 }): JSX.Element => (
   <>
     <style jsx>
       {`
         div {
-          padding-bottom: 4px;
           position: relative;
           text-decoration: none;
         }
 
         div::after {
-          background: white;
-          background: linear-gradient(
-            to ${direction},
-            #fff 0%,
-            rgb(20, 20, 20) 50%,
-            transparent 100%
-          );
           content: '';
           position: absolute;
           bottom: 0;
           left: 0;
-          height: 2px;
+          height: 1px;
           width: 100%;
+          animation: fade 1.5s linear forwards;
+          animation-delay: ${delay}s;
+          opacity: 0;
+          background: linear-gradient(to ${direction}, white, black);
         }
 
         @media (prefers-color-scheme: light) {
           div::after {
-            background: linear-gradient(
-              to ${direction},
-              rgb(20, 20, 20) 0%,
-              #fff 50%,
-              transparent 100%
-            );
+            background: linear-gradient(to ${direction}, black, white);
+          }
+        }
+
+        @keyframes fade {
+          from {
+            opacity: 0;
+            transform: 30px;
+          }
+          to {
+            opacity: 100%;
+            transform: 0px;
           }
         }
       `}

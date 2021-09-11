@@ -15,7 +15,14 @@ body {
 
 h1 {
   font-size: clamp(65px, 10vw, 130px);
-  margin: 0;
+}
+
+h2 {
+  font-size: clamp(35px, 4.5vw, 70px);
+}
+
+h1,
+h2 {
   font-weight: bold;
 }
 
