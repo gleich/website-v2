@@ -1,17 +1,17 @@
 commit_message: 🔄 Update file via sync
 replace:
   - before: project_name
-    after: site-v2
+    after: website
   - before: project_description
-    after: 🕸 My website written in Next.js
+    after: 🕸 My website
   - before: github_username
     after: gleich
   - before: project_author_email
-    after: matthewgleich@gmail.com
+    after: email@mattglei.ch
   - before: docker_username
     after: mattgleich
   - before: project_author_full_name
-    after: Matthew Gleich
+    after: Matt Gleich
 files:
   - path: LICENSE.md
     source: https://github.com/gleich/gleich/blob/master/standard_documents/licenses/MIT_LICENSE.md
