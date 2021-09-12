@@ -5,18 +5,21 @@ const Center = ({
   root?: boolean
   children: React.ReactNode
 }): JSX.Element => (
-  <div
-    style={{
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      margin: '0 auto',
-      minWidth: root ? '100vw' : 'min-content',
-      minHeight: root ? '100vh' : 'min-content',
-    }}
-  >
-    {children}
-  </div>
+  <>
+    <style jsx>
+      {`
+        p {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          min-width: ${root ? '100vw' : 'min-content'};
+          min-height: ${root ? '100vh' : 'min-content'};
+        }
+      `}
+    </style>
+    <p>{children}</p>
+  </>
 )
 
 export default Center
