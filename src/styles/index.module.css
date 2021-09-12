@@ -4,7 +4,7 @@
 }
 
 .wave {
-  font-size: clamp(30px, 4vw, 60px);
+  font-size: clamp(30px, 4.5vw, 60px);
   padding-right: 1.5vw;
 }
 
@@ -25,6 +25,12 @@
 
   to {
     text-shadow: 6px 4px 30px #ffffff5b;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .name {
+    animation: none;
   }
 }
 

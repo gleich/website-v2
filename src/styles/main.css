@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(35px, 5vw, 70px);
+  font-size: clamp(35px, 5.5vw, 70px);
 }
 
 a,
