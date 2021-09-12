@@ -30,7 +30,7 @@ const AccountIcon = ({
         `}
       </style>
       <div className="icon" title={name}>
-        <a href={url} rel={`Matt Gleich's ${name}`} target="_blank">
+        <a href={url} target="_blank" rel="noreferrer">
           <Image src={imagePath} width="40px" height="40px" alt={name} />
         </a>
       </div>
