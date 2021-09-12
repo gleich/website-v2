@@ -22,6 +22,7 @@ const AccountIcon = ({
             user-select: none;
             width: clamp(25px, 3vw, 45px);
             height: clamp(25px, 3vw, 45px);
+            position: relative;
           }
 
           @media (prefers-color-scheme: light) {
