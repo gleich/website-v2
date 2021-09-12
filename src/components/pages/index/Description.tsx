@@ -12,7 +12,7 @@ const Description = (): JSX.Element => (
     </style>
     <h4>
       {time.full}{' '}
-      <TextLoop delay={500} mask>
+      <TextLoop delay={700} mask>
         <span>developer</span>
         <span>photographer</span>
         <span>cyclist</span>
