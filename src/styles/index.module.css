@@ -15,16 +15,24 @@
 
 .name {
   line-height: 115%;
-  animation: light-up 2s ease-in 3s forwards;
+  animation: light-up 5s ease-in 4s infinite;
+}
+
+.description {
+  padding-top: 10px;
 }
 
 @keyframes light-up {
-  from {
+  0% {
     text-shadow: none;
   }
 
-  to {
+  50% {
     text-shadow: 6px 4px 30px #ffffff5b;
+  }
+
+  100% {
+    text-shadow: none;
   }
 }
 

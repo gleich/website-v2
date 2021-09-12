@@ -21,6 +21,10 @@ h2 {
   font-size: clamp(35px, 5.5vw, 70px);
 }
 
+h4 {
+  font-size: clamp(22.5px, 4vw, 35px);
+}
+
 a,
 a:visited {
   color: #418fdd;

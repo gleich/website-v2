@@ -5,6 +5,8 @@ import Meta from '@components/Meta'
 import getSocials from '@data/socials'
 import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import styles from '@styles/index.module.css'
+import TextLoop from 'react-text-loop'
+import time from '@data/time'
 
 const Index: NextPage = ({
   accounts,
@@ -29,6 +31,18 @@ const Index: NextPage = ({
             <GradientUnderline direction="left" delay={2}>
               <h1 className={styles.name}>Matt Gleich</h1>
             </GradientUnderline>
+            <h4 className={styles.description}>
+              {time.full}{' '}
+              <TextLoop delay={500} mask>
+                <span>developer</span>
+                <span>designer</span>
+                <span>photographer</span>
+                <span>cyclist</span>
+                <a href="https://hackclub.com" target="_blank" rel="noreferrer">
+                  hackclubber
+                </a>
+              </TextLoop>
+            </h4>
           </div>
         </Center>
       </main>
