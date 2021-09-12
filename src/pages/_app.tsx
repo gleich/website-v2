@@ -1,10 +1,9 @@
 import type { AppProps } from 'next/app'
-import { ReactElement } from 'react'
 import '@styles/main.css'
 
-export default function MyApp({
-  Component,
-  pageProps,
-}: AppProps): ReactElement {
-  return <Component {...pageProps} hreflang="en" />
-}
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+const MyApp = ({ Component, pageProps }: AppProps) => (
+  <Component {...pageProps} hreflang="en" />
+)
+
+export default MyApp
