@@ -1,0 +1,63 @@
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.wave {
+  font-size: clamp(30px, 4vw, 60px);
+  padding-right: 1.5vw;
+}
+
+.hey {
+  font-family: 'Victor Mono';
+  font-style: italic;
+}
+
+.name {
+  line-height: 115%;
+  animation: light-up 2s ease-in 3s forwards;
+}
+
+@keyframes light-up {
+  from {
+    text-shadow: none;
+  }
+
+  to {
+    text-shadow: 6px 4px 30px #ffffff5b;
+  }
+}
+
+/* Used from https://jarv.is/notes/css-waving-hand-emoji/ */
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}

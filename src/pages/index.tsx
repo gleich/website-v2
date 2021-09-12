@@ -4,6 +4,7 @@ import GradientUnderline from '@components/GradientUnderline'
 import Meta from '@components/Meta'
 import getSocials from '@data/socials'
 import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
+import styles from '@styles/index.module.css'
 
 const Index: NextPage = ({
   accounts,
@@ -17,12 +18,16 @@ const Index: NextPage = ({
       />
       <main>
         <Center root>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <div className={styles.left}>
             <GradientUnderline>
-              <h2>Hey! I&apos;m</h2>
+              <h2>
+                {' '}
+                <span className={styles.wave}>👋🏼</span>
+                <span className={styles.hey}>Hey! I&apos;m</span>
+              </h2>
             </GradientUnderline>
             <GradientUnderline direction="left" delay={2}>
-              <h1>Matt Gleich</h1>
+              <h1 className={styles.name}>Matt Gleich</h1>
             </GradientUnderline>
           </div>
         </Center>
@@ -34,12 +39,9 @@ const Index: NextPage = ({
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  const accounts = await getSocials()
-  return {
-    props: { accounts },
-    revalidate: 3600,
-  }
-}
+export const getStaticProps: GetStaticProps = async () => ({
+  props: { accounts: await getSocials() },
+  revalidate: 300, // Every five minutes
+})
 
 export default Index

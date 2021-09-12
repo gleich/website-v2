@@ -18,12 +18,12 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(35px, 4.5vw, 70px);
+  font-size: clamp(35px, 5vw, 70px);
 }
 
-h1,
-h2 {
-  font-weight: bold;
+a,
+a:visited {
+  color: #418fdd;
 }
 
 @media (prefers-color-scheme: light) {
@@ -36,4 +36,20 @@ h2 {
     background-color: black;
     color: white;
   }
+}
+
+/* fonts */
+@font-face {
+  font-family: 'Victor Mono';
+  src: url('/fonts/victormono/mediumItalic.otf');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Victor Mono';
+  src: url('/fonts/victormono/medium.otf');
+  font-weight: 600;
+  font-display: swap;
 }

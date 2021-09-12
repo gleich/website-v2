@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app'
-import '../main.css'
+import '@styles/main.css'
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 const MyApp = ({ Component, pageProps }: AppProps) => (
