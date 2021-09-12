@@ -14,7 +14,6 @@ const Description = (): JSX.Element => (
       {time.full}{' '}
       <TextLoop delay={500} mask>
         <span>developer</span>
-        <span>designer</span>
         <span>photographer</span>
         <span>cyclist</span>
         <a href="https://hackclub.com" target="_blank" rel="noreferrer">
