@@ -33,11 +33,11 @@ const Index: NextPage = ({
             display: flex;
             flex-direction: column;
             margin-left: 3vw;
-            margin-top: 5vh;
+            margin-top: 4vh;
           }
 
           .accounts > div {
-            margin-bottom: 10px !important;
+            margin-bottom: 15px !important;
           }
 
           .accounts:first-child {
@@ -55,7 +55,7 @@ const Index: NextPage = ({
             }
 
             .accounts > div {
-              margin-right: 10px !important;
+              margin-right: 20px !important;
               margin-bottom: 0;
             }
 

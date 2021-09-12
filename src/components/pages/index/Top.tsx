@@ -5,7 +5,9 @@ const Top = (): JSX.Element => (
     <style jsx>
       {`
         .hey {
-          font-family: 'Victor Mono';
+          font-family: Victor Mono, -apple-system, BlinkMacSystemFont, Segoe UI,
+            Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+            Helvetica Neue, sans-serif;
           font-style: italic;
         }
 
@@ -42,8 +44,8 @@ const Top = (): JSX.Element => (
           animation-duration: 2.5s;
           transform-origin: 70% 70%;
           display: inline-block;
-          font-size: clamp(30px, 4.5vw, 60px);
-          padding-right: 1.5vw;
+          font-size: clamp(40px, 4.5vw, 60px);
+          padding-right: clamp(17px, 1.5vw, 30px);
         }
       `}
     </style>

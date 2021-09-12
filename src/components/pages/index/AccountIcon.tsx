@@ -20,8 +20,8 @@ const AccountIcon = ({
             -webkit-user-select: none;
             -ms-user-select: none;
             user-select: none;
-            width: clamp(25px, 3vw, 45px);
-            height: clamp(25px, 3vw, 45px);
+            width: clamp(30px, 3vw, 45px);
+            height: clamp(30px, 3vw, 45px);
             position: relative;
           }
 
