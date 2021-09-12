@@ -1,0 +1,60 @@
+import GradientUnderline from '@components/GradientUnderline'
+
+const Top = (): JSX.Element => (
+  <>
+    <style jsx>
+      {`
+        .hey {
+          font-family: 'Victor Mono';
+          font-style: italic;
+        }
+
+        /* Used from https://jarv.is/notes/css-waving-hand-emoji/ */
+        @keyframes wave-animation {
+          0% {
+            transform: rotate(0deg);
+          }
+          10% {
+            transform: rotate(14deg);
+          }
+          20% {
+            transform: rotate(-8deg);
+          }
+          30% {
+            transform: rotate(14deg);
+          }
+          40% {
+            transform: rotate(-4deg);
+          }
+          50% {
+            transform: rotate(10deg);
+          }
+          60% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(0deg);
+          }
+        }
+
+        .wave {
+          animation-name: wave-animation;
+          animation-duration: 2.5s;
+          transform-origin: 70% 70%;
+          display: inline-block;
+          font-size: clamp(30px, 4.5vw, 60px);
+          padding-right: 1.5vw;
+        }
+      `}
+    </style>
+    <GradientUnderline>
+      <h2>
+        {' '}
+        <span className="wave">👋🏼</span>
+        <span className="hey">Hey! I&apos;m</span>
+      </h2>
+    </GradientUnderline>
+  </>
+)
+
+export default Top
