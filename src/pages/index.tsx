@@ -24,8 +24,6 @@ const Index: NextPage = ({
             flex-direction: row;
           }
 
-          /* Work on making this responsive */
-
           .left {
             display: flex;
             flex-direction: column;
@@ -34,8 +32,8 @@ const Index: NextPage = ({
           .accounts {
             display: flex;
             flex-direction: column;
-            margin-left: 50px;
-            margin-top: 50px;
+            margin-left: 3vw;
+            margin-top: 5vh;
           }
 
           .accounts > div {
@@ -44,6 +42,26 @@ const Index: NextPage = ({
 
           .accounts:first-child {
             margin-bottom: 0 !important;
+          }
+
+          @media screen and (max-width: 850px) {
+            main {
+              flex-direction: column;
+              align-items: center;
+            }
+
+            .accounts {
+              flex-direction: row;
+            }
+
+            .accounts > div {
+              margin-right: 10px !important;
+              margin-bottom: 0;
+            }
+
+            .accounts:first-child {
+              margin-right: 0 !important;
+            }
           }
         `}
       </style>

@@ -8,7 +8,7 @@ const Center = ({
   <>
     <style jsx>
       {`
-        p {
+        div {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -18,7 +18,7 @@ const Center = ({
         }
       `}
     </style>
-    <p>{children}</p>
+    <div>{children}</div>
   </>
 )
 

@@ -15,7 +15,7 @@ const Name = (): JSX.Element => (
           }
 
           50% {
-            text-shadow: 6px 4px 30px #ffffff5b;
+            text-shadow: 6px 4px 30px rgba(255, 255, 255, 0.6);
           }
 
           100% {

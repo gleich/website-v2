@@ -20,6 +20,8 @@ const AccountIcon = ({
             -webkit-user-select: none;
             -ms-user-select: none;
             user-select: none;
+            width: clamp(25px, 3vw, 45px);
+            height: clamp(25px, 3vw, 45px);
           }
 
           @media (prefers-color-scheme: light) {
@@ -31,7 +33,7 @@ const AccountIcon = ({
       </style>
       <div className="icon" title={name}>
         <a href={url} target="_blank" rel="noreferrer">
-          <Image src={imagePath} width="40px" height="40px" alt={name} />
+          <Image src={imagePath} layout="fill" alt={name} />
         </a>
       </div>
     </>

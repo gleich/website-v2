@@ -12,7 +12,7 @@ const Copyright = (): JSX.Element => (
           padding: 10px 0px;
         }
 
-        .link {
+        a {
           padding-left: 10px;
           display: inline-block;
         }
@@ -20,15 +20,13 @@ const Copyright = (): JSX.Element => (
     </style>
     <p>
       {`© Matt Gleich ${time.date.getFullYear()}-${new Date().getFullYear()}`}{' '}
-      <div className="link">
-        <a
-          href="https://github.com/gleich/website"
-          target="_blank"
-          rel="noreferrer"
-        >
-          gleich/website
-        </a>
-      </div>
+      <a
+        href="https://github.com/gleich/website"
+        target="_blank"
+        rel="noreferrer"
+      >
+        gleich/website
+      </a>
     </p>
   </>
 )
