@@ -49,7 +49,7 @@ const Meta = ({
     <meta property="og:image" content="/images/me.jpg" />
     <meta property="og:image:width" content="700" />
     <meta property="og:image:height" content="753" />
-    <meta property="og:site_name" content="Matt Gleich's personal website" />
+    <meta property="og:site_name" content="Matt Gleich" />
 
     {/* Twitter */}
     <meta property="twitter:creator" content="@matthewgleich" />
@@ -57,6 +57,10 @@ const Meta = ({
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content="/images/me.jpg" />
     <meta property="twitter:url" content="https://mattglei.ch" />
+    <meta property="twitter:label1" content="Developer" />
+    <meta property="twitter:label2" content="Photographer" />
+    <meta property="twitter:data1" content="Cyclist" />
+    <meta property="twitter:data2" content="Hackclubber" />
   </Head>
 )
 
