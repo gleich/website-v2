@@ -47,7 +47,7 @@ const NotFound = (): JSX.Element => (
       `}
     </style>
     <Meta
-      title="Page not found"
+      title="Requested page not found"
       description="The requested page doesn't exist"
     />
     <Center root>
@@ -61,7 +61,7 @@ const NotFound = (): JSX.Element => (
           </h2>{' '}
           <br />
           <h4>
-            Page doesn&apos;t exist. <br /> Have gex the lizard instead.
+            Requested page doesn&apos;t exist. <br /> Have gex the lizard instead.
           </h4>
         </Glow>
       </main>
