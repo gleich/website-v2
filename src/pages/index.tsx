@@ -22,6 +22,7 @@ const Index: NextPage = ({
           main {
             display: flex;
             flex-direction: row;
+            align-items: center;
           }
 
           .left {
@@ -33,7 +34,7 @@ const Index: NextPage = ({
             display: flex;
             flex-direction: column;
             margin-left: 3vw;
-            margin-top: 4vh;
+            margin-top: 4.5vh;
           }
 
           .accounts > div {
