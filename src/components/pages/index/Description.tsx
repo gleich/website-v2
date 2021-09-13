@@ -13,11 +13,11 @@ const Description = (): JSX.Element => (
     <h4>
       {time.full}{' '}
       <TextLoop delay={700} mask>
-        <span>developer</span>
-        <span>photographer</span>
-        <span>cyclist</span>
+        <span>developer 💻</span>
+        <span>photographer 📷</span>
+        <span>cyclist 🚴🏼</span>
         <a href="https://hackclub.com" target="_blank" rel="noreferrer">
-          hackclubber
+          hackclubber 🦎
         </a>
       </TextLoop>
     </h4>

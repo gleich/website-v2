@@ -57,10 +57,10 @@ const Meta = ({
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content="/images/me.jpg" />
     <meta property="twitter:url" content="https://mattglei.ch" />
-    <meta property="twitter:label1" content="Developer" />
-    <meta property="twitter:label2" content="Photographer" />
-    <meta property="twitter:data1" content="Cyclist" />
-    <meta property="twitter:data2" content="Hackclubber" />
+    <meta property="twitter:label1" content="💻 Developer" />
+    <meta property="twitter:label2" content="📷 Photographer" />
+    <meta property="twitter:data1" content="🚴🏼 Cyclist" />
+    <meta property="twitter:data2" content="🦎 Hackclubber" />
   </Head>
 )
 
