@@ -1,4 +1,5 @@
 import GradientUnderline from '@components/GradientUnderline'
+import Glow from '@components/Glow'
 
 const Name = (): JSX.Element => (
   <>
@@ -6,32 +7,13 @@ const Name = (): JSX.Element => (
       {`
         h1 {
           line-height: 115%;
-          animation: light-up 5s ease-in 4s infinite;
-        }
-
-        @keyframes light-up {
-          0% {
-            text-shadow: none;
-          }
-
-          50% {
-            text-shadow: 6px 4px 30px rgba(255, 255, 255, 0.6);
-          }
-
-          100% {
-            text-shadow: none;
-          }
-        }
-
-        @media (prefers-color-scheme: light) {
-          .name {
-            animation: none;
-          }
         }
       `}
     </style>
     <GradientUnderline direction="left" delay={2}>
-      <h1>Matt Gleich</h1>
+      <Glow>
+        <h1>Matt Gleich</h1>
+      </Glow>
     </GradientUnderline>
   </>
 )

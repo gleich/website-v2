@@ -13,10 +13,6 @@ const Index: NextPage = ({
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <>
-      <Meta
-        title="Matt Gleich"
-        description="17-year-old open-source developer from New Hampshire"
-      />
       <style jsx>
         {`
           main {
@@ -66,6 +62,10 @@ const Index: NextPage = ({
           }
         `}
       </style>
+      <Meta
+        title="Matt Gleich"
+        description="17-year-old open-source developer from New Hampshire"
+      />
       <Center root>
         <main>
           <div className="left">
