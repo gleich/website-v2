@@ -20,11 +20,7 @@ const Copyright = (): JSX.Element => (
     </style>
     <p>
       {`© Matt Gleich ${time.date.getFullYear()}-${new Date().getFullYear()}`}{' '}
-      <a
-        href="https://github.com/gleich/www"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a href="https://github.com/gleich/www" target="_blank" rel="noreferrer">
         gleich/www
       </a>
     </p>
