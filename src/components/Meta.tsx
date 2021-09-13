@@ -43,7 +43,7 @@ const Meta = ({
 
     {/* Open Graph */}
     <meta property="og:title" content={title} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="www" />
     <meta property="og:description" content={description} />
     <meta property="og:locale" content="en_US" />
     <meta property="og:image" content="/images/me.jpg" />

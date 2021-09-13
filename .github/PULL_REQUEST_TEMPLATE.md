@@ -21,5 +21,5 @@ This PR resolves #22
 -->
 
 <!--
-Thank you for your contribution to website!
+Thank you for your contribution to www!
 -->
