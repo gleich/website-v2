@@ -61,7 +61,8 @@ const NotFound = (): JSX.Element => (
           </h2>{' '}
           <br />
           <h4>
-            Requested page doesn&apos;t exist. <br /> Have gex the lizard instead.
+            Requested page doesn&apos;t exist. <br /> Have gex the lizard
+            instead.
           </h4>
         </Glow>
       </main>
