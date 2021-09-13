@@ -39,6 +39,10 @@ const NotFound = (): JSX.Element => (
           main {
             flex-direction: column;
           }
+
+          .status-code {
+            margin-top: 50px;
+          }
         }
       `}
     </style>
