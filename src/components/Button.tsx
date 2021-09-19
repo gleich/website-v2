@@ -12,6 +12,7 @@ const Button = ({
       {`
         button {
           background-color: white;
+          color: black;
           cursor: pointer;
           border: none;
           height: min-content;
@@ -63,13 +64,19 @@ const Button = ({
         }
       `}
     </style>
-    <button>
+    {!href.startsWith('http') ? (
       <Link href={href}>
-        <div>
+        <button>
           <span>{children} </span>
-        </div>
+        </button>
       </Link>
-    </button>
+    ) : (
+      <a href={href} target="_blank" rel="noreferrer">
+        <button>
+          <span>{children} </span>
+        </button>
+      </a>
+    )}
   </>
 )
 

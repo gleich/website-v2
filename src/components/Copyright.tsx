@@ -1,6 +1,6 @@
 import time from '@data/time'
 
-const Copyright = (): JSX.Element => (
+const Copyright = ({ repoLink }: { repoLink?: boolean }): JSX.Element => (
   <>
     <style jsx>
       {`
@@ -14,7 +14,7 @@ const Copyright = (): JSX.Element => (
 
         a {
           padding-left: 10px;
-          display: inline-block;
+          ${repoLink ? 'display: inline-block' : 'display: none'}
         }
       `}
     </style>
