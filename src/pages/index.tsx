@@ -122,11 +122,11 @@ const Index: NextPage = ({
             </div>
           </div>
           <div className="links">
-            <Button href="/about">About</Button>
-            <Button href="/projects">Projects</Button>
-            <Button href="/photography">Photography</Button>
-            <Button href="/blog">Blog</Button>
-            <Button href="/skills">Skills</Button>
+            <Button href="/wip">About</Button>
+            <Button href="/wip">Projects</Button>
+            <Button href="/wip">Photography</Button>
+            <Button href="/wip">Blog</Button>
+            <Button href="/wip">Skills</Button>
           </div>
         </main>
       </Center>

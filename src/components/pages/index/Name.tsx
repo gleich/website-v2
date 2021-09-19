@@ -7,6 +7,7 @@ const Name = (): JSX.Element => (
       {`
         h1 {
           line-height: 115%;
+          text-align: center;
         }
       `}
     </style>

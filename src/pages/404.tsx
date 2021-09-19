@@ -1,9 +1,10 @@
 import Center from '@components/Center'
 import Glow from '@components/Glow'
 import Meta from '@components/Meta'
+import { NextPage } from 'next'
 import Image from 'next/image'
 
-const NotFound = (): JSX.Element => (
+const NotFound: NextPage = (): JSX.Element => (
   <>
     <style jsx>
       {`

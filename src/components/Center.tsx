@@ -12,7 +12,7 @@ const Center = ({
           display: flex;
           align-items: center;
           justify-content: center;
-          margin: 0 auto;
+          margin: 0;
           min-width: ${root ? '100vw' : 'min-content'};
           min-height: ${root ? '100vh' : 'min-content'};
         }
