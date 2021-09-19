@@ -3,7 +3,7 @@ const Glow = ({ children }: { children: React.ReactNode }): JSX.Element => (
     <style jsx>
       {`
         .glow {
-          animation: light-up 5s ease-in 4s infinite;
+          animation: light-up 5s ease-in infinite;
         }
 
         @keyframes light-up {
