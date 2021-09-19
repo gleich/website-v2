@@ -12,130 +12,128 @@ import Button from '@components/Button'
 
 const Index: NextPage = ({
   accounts,
-}: InferGetStaticPropsType<typeof getStaticProps>) => {
-  return (
-    <>
-      <style jsx>
-        {`
+}: InferGetStaticPropsType<typeof getStaticProps>) => (
+  <>
+    <style jsx>
+      {`
+        main {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .top {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .left {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .right {
+          display: flex;
+          flex-direction: row;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .accounts {
+          display: flex;
+          flex-direction: column;
+          margin-left: 3vw;
+          margin-top: 4.5vh;
+        }
+
+        .links {
+          margin-top: 4vh;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: space-between;
+          gap: 20px;
+          justify-content: center;
+          width: 100%;
+          flex-basis: 25%;
+        }
+
+        .accounts > div {
+          margin-bottom: 15px !important;
+        }
+
+        .accounts:first-child {
+          margin-bottom: 0 !important;
+        }
+
+        @media screen and (max-width: 850px) {
           main {
-            display: flex;
             flex-direction: column;
             align-items: center;
           }
 
           .top {
-            display: flex;
-            flex-direction: row;
-          }
-
-          .left {
-            display: flex;
             flex-direction: column;
           }
 
           .right {
-            display: flex;
-            flex-direction: row;
-            flex-direction: row;
-            align-items: center;
-          }
-
-          .accounts {
-            display: flex;
-            flex-direction: column;
-            margin-left: 3vw;
-            margin-top: 4.5vh;
+            justify-content: center;
           }
 
           .links {
-            margin-top: 4vh;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: space-between;
-            gap: 20px;
-            justify-content: center;
-            width: 100%;
-            flex-basis: 25%;
+            width: 98vw;
+          }
+
+          .accounts {
+            flex-direction: row;
           }
 
           .accounts > div {
-            margin-bottom: 15px !important;
+            margin-right: 20px !important;
+            margin-bottom: 0;
           }
 
           .accounts:first-child {
-            margin-bottom: 0 !important;
+            margin-right: 0 !important;
           }
-
-          @media screen and (max-width: 850px) {
-            main {
-              flex-direction: column;
-              align-items: center;
-            }
-
-            .top {
-              flex-direction: column;
-            }
-
-            .right {
-              justify-content: center;
-            }
-
-            .links {
-              width: 98vw;
-            }
-
-            .accounts {
-              flex-direction: row;
-            }
-
-            .accounts > div {
-              margin-right: 20px !important;
-              margin-bottom: 0;
-            }
-
-            .accounts:first-child {
-              margin-right: 0 !important;
-            }
-          }
-        `}
-      </style>
-      <Meta
-        title="Matt Gleich"
-        description={time.full + ' open-source developer from New Hampshire'}
-      />
-      <Center root>
-        <main>
-          <div className="top">
-            <div className="left">
-              <Top />
-              <Name />
-              <Description />
-            </div>
-            <div className="right">
-              <div className="accounts">
-                {accounts.map((account: SocialMediaAccount) => (
-                  <div key={account.name}>
-                    <AccountIcon {...account} />
-                  </div>
-                ))}
-              </div>
+        }
+      `}
+    </style>
+    <Meta
+      title="Matt Gleich"
+      description={time.full + ' open-source developer from New Hampshire'}
+    />
+    <Center root>
+      <main>
+        <div className="top">
+          <div className="left">
+            <Top />
+            <Name />
+            <Description />
+          </div>
+          <div className="right">
+            <div className="accounts">
+              {accounts.map((account: SocialMediaAccount) => (
+                <div key={account.name}>
+                  <AccountIcon {...account} />
+                </div>
+              ))}
             </div>
           </div>
-          <div className="links">
-            <Button href="/wip">About</Button>
-            <Button href="/wip">Projects</Button>
-            <Button href="/wip">Photography</Button>
-            <Button href="/wip">Blog</Button>
-            <Button href="/wip">Skills</Button>
-          </div>
-        </main>
-      </Center>
-      <footer>
-        <Copyright />
-      </footer>
-    </>
-  )
-}
+        </div>
+        <div className="links">
+          <Button href="/wip">About</Button>
+          <Button href="/wip">Projects</Button>
+          <Button href="/wip">Photography</Button>
+          <Button href="/wip">Blog</Button>
+          <Button href="/wip">Skills</Button>
+        </div>
+      </main>
+    </Center>
+    <footer>
+      <Copyright />
+    </footer>
+  </>
+)
 
 export const getStaticProps: GetStaticProps = async () => ({
   props: { accounts: await getSocials() },
