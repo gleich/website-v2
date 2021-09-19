@@ -22,6 +22,7 @@ const AccountIcon = ({
             user-select: none;
             width: clamp(35px, 4.5vw, 50px);
             height: clamp(35px, 4.5vw, 50px);
+            position: relative;
           }
 
           .icon:hover {
