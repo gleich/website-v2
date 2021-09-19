@@ -22,7 +22,24 @@ const AccountIcon = ({
             user-select: none;
             width: clamp(35px, 4.5vw, 50px);
             height: clamp(35px, 4.5vw, 50px);
-            position: relative;
+          }
+
+          .icon:hover {
+            animation: shake 0.5s ease;
+          }
+
+          @keyframes shake {
+            0% {
+              transform: 0;
+            }
+
+            50% {
+              transform: rotate(20deg);
+            }
+
+            0% {
+              transform: 0;
+            }
           }
 
           @media (prefers-color-scheme: light) {
