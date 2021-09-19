@@ -13,20 +13,24 @@ body {
 }
 
 h1 {
-  font-size: clamp(70px, 10vw, 130px);
+  font-size: clamp(70px, 15vw, 130px);
 }
 
 h2 {
-  font-size: clamp(45px, 5.5vw, 70px);
+  font-size: clamp(45px, 8vw, 70px);
 }
 
 h4 {
-  font-size: clamp(28px, 4vw, 35px);
+  font-size: clamp(28px, 4.5vw, 35px);
 }
 
 a,
 a:visited {
   color: #418fdd;
+}
+
+button {
+  font-size: clamp(18px, 3vw, 25px);
 }
 
 @media (prefers-color-scheme: light) {

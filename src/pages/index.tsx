@@ -7,6 +7,8 @@ import Top from '@components/pages/index/Top'
 import Name from '@components/pages/index/Name'
 import Description from '@components/pages/index/Description'
 import AccountIcon from '@components/pages/index/AccountIcon'
+import time from '@data/time'
+import Button from '@components/Button'
 
 const Index: NextPage = ({
   accounts,
@@ -17,8 +19,13 @@ const Index: NextPage = ({
         {`
           main {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
+          }
+
+          .top {
+            display: flex;
+            flex-direction: row;
           }
 
           .left {
@@ -26,11 +33,29 @@ const Index: NextPage = ({
             flex-direction: column;
           }
 
+          .right {
+            display: flex;
+            flex-direction: row;
+            flex-direction: row;
+            align-items: center;
+          }
+
           .accounts {
             display: flex;
             flex-direction: column;
             margin-left: 3vw;
             margin-top: 4.5vh;
+          }
+
+          .links {
+            margin-top: 4vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: space-between;
+            gap: 20px;
+            justify-content: center;
+            width: 100%;
+            flex-basis: 25%;
           }
 
           .accounts > div {
@@ -45,6 +70,18 @@ const Index: NextPage = ({
             main {
               flex-direction: column;
               align-items: center;
+            }
+
+            .top {
+              flex-direction: column;
+            }
+
+            .right {
+              justify-content: center;
+            }
+
+            .links {
+              width: 98vw;
             }
 
             .accounts {
@@ -64,23 +101,32 @@ const Index: NextPage = ({
       </style>
       <Meta
         title="Matt Gleich"
-        description="17-year-old open-source developer from New Hampshire"
+        description={time.full + ' open-source developer from New Hampshire'}
       />
       <Center root>
         <main>
-          <div className="left">
-            <Top />
-            <Name />
-            <Description />
-          </div>
-          <div className="right">
-            <div className="accounts">
-              {accounts.map((account: SocialMediaAccount) => (
-                <div key={account.name}>
-                  <AccountIcon {...account} />
-                </div>
-              ))}
+          <div className="top">
+            <div className="left">
+              <Top />
+              <Name />
+              <Description />
             </div>
+            <div className="right">
+              <div className="accounts">
+                {accounts.map((account: SocialMediaAccount) => (
+                  <div key={account.name}>
+                    <AccountIcon {...account} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="links">
+            <Button href="/about">About</Button>
+            <Button href="/projects">Projects</Button>
+            <Button href="/photography">Photography</Button>
+            <Button href="/blog">Blog</Button>
+            <Button href="/skills">Skills</Button>
           </div>
         </main>
       </Center>

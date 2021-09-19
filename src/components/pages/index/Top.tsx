@@ -44,8 +44,8 @@ const Top = (): JSX.Element => (
           animation-duration: 2.5s;
           transform-origin: 70% 70%;
           display: inline-block;
-          font-size: clamp(40px, 4.5vw, 60px);
-          padding-right: clamp(17px, 1.5vw, 30px);
+          font-size: clamp(40px, 5.5vw, 60px);
+          padding-right: clamp(17px, 3vw, 30px);
         }
       `}
     </style>
