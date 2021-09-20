@@ -96,7 +96,14 @@ const About: NextPage = (): JSX.Element => {
           <p className="contact">
             I would love to hear from you! <br /> The best way to get in contact
             with me is via <a href="mailto:email@mattglei.ch">email</a> or{' '}
-            <a href="https://twitter.com/matt_gleich">twitter</a>.
+            <a
+              href="https://twitter.com/matt_gleich"
+              target="_blank"
+              rel="noreferrer"
+            >
+              twitter
+            </a>
+            .
           </p>
           <h3>Q&A</h3>
           <QNA question="When did you start coding?">
@@ -104,7 +111,11 @@ const About: NextPage = (): JSX.Element => {
               I started programming on my high school&apos;s robotics team my
               freshman year of high school. I started as the lead computer
               vision programmer and worked on{' '}
-              <a href="https://github.com/Team-501-The-PowerKnights/Vision2019">
+              <a
+                href="https://github.com/Team-501-The-PowerKnights/Vision2019"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {' '}
                 software
               </a>{' '}
