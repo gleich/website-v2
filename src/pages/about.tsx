@@ -31,17 +31,13 @@ const About: NextPage = (): JSX.Element => {
             -webkit-user-select: none;
             -ms-user-select: none;
             user-select: none;
-            border-radius: 50% !important;
-            padding: 20px 0;
-          }
-
-          h2 {
+            border-radius: 50%;
+            padding-top: 50px;
             padding-bottom: 20px;
-            text-decoration: underline;
           }
 
           h3 {
-            padding-top: 70px;
+            padding-top: 30px;
             text-decoration: underline;
           }
 
@@ -69,7 +65,6 @@ const About: NextPage = (): JSX.Element => {
           <div className="img">
             <Image src="/images/me.jpg" width="266px" height="286px" />
           </div>
-          <h2>Hello World!</h2>
           <p>
             Hello and welcome to my website! For the past{' '}
             <span className="coding-for">
