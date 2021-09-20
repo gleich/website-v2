@@ -7,13 +7,25 @@ const Description = (): JSX.Element => (
       {`
         h4 {
           padding-top: 10px;
+          text-align: center;
+        }
+
+        @media screen and (min-width: 850px) {
+          br {
+            display: none;
+          }
+
+          h4 {
+            text-align: left;
+          }
         }
       `}
     </style>
     <h4>
-      {time.full}{' '}
+      {time.full} <br />{' '}
       <TextLoop delay={700} mask>
         <span>developer 💻</span>
+        <span>designer 🎨</span>
         <span>photographer 📷</span>
         <span>cyclist 🚴🏼</span>
         <a href="https://hackclub.com" target="_blank" rel="noreferrer">

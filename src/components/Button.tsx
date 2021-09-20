@@ -43,13 +43,15 @@ const Button = ({
           transition: 0.5s;
         }
 
-        button:hover span {
-          padding-right: 20px;
-        }
+        @media (hover: hover) {
+          button:hover span {
+            padding-right: 20px;
+          }
 
-        button:hover span:after {
-          opacity: 1;
-          right: 0;
+          button:hover span:after {
+            opacity: 1;
+            right: 0;
+          }
         }
 
         @media (prefers-color-scheme: light) {

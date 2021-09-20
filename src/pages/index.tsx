@@ -53,7 +53,6 @@ const Index: NextPage = ({
           align-items: space-between;
           gap: 20px;
           justify-content: center;
-          width: 97vw;
           flex-basis: 25%;
         }
 
@@ -69,6 +68,10 @@ const Index: NextPage = ({
           main {
             flex-direction: column;
             align-items: center;
+          }
+
+          .links {
+            width: 80vw;
           }
 
           .top {

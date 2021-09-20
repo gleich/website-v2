@@ -40,7 +40,7 @@ const WIP: NextPage = (): JSX.Element => (
         <Glow>
           <h1>W.I.P</h1>
         </Glow>
-        <h4>This page is a work in progress</h4>
+        <h5>This page is a work in progress</h5>
         <div className="buttons">
           <Button href="/">Head Home</Button>
           <Button href="https://github.com/gleich/www">

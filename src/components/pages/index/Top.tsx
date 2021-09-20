@@ -44,7 +44,7 @@ const Top = (): JSX.Element => (
           animation-duration: 2.5s;
           transform-origin: 70% 70%;
           display: inline-block;
-          font-size: clamp(40px, 5.5vw, 60px);
+          font-size: clamp(50px, 5.5vw, 60px);
           padding-right: clamp(17px, 3vw, 30px);
         }
       `}

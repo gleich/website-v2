@@ -61,10 +61,10 @@ const NotFound: NextPage = (): JSX.Element => (
             <span>404</span>
           </h3>{' '}
           <br />
-          <h4>
+          <h5>
             Requested page doesn&apos;t exist. <br /> Have gex the lizard
             instead.
-          </h4>
+          </h5>
         </Glow>
       </main>
     </Center>
