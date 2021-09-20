@@ -47,7 +47,9 @@ const About: NextPage = (): JSX.Element => {
 
           .coding-for {
             display: inline-block;
-            width: 140px;
+            font-family: 'Victor Mono';
+            font-size: 1.35rem;
+            font-feature-settings: 'ss01';
           }
 
           .answer {
