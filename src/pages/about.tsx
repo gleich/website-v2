@@ -47,7 +47,7 @@ const About: NextPage = (): JSX.Element => {
 
           .coding-for {
             display: inline-block;
-            width: 127px;
+            width: 140px;
           }
 
           .answer {
