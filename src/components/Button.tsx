@@ -16,7 +16,7 @@ const Button = ({
           cursor: pointer;
           border: none;
           height: min-content;
-          transition: all 0.5s;
+          transition: right 0.5s;
           padding: 10px 20px;
           border-radius: 8px;
           text-align: center;

@@ -68,6 +68,7 @@ const Index: NextPage = ({
           main {
             flex-direction: column;
             align-items: center;
+            margin-bottom: 10vh;
           }
 
           .links {
@@ -76,6 +77,7 @@ const Index: NextPage = ({
 
           .top {
             flex-direction: column;
+            margin-top: 10vh;
           }
 
           .right {
