@@ -10,6 +10,7 @@ const Copyright = ({ repoLink }: { repoLink?: boolean }): JSX.Element => (
           min-width: 100%;
           text-align: center;
           padding: 10px 0px;
+          font-size: 17px;
         }
 
         a {
@@ -19,7 +20,7 @@ const Copyright = ({ repoLink }: { repoLink?: boolean }): JSX.Element => (
       `}
     </style>
     <p>
-      {`© Matt Gleich ${time.date.getFullYear()}-${new Date().getFullYear()}`}{' '}
+      &copy; Matt Gleich {time.bday.year()}-{new Date().getFullYear()}{' '}
       <a href="https://github.com/gleich/www" target="_blank" rel="noreferrer">
         gleich/www
       </a>

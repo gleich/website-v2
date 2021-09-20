@@ -10,6 +10,7 @@ body {
 ::selection {
   background-color: white;
   color: black;
+  text-decoration-color: black;
 }
 
 h1 {
@@ -17,6 +18,10 @@ h1 {
 }
 
 h2 {
+  font-size: clamp(60px, 11vw, 100px);
+}
+
+h3 {
   font-size: clamp(45px, 8vw, 70px);
 }
 
@@ -26,7 +31,12 @@ h4 {
 
 a,
 a:visited {
-  color: #418fdd;
+  color: #49a4ff;
+}
+
+p,
+li {
+  font-size: 1.3rem;
 }
 
 button {
@@ -42,6 +52,7 @@ button {
   ::selection {
     background-color: black;
     color: white;
+    text-decoration-color: white;
   }
 }
 

@@ -12,8 +12,9 @@ const WIP: NextPage = (): JSX.Element => (
         main {
           display: flex;
           flex-direction: column;
-          justify-content: center;
           align-items: center;
+
+          text-align: center;
         }
 
         .buttons {
@@ -28,9 +29,7 @@ const WIP: NextPage = (): JSX.Element => (
 
         @media screen and (max-width: 800px) {
           main {
-            align-items: center;
             width: 90%;
-            text-align: center;
           }
         }
       `}

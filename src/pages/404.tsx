@@ -57,9 +57,9 @@ const NotFound: NextPage = (): JSX.Element => (
           <Image src="/images/gex.png" height="336" width="278" />
         </div>
         <Glow>
-          <h2 className="status-code">
+          <h3 className="status-code">
             <span>404</span>
-          </h2>{' '}
+          </h3>{' '}
           <br />
           <h4>
             Requested page doesn&apos;t exist. <br /> Have gex the lizard

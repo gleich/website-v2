@@ -50,11 +50,11 @@ const Top = (): JSX.Element => (
       `}
     </style>
     <GradientUnderline>
-      <h2>
+      <h3>
         {' '}
         <span className="wave">👋🏼</span>
         <span className="hey">Hey! I&apos;m</span>
-      </h2>
+      </h3>
     </GradientUnderline>
   </>
 )
