@@ -11,11 +11,18 @@ const Copyright = ({ repoLink }: { repoLink?: boolean }): JSX.Element => (
           text-align: center;
           padding: 10px 0px;
           font-size: 17px;
+          background-color: black;
         }
 
         a {
           padding-left: 10px;
           ${repoLink ? 'display: inline-block' : 'display: none'}
+        }
+
+        @media (prefers-color-scheme: light) {
+          p {
+            background-color: white;
+          }
         }
       `}
     </style>
