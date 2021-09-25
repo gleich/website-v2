@@ -14,23 +14,23 @@ body {
 }
 
 h1 {
-  font-size: clamp(100px, 15vw, 130px);
+  font-size: clamp(6.25rem, 15vw, 8.125rem);
 }
 
 h2 {
-  font-size: clamp(70px, 11vw, 100px);
+  font-size: clamp(4.375rem, 11vw, 6.25rem);
 }
 
 h3 {
-  font-size: clamp(55px, 8vw, 70px);
+  font-size: clamp(3.4375rem, 8vw, 4.375rem);
 }
 
 h4 {
-  font-size: clamp(38px, 4.5vw, 35px);
+  font-size: clamp(2.375rem, 4.5vw, 2.1875rem);
 }
 
 h5 {
-  font-size: clamp(28px, 4vw, 30px);
+  font-size: clamp(1.75rem, 4vw, 1.875rem);
 }
 
 a,
@@ -44,7 +44,7 @@ li {
 }
 
 button {
-  font-size: clamp(20px, 3vw, 25px);
+  font-size: clamp(1.25rem, 3vw, 1.5625rem);
 }
 
 @media (prefers-color-scheme: light) {

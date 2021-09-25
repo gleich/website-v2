@@ -10,7 +10,7 @@ const Copyright = ({ repoLink }: { repoLink?: boolean }): JSX.Element => (
           min-width: 100%;
           text-align: center;
           padding: 10px 0px;
-          font-size: 17px;
+          font-size: 1.0625rem;
           background-color: black;
         }
 
