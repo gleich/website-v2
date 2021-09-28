@@ -13,7 +13,7 @@ const Center = ({
           align-items: center;
           justify-content: center;
           margin: 0;
-          min-width: ${root ? '100vw' : 'min-content'};
+          min-width: ${root ? '99vw' : 'min-content'};
           min-height: ${root ? '100vh' : 'min-content'};
         }
       `}

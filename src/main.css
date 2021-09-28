@@ -47,6 +47,19 @@ button {
   font-size: clamp(1.25rem, 3vw, 1.5625rem);
 }
 
+::-webkit-scrollbar {
+  width: 0.2rem;
+  height: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
 @media (prefers-color-scheme: light) {
   body {
     background-color: white;
