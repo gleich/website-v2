@@ -78,9 +78,22 @@ const About: NextPage = (): JSX.Element => {
             />
             <p>
               Me (right) and{' '}
-              <a href="https://twitter.com/mojombo">Tom Preston Werner</a>{' '}
+              <a
+                href="https://twitter.com/mojombo"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Tom Preston Werner
+              </a>{' '}
               (left) on the{' '}
-              <a href="https://zephyr.hackclub.com/">hacker zephyr</a>.
+              <a
+                href="https://zephyr.hackclub.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                hacker zephyr
+              </a>
+              .
             </p>
           </div>
           <p>
