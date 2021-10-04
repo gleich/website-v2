@@ -7,6 +7,7 @@ import useInterval from 'use-interval'
 import Link from 'next/link'
 import Image from 'next/image'
 import QNA from '@components/pages/about/QNA'
+import pictureOfMe from '@data/me.jpeg'
 
 const About: NextPage = (): JSX.Element => {
   const [codingFor, setCodingFor] = useState(0)
@@ -34,6 +35,10 @@ const About: NextPage = (): JSX.Element => {
             border-radius: 50%;
             padding-top: 50px;
             padding-bottom: 20px;
+          }
+
+          .img > p {
+            font-size: 1rem;
           }
 
           h3 {
@@ -65,7 +70,18 @@ const About: NextPage = (): JSX.Element => {
       <Center root>
         <main>
           <div className="img">
-            <Image src="/images/me.jpg" width="266px" height="286px" />
+            <Image
+              src={pictureOfMe}
+              placeholder="blur"
+              width="330"
+              height="400"
+            />
+            <p>
+              Me (right) and{' '}
+              <a href="https://twitter.com/mojombo">Tom Preston Werner</a>{' '}
+              (left) on the{' '}
+              <a href="https://zephyr.hackclub.com/">hacker zephyr</a>.
+            </p>
           </div>
           <p>
             Hello and welcome to my website! For the past{' '}
