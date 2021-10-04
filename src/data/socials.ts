@@ -6,7 +6,7 @@ export interface SocialMediaAccount {
 
 const getSocials = async (): Promise<SocialMediaAccount[]> => {
   // Making request to api
-  const resp = await fetch('https://gql.api.mattglei.ch', {
+  const resp = await fetch('https://graphql.mattglei.ch', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
