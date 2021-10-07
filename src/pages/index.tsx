@@ -126,7 +126,9 @@ const Index: NextPage = ({
           <Button href="https://github.com/gleich?tab=repositories">
             Projects
           </Button>
-          <Button href="/wip">Photography</Button>
+          <Button href="https://lightroom.adobe.com/shares/e96b417d28384fe7b26b54b8809f5d08">
+            Photography
+          </Button>
           <Button href="/wip">Blog</Button>
           <Button href="/wip">Skills</Button>
         </div>
