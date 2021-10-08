@@ -8,6 +8,10 @@ const Name = (): JSX.Element => (
         h1 {
           line-height: 115%;
           text-align: center;
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+            sans-serif;
+          font-style: normal;
         }
 
         @media screen and (min-width: 850px) {

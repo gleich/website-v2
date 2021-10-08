@@ -23,6 +23,7 @@ const NotFound: NextPage = (): JSX.Element => (
             Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
             Helvetica Neue, sans-serif;
           font-feature-settings: 'ss01';
+          font-style: normal;
           background-color: white;
           color: black;
           width: min-content;

@@ -33,6 +33,15 @@ h5 {
   font-size: clamp(1.75rem, 4vw, 1.875rem);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Space Mono';
+  font-style: italic;
+}
+
 a,
 a:visited {
   color: #49a4ff;
@@ -86,5 +95,13 @@ button {
   font-family: 'Victor Mono';
   src: url('/fonts/victormono/medium.otf');
   font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url('/fonts/spacemono/italic.ttf');
+  font-weight: 600;
+  font-style: italic;
   font-display: swap;
 }
