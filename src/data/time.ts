@@ -6,6 +6,7 @@ const startedCoding = dayjs('2019/01/19')
 
 function yearsSince(date: Dayjs): number {
   const roundPlaces = 7
+  console.log(dayjs().diff(date, 'years', true))
   const value =
     (dayjs().diff(date, 'years', true) * Math.pow(10, roundPlaces)) /
     Math.pow(10, roundPlaces)
@@ -21,7 +22,7 @@ export default {
   bday: bday,
   age: yearsSince(bday),
   today: isToday(),
-  full: Math.round(yearsSince(bday)) + '-year-old',
+  full: Math.trunc(yearsSince(bday)) + '-year-old',
   startedCoding: startedCoding,
   yearsSince: yearsSince,
 }
