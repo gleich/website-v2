@@ -129,7 +129,7 @@ const Index: NextPage = ({
           <Button href="https://lightroom.adobe.com/shares/e96b417d28384fe7b26b54b8809f5d08">
             Photography
           </Button>
-          <Button href="/wip">Blog</Button>
+          <Button href="/blog">Blog</Button>
           <Button href="/wip">Skills</Button>
         </div>
       </main>

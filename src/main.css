@@ -56,6 +56,10 @@ button {
   font-size: clamp(1.25rem, 3vw, 1.5625rem);
 }
 
+ul {
+  list-style-type: '- ';
+}
+
 ::-webkit-scrollbar {
   width: 0.2rem;
   height: 0.2rem;
@@ -65,7 +69,7 @@ button {
   background: black;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scbollbar-thumb {
   background: white;
 }
 
