@@ -11,6 +11,13 @@ const Top = (): JSX.Element => (
           font-style: italic;
         }
 
+        .wave {
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+            sans-serif;
+          font-style: normal;
+        }
+
         /* Used from https://jarv.is/notes/css-waving-hand-emoji/ */
         @keyframes wave-animation {
           0% {
