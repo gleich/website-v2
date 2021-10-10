@@ -60,6 +60,10 @@ ul {
   list-style-type: '- ';
 }
 
+ol {
+  list-style-position: inside;
+}
+
 ::-webkit-scrollbar {
   width: 0.2rem;
   height: 0.2rem;

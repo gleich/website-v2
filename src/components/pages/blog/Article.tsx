@@ -1,5 +1,6 @@
 import Button from '@components/Button'
 import { BlogPost } from '@data/blog'
+import dayjs from 'dayjs'
 
 const Article = ({ post }: { post: BlogPost }): JSX.Element => (
   <>
@@ -36,7 +37,8 @@ const Article = ({ post }: { post: BlogPost }): JSX.Element => (
       .meta-separator {
         display: inline-block;
         color: white;
-        margin: 0 10px;
+        margin-left: 10px;
+        margin-right: 13px;
         font-family: 'Victor Mono';
       }
 
@@ -59,8 +61,8 @@ const Article = ({ post }: { post: BlogPost }): JSX.Element => (
       <h3>{post.title}</h3>
       <div className="meta">
         <p>
-          Updated {post.timeSince}
-          <p className="meta-separator">⎇</p>
+          Developed {dayjs(post.created, 'YYYY-MM-DD').fromNow()}
+          <p className="meta-separator">λ</p>
           {post.readingTime} read
         </p>
       </div>
