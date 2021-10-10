@@ -1,8 +1,7 @@
 const path = require('path')
-const withTM = require('next-transpile-modules')(['react-markdown'])
 
 /** @type {import('next/dist/next-server/server/config').NextConfig} */
-module.exports = withTM({
+module.exports = {
   webpack: (config) => {
     config.resolve.alias['~'] = path.resolve('./src')
     return config
@@ -27,4 +26,4 @@ module.exports = withTM({
       },
     ]
   },
-})
+}

@@ -33,7 +33,7 @@ export const getBlogPost = (filename: string): BlogPost => {
     slug: path.parse(filename).name,
     title: String(frontMatter.data.name),
     description: String(frontMatter.data.description),
-    readingTime: readingMinutes === 1 ? '1 minute' : `${readingTime} minutes`,
+    readingTime: readingMinutes === 1 ? '1 minute' : `${readingMinutes} minute`,
     created: frontMatter.data.date,
     content: frontMatter.content,
     filename,

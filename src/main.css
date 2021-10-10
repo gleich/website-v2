@@ -64,16 +64,16 @@ ol {
   list-style-position: inside;
 }
 
-::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 0.2rem;
   height: 0.2rem;
 }
 
-::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
   background: black;
 }
 
-::-webkit-scbollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background: white;
 }
 

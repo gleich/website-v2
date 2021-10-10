@@ -6,7 +6,7 @@ import {
   GetStaticPropsContext,
   InferGetStaticPropsType,
 } from 'next'
-import ReactMarkdown from 'react-markdown/react-markdown.min'
+import ReactMarkdown from 'react-markdown'
 import dayjs from 'dayjs'
 import customParseFormat from 'dayjs/plugin/customParseFormat'
 import relativeTime from 'dayjs/plugin/relativeTime'
@@ -25,8 +25,9 @@ const ArticlePage = ({
       <style jsx global>
         {`
           main {
-            max-width: 700px;
-            margin: 0 20px;
+            max-width: 750px;
+            padding: 0 20px;
+            margin-bottom: 100px;
           }
 
           .top {
@@ -34,10 +35,19 @@ const ArticlePage = ({
             padding-bottom: 8px;
           }
 
+          .title {
+            font-size: clamp(3.25rem, 10vw, 5.125rem);
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+              Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+              sans-serif;
+            font-style: normal;
+          }
+
           .meta {
             color: grey;
             font-family: 'Victor Mono';
             font-feature-settings: 'ss01';
+            font-size: 1.2rem;
           }
 
           .separator-char {
@@ -50,8 +60,13 @@ const ArticlePage = ({
           }
 
           .markdown > ol,
-          .markdown > ul {
-            padding: 20px 0;
+          .markdown > ul,
+          .markdown > h1,
+          .markdown > h2,
+          .markdown > h3,
+          .markdown > h4,
+          .markdown > pre {
+            margin: 20px 0;
           }
 
           .markdown > h1,
@@ -60,18 +75,14 @@ const ArticlePage = ({
           }
 
           .markdown > h1 {
-            font-size: clamp(3.25rem, 10vw, 5.125rem);
-          }
-
-          .markdown > h2 {
             font-size: clamp(2.375rem, 7vw, 3.25rem);
           }
 
-          .markdown > h3 {
+          .markdown > h2 {
             font-size: clamp(1.4375rem, 5vw, 2.375rem);
           }
 
-          .markdown > h4 {
+          .markdown > h3 {
             font-size: clamp(1.1rem, 3vw, 0.1875rem);
           }
 
@@ -81,8 +92,14 @@ const ArticlePage = ({
             font-feature-settings: 'ss01';
           }
 
+          .markdown > pre {
+            border: 1px solid grey;
+            padding: 20px;
+            overflow: scroll;
+          }
+
           .markdown {
-            padding-top: 100px;
+            padding-top: 80px;
           }
         `}
       </style>
@@ -91,7 +108,8 @@ const ArticlePage = ({
         <main>
           <GradientUnderline>
             <div className="top">
-              <h2>{post.title}</h2>
+              <h2 className="title">{post.title}</h2>
+              <p>By Matt Gleich</p>
               <p className="meta">
                 {dayjs(post.created, 'YYYY-MM-DD').format('ll')}{' '}
                 <span className="separator-char">λ</span> {post.readingTime}{' '}
