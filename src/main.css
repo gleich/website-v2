@@ -60,6 +60,7 @@ ul {
   list-style-type: '- ';
 }
 
+ul,
 ol {
   list-style-position: inside;
 }

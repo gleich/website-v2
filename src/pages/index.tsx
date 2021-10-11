@@ -135,7 +135,7 @@ const Index: NextPage = ({
       </main>
     </Center>
     <footer>
-      <Copyright repoLink />
+      <Copyright repoLink stick />
     </footer>
   </>
 )

@@ -13,6 +13,7 @@ import relativeTime from 'dayjs/plugin/relativeTime'
 import localizedFormat from 'dayjs/plugin/localizedFormat'
 import GradientUnderline from '@components/GradientUnderline'
 import Meta from '@components/Meta'
+import Copyright from '@components/Copyright'
 
 const ArticlePage = ({
   post,
@@ -36,7 +37,7 @@ const ArticlePage = ({
           }
 
           .title {
-            font-size: clamp(3.25rem, 10vw, 5.125rem);
+            font-size: clamp(4rem, 10vw, 5.125rem);
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
               Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
               sans-serif;
@@ -47,7 +48,11 @@ const ArticlePage = ({
             color: grey;
             font-family: 'Victor Mono';
             font-feature-settings: 'ss01';
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+          }
+
+          p {
+            font-size: 1.5rem;
           }
 
           .separator-char {
@@ -74,19 +79,26 @@ const ArticlePage = ({
             text-decoration: none;
           }
 
+          .markdown > ol > li > ol,
+          .markdown > ol > li > ul,
+          .markdown > ul > li > ol,
+          .markdown > ul > li > ul {
+            margin-left: 20px;
+          }
           .markdown > h1 {
-            font-size: clamp(2.375rem, 7vw, 3.25rem);
+            font-size: clamp(3.375rem, 7vw, 3.25rem);
           }
 
           .markdown > h2 {
-            font-size: clamp(1.4375rem, 5vw, 2.375rem);
+            font-size: clamp(2.4375rem, 5vw, 2.375rem);
           }
 
           .markdown > h3 {
             font-size: clamp(1.1rem, 3vw, 0.1875rem);
           }
 
-          .markdown > pre > code {
+          .markdown > pre > code,
+          .markdown > p > code {
             font-size: 1.2rem;
             font-family: 'Victor Mono';
             font-feature-settings: 'ss01';
@@ -98,8 +110,14 @@ const ArticlePage = ({
             overflow: scroll;
           }
 
+          .markdown > p > code {
+            border: 1px solid rgb(56, 56, 56);
+            border-radius: 3px;
+            padding: 2px 5px;
+          }
+
           .markdown {
-            padding-top: 80px;
+            padding-top: 40px;
           }
         `}
       </style>
@@ -120,6 +138,9 @@ const ArticlePage = ({
           <ReactMarkdown className="markdown">{post.content}</ReactMarkdown>
         </main>
       </Center>
+      <footer>
+        <Copyright repoLink />
+      </footer>
     </>
   )
 }

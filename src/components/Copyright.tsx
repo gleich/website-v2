@@ -1,11 +1,17 @@
 import time from '@data/time'
 
-const Copyright = ({ repoLink }: { repoLink?: boolean }): JSX.Element => (
+const Copyright = ({
+  repoLink,
+  stick,
+}: {
+  repoLink?: boolean
+  stick?: boolean
+}): JSX.Element => (
   <>
     <style jsx>
       {`
         p {
-          position: fixed;
+          position: ${stick ? 'fixed' : 'block'};
           bottom: 0;
           min-width: 100%;
           text-align: center;
