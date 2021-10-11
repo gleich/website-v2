@@ -29,9 +29,9 @@ const Description = (): JSX.Element => (
       {time.full} <br />{' '}
       <TextLoop delay={700} mask>
         <span>developer 💻</span>
-        <span>designer 🎨</span>
         <span>photographer 📷</span>
         <span>cyclist 🚴🏼</span>
+        <span>runner 🏃🏻‍♂️</span>
         <a href="https://hackclub.com" target="_blank" rel="noreferrer">
           hackclubber 🦎
         </a>
