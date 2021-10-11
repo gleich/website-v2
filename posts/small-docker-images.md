@@ -1,6 +1,6 @@
 ---
 name: Small Docker Images
-date: '2021-10-08'
+date: '2021-10-11'
 description: Develop Docker images that have a final image size smaller than 10mb
 ---
 
