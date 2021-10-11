@@ -21,6 +21,7 @@ const ArticlePage = ({
   dayjs.extend(customParseFormat)
   dayjs.extend(relativeTime)
   dayjs.extend(localizedFormat)
+  const postedDate = dayjs(post.created, 'YYYY-MM-DD').format('ll')
   return (
     <>
       <style jsx global>
@@ -121,7 +122,14 @@ const ArticlePage = ({
           }
         `}
       </style>
-      <Meta title={post.title} description={post.description} />
+      <Meta
+        title={post.title}
+        description={post.description}
+        label1="Developed Date"
+        data1={postedDate}
+        label2="Read Time"
+        data2={post.readingTime}
+      />
       <Center>
         <main>
           <GradientUnderline>
@@ -129,9 +137,8 @@ const ArticlePage = ({
               <h2 className="title">{post.title}</h2>
               <p>By Matt Gleich</p>
               <p className="meta">
-                {dayjs(post.created, 'YYYY-MM-DD').format('ll')}{' '}
-                <span className="separator-char">λ</span> {post.readingTime}{' '}
-                read
+                {postedDate} <span className="separator-char">λ</span>{' '}
+                {post.readingTime} read
               </p>
             </div>
           </GradientUnderline>

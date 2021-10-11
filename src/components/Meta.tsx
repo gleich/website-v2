@@ -4,9 +4,17 @@ import Head from 'next/head'
 const Meta = ({
   title,
   description,
+  label1 = 'Developer',
+  label2 = 'Photographer',
+  data1 = 'Cyclist',
+  data2 = 'Hackclubber',
 }: {
   title: string
   description: string
+  label1?: string
+  label2?: string
+  data1?: string
+  data2?: string
 }): JSX.Element => (
   <Head>
     <title>{title}</title>
@@ -57,10 +65,10 @@ const Meta = ({
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content="/images/me.jpg" />
     <meta property="twitter:url" content="https://mattglei.ch" />
-    <meta property="twitter:label1" content="Developer" />
-    <meta property="twitter:label2" content="Photographer" />
-    <meta property="twitter:data1" content="Cyclist" />
-    <meta property="twitter:data2" content="Hackclubber" />
+    <meta property="twitter:label1" content={label1} />
+    <meta property="twitter:label2" content={label2} />
+    <meta property="twitter:data1" content={data1} />
+    <meta property="twitter:data2" content={data2} />
   </Head>
 )
 
