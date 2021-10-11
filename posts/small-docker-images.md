@@ -4,7 +4,7 @@ date: '2021-10-11'
 description: Develop Docker images that have a final image size smaller than 10mb
 ---
 
-Docker images can easily become huge (over 500mb in size). This produces longer pull and push times and wasted resources. In this post, I'll try to easily and briefly explain some practices you can follow to make them smaller.
+Docker images can easily become huge (over 500mb in size). This produces long pull and push times and wasted resources. In this post, I'll try to easily and briefly explain some practices you can follow to make them smaller.
 
 # Copy the Binary
 
