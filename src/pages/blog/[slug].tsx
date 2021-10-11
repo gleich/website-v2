@@ -120,6 +120,16 @@ const ArticlePage = ({
           .markdown {
             padding-top: 40px;
           }
+
+          @media (prefers-color-scheme: light) {
+            .markdown > pre {
+              box-shadow: 10px 10px;
+            }
+
+            .separator-char {
+              color: black;
+            }
+          }
         `}
       </style>
       <Meta

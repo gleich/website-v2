@@ -56,6 +56,12 @@ const Article = ({ post }: { post: BlogPost }): JSX.Element => (
           padding-left: 0;
         }
       }
+
+      @media (prefers-color-scheme: light) {
+        .meta-separator {
+          color: black;
+        }
+      }
     `}</style>
     <div className="article">
       <h3>{post.title}</h3>
