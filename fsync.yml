@@ -13,8 +13,8 @@ replace:
   - before: project_author_full_name
     after: Matt Gleich
 files:
-  - path: LICENSE.md
-    source: https://github.com/gleich/gleich/blob/master/standard_documents/licenses/MIT_LICENSE.md
+  - path: LICENSE
+    source: https://github.com/gleich/gleich/blob/master/standard_documents/licenses/MPL-2.0.txt
   - path: CODE_OF_CONDUCT.md
     source: https://github.com/gleich/gleich/blob/master/standard_documents/CODE_OF_CONDUCT.md
   - path: .github/PULL_REQUEST_TEMPLATE.md
