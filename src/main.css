@@ -89,6 +89,14 @@ ol {
     color: white;
     text-decoration-color: white;
   }
+
+  *::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: black;
+  }
 }
 
 /* fonts */
