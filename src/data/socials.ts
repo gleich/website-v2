@@ -23,7 +23,6 @@ const getSocials = async (): Promise<SocialMediaAccount[]> => {
     github: 'GitHub',
     linkedin: 'Linkedin',
   }
-  // Accounts is a list of the social media platform paired
   const accounts: SocialMediaAccount[] = []
   for (const account of socials) {
     if (account.name in requiredAccounts) {
