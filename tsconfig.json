@@ -18,7 +18,8 @@
       "@pages/*": ["pages/*"],
       "@data/*": ["data/*"],
       "@components/*": ["components/*"]
-    }
+    },
+    "incremental": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
