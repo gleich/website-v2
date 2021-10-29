@@ -2,7 +2,7 @@
 
 # www
 
-🏡 My home on the would wide web
+🏡 My home on the world wide web
 
 ![format](https://github.com/gleich/www/workflows/format/badge.svg)
 ![GitHub deployments](https://img.shields.io/github/deployments/gleich/www/production?label=Deployment&logo=vercel)
