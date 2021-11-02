@@ -1,6 +1,7 @@
 import Center from '@components/Center'
 import Meta from '@components/Meta'
 import LogoBlock from '@components/pages/art/joins/Block'
+import { nanoid } from 'nanoid'
 import { NextPage } from 'next'
 import Link from 'next/link'
 
@@ -9,7 +10,7 @@ const Logo: NextPage = (): JSX.Element => {
 
   const blocks: JSX.Element[] = []
   for (let i = 0; i < squares; i++) {
-    blocks.push(<LogoBlock index={i} total={squares} />)
+    blocks.push(<LogoBlock key={nanoid()} index={i} total={squares} />)
   }
 
   return (
