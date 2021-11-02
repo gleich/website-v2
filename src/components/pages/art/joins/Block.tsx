@@ -68,6 +68,16 @@ const LogoBlock = ({
               opacity: 10%;
             }
           }
+
+          @media (prefers-color-scheme: light) {
+            .block {
+              border: solid 2px black;
+            }
+
+            .block:after {
+              background: black;
+            }
+          }
         `}
       </style>
       <div className="block" />
