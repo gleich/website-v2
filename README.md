@@ -5,6 +5,7 @@
 🏡 My home on the world wide web
 
 ![format](https://github.com/gleich/www/workflows/format/badge.svg)
+![lint](https://github.com/gleich/www/workflows/lint/badge.svg)
 ![GitHub deployments](https://img.shields.io/github/deployments/gleich/www/production?label=Deployment&logo=vercel)
 
 <!-- DO NOT REMOVE - contributor_list:start -->

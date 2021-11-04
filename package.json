@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "format": "prettier --write .",
-    "format::check": "prettier --check ."
+    "format::check": "prettier --check .",
+    "lint": "eslint ."
   },
   "dependencies": {
     "dayjs": "^1.10.7",
