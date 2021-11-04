@@ -10,18 +10,8 @@
     "start": "next start",
     "format": "prettier --write .",
     "format::check": "prettier --check .",
-    "lint": "eslint ."
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{tsx,ts,css,md,html,yml,json}": [
-      "pnpm run format",
-      "pnpm run lint"
-    ]
+    "lint": "eslint .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "dayjs": "^1.10.7",
