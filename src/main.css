@@ -2,9 +2,9 @@
 
 :root {
   --darkmode-background: #0f0f0f;
-  --darkmode-foreground: white;
+  --darkmode-foreground: #ffffff;
 
-  --lightmode-background: white;
+  --lightmode-background: #ffffff;
   --lightmode-foreground: #0400b6;
 }
 
@@ -16,9 +16,9 @@ body {
 }
 
 ::selection {
-  background-color: white;
-  color: black;
-  text-decoration-color: black;
+  background-color: var(--darkmode-foreground);
+  text-decoration-color: var(--darkmode-foreground);
+  color: var(--darkmode-background);
 }
 
 ul {
@@ -36,54 +36,30 @@ ol {
 }
 
 *::-webkit-scrollbar-track {
-  background: black;
+  background: var(--darkmode-background);
 }
 
 *::-webkit-scrollbar-thumb {
-  background: white;
+  background: var(--darkmode-foreground);
 }
 
 @media (prefers-color-scheme: light) {
   body {
-    background-color: white;
-    color: black;
+    background-color: var(--lightmode-background);
+    color: var(--lightmode-foreground);
   }
 
   ::selection {
-    background-color: black;
-    color: white;
-    text-decoration-color: white;
+    background-color: var(--lightmode-foreground);
+    text-decoration-color: var(--lightmode-foreground);
+    color: var(--lightmode-background);
   }
 
   *::-webkit-scrollbar-track {
-    background: white;
+    background: var(--lightmode-background);
   }
 
   *::-webkit-scrollbar-thumb {
-    background: black;
+    background: var(--lightmode-foreground);
   }
-}
-
-/* fonts */
-@font-face {
-  font-family: 'Victor Mono';
-  src: url('/fonts/victormono/mediumItalic.otf');
-  font-style: italic;
-  font-weight: 600;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Victor Mono';
-  src: url('/fonts/victormono/medium.otf');
-  font-weight: 600;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Space Mono';
-  src: url('/fonts/spacemono/italic.ttf');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
 }
