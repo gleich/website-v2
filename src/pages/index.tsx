@@ -1,14 +1,8 @@
 import Center from '@components/Center'
-import Copyright from '@components/Copyright'
 import Meta from '@components/Meta'
 import getSocials, { SocialMediaAccount } from '@data/socials'
 import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
-import Top from '@components/pages/index/Top'
-import Name from '@components/pages/index/Name'
-import Description from '@components/pages/index/Description'
-import AccountIcon from '@components/pages/index/AccountIcon'
 import time from '@data/time'
-import Button from '@components/Button'
 
 const Index: NextPage = ({
   accounts,
@@ -103,40 +97,7 @@ const Index: NextPage = ({
       title="Matt Gleich"
       description={time.full + ' open-source developer from New Hampshire'}
     />
-    <Center root>
-      <main>
-        <div className="top">
-          <div className="left">
-            <Top />
-            <Name />
-            <Description />
-          </div>
-          <div className="right">
-            <div className="accounts">
-              {accounts.map((account: SocialMediaAccount) => (
-                <div key={account.name}>
-                  <AccountIcon {...account} />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-        <div className="links">
-          <Button href="/about">About</Button>
-          <Button href="https://github.com/gleich?tab=repositories">
-            Projects
-          </Button>
-          <Button href="https://lightroom.adobe.com/shares/e96b417d28384fe7b26b54b8809f5d08">
-            Photography
-          </Button>
-          <Button href="/blog">Blog</Button>
-          <Button href="/wip">Skills</Button>
-        </div>
-      </main>
-    </Center>
-    <footer>
-      <Copyright repoLink stick />
-    </footer>
+    <div>Hello World!</div>
   </>
 )
 
