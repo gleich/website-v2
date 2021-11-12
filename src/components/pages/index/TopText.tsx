@@ -1,4 +1,5 @@
 import time from '@data/time'
+import TextLoop from 'react-text-loop'
 
 const TopText = (): JSX.Element => (
   <>
@@ -7,12 +8,11 @@ const TopText = (): JSX.Element => (
         .topText {
           display: flex;
           flex-direction: column;
-          align-items: flex-end;
-          margin-left: 100px;
         }
 
-        .description > h5 {
-          display: inline-block;
+        .description {
+          display: flex;
+          flex-direction: row;
         }
 
         .age {
@@ -22,8 +22,6 @@ const TopText = (): JSX.Element => (
         @media screen and (max-width: 1000px) {
           .topText {
             align-items: center;
-            margin-left: 0;
-            margin-top: 2vh;
           }
 
           .description > h5 {
@@ -37,8 +35,13 @@ const TopText = (): JSX.Element => (
       <h1>Matt Gleich</h1>
       <div className="description">
         <h5 className="age">{time.full}</h5>
-        {/* Problem with spacing */}
-        <h5>software developer</h5>
+        <TextLoop>
+          <h5>developer</h5>
+          <h5>photographer</h5>
+          <h5>cyclist</h5>
+          <h5>hackclubber</h5>
+          <h5>student</h5>
+        </TextLoop>
       </div>
     </div>
   </>

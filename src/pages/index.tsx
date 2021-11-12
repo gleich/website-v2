@@ -22,7 +22,7 @@ const Index: NextPage = () => (
         .nameAndSocials {
           display: flex;
           flex-direction: column;
-          align-items: flex-end;
+          margin-left: 100px;
         }
 
         @media screen and (max-width: 1000px) {
@@ -32,6 +32,8 @@ const Index: NextPage = () => (
 
           .nameAndSocials {
             align-items: center;
+            margin-left: 0;
+            margin-top: 2vh;
           }
         }
       `}
