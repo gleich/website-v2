@@ -1,14 +1,12 @@
 import Center from '@components/Center'
 import Meta from '@components/Meta'
-import getSocials from '@data/socials'
-import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
+import type { NextPage } from 'next'
 import time from '@data/time'
 import Logo from '@components/Logo'
 import TopText from '@components/pages/index/TopText'
+import Socials from '@components/pages/index/Socials'
 
-const Index: NextPage = ({
-  accounts,
-}: InferGetStaticPropsType<typeof getStaticProps>) => (
+const Index: NextPage = () => (
   <>
     <Meta
       title="Matt Gleich"
@@ -21,9 +19,19 @@ const Index: NextPage = ({
           align-items: center;
         }
 
+        .nameAndSocials {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+
         @media screen and (max-width: 1000px) {
           .top {
             flex-direction: column;
+          }
+
+          .nameAndSocials {
+            align-items: center;
           }
         }
       `}
@@ -32,16 +40,14 @@ const Index: NextPage = ({
       <main>
         <div className="top">
           <Logo />
-          <TopText />
+          <div className="nameAndSocials">
+            <TopText />
+            <Socials />
+          </div>
         </div>
       </main>
     </Center>
   </>
 )
-
-export const getStaticProps: GetStaticProps = async () => ({
-  props: { accounts: await getSocials() },
-  revalidate: 300, // Every five minutes
-})
 
 export default Index

@@ -13,7 +13,6 @@ const Logo = (): JSX.Element => {
         {`
           .logoPath {
             stroke: var(--darkmode-foreground);
-            fill: var(--darkmode-background);
           }
 
           .logoPathName {
@@ -49,7 +48,7 @@ const Logo = (): JSX.Element => {
           <motion.svg
             width="400"
             height="400"
-            viewBox="0 0 430 400"
+            viewBox="0 0 400 400"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             initial={{
@@ -98,7 +97,7 @@ const Logo = (): JSX.Element => {
                 width="392.5"
                 height="392.5"
                 filterUnits="userSpaceOnUse"
-                color-interpolationFilters="sRGB"
+                color-interpolationfilters="sRGB"
               >
                 <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feOffset dy="4" />

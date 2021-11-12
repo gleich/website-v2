@@ -21,6 +21,10 @@ body {
   color: var(--darkmode-background);
 }
 
+path {
+  stroke: var(--darkmode-foreground);
+}
+
 ul {
   list-style-type: '- ';
 }
@@ -72,6 +76,7 @@ h5 {
   }
 }
 
+.fadeUpAnimation,
 p,
 h1,
 h2,
