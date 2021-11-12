@@ -4,6 +4,7 @@ import getSocials from '@data/socials'
 import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import time from '@data/time'
 import Logo from '@components/Logo'
+import TopText from '@components/pages/index/TopText'
 
 const Index: NextPage = ({
   accounts,
@@ -13,9 +14,26 @@ const Index: NextPage = ({
       title="Matt Gleich"
       description={time.full + ' open-source developer from New Hampshire'}
     />
+    <style jsx>
+      {`
+        .top {
+          display: flex;
+          align-items: center;
+        }
+
+        @media screen and (max-width: 1000px) {
+          .top {
+            flex-direction: column;
+          }
+        }
+      `}
+    </style>
     <Center root>
       <main>
-        <Logo />
+        <div className="top">
+          <Logo />
+          <TopText />
+        </div>
       </main>
     </Center>
   </>

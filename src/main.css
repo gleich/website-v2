@@ -11,8 +11,8 @@
 body {
   background-color: var(--darkmode-background);
   color: var(--darkmode-foreground);
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 ::selection {
@@ -28,6 +28,14 @@ ul {
 ul,
 ol {
   list-style-position: inside;
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 5rem);
+}
+
+h5 {
+  font-size: 1.5rem;
 }
 
 *::-webkit-scrollbar {
@@ -62,4 +70,33 @@ ol {
   *::-webkit-scrollbar-thumb {
     background: var(--lightmode-foreground);
   }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+  animation: fadeUp 1s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0%;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter/regular.otf');
 }

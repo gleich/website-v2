@@ -24,6 +24,7 @@ specifiers:
   reading-time: ^1.5.0
   typescript: 4.4.4
   use-interval: ^1.4.0
+  use-prefers-color-scheme: ^0.1.1
 
 dependencies:
   dayjs: 1.10.7
@@ -37,6 +38,7 @@ dependencies:
   react-text-loop: 2.3.0_react-dom@17.0.2+react@17.0.2
   reading-time: 1.5.0
   use-interval: 1.4.0_react@17.0.2
+  use-prefers-color-scheme: 0.1.1_react@17.0.2
 
 devDependencies:
   '@types/node': 16.11.6
@@ -5385,6 +5387,18 @@ packages:
     engines: { node: '>=8', npm: '>=5' }
     peerDependencies:
       react: '>=16.8.0 || ^17'
+    dependencies:
+      react: 17.0.2
+    dev: false
+
+  /use-prefers-color-scheme/0.1.1_react@17.0.2:
+    resolution:
+      {
+        integrity: sha512-KFuYYXaVBiVjwR+DccbN2w+1g+HpTBSEet3d+03S7Ionv1ogED8qeXEK7dkq/oNVu3rKbJYrgEzCZpGU/9meGA==,
+      }
+    engines: { node: '>=8', npm: '>=5' }
+    peerDependencies:
+      react: ^16.8.0
     dependencies:
       react: 17.0.2
     dev: false
