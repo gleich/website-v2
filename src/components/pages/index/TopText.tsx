@@ -35,7 +35,7 @@ const TopText = (): JSX.Element => (
       <h1>Matt Gleich</h1>
       <div className="description">
         <h5 className="age">{time.full}</h5>
-        <TextLoop>
+        <TextLoop delay={10}>
           <h5>developer</h5>
           <h5>photographer</h5>
           <h5>cyclist</h5>

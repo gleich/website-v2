@@ -29,8 +29,8 @@ const Index: NextPage = () => (
         }
 
         .arrows {
-          position: absolute;
           bottom: 20px;
+          position: absolute;
         }
 
         @media screen and (max-width: 1000px) {
@@ -42,6 +42,18 @@ const Index: NextPage = () => (
             align-items: center;
             margin-left: 0;
             margin-top: 2vh;
+          }
+        }
+
+        @media screen and (max-height: 670px) {
+          .arrows {
+            background-color: var(--darkmode-background);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: 0;
+            padding-top: 10px;
           }
         }
       `}

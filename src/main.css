@@ -74,6 +74,10 @@ h5 {
   *::-webkit-scrollbar-thumb {
     background: var(--lightmode-foreground);
   }
+
+  path {
+    stroke: var(--lightmode-foreground);
+  }
 }
 
 .fadeUpAnimation,
