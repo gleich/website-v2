@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 const Logo = (): JSX.Element => {
   const pathInitial = { pathLength: 0 }
   const pathAnimate = { pathLength: 1 }
-  const whileChange = { scale: 0.9 }
+  const whileChange = { rotate: 2880 }
   function getDuration(index: number): Record<string, number> {
     return { duration: index ** 2 * 3 }
   }
@@ -42,8 +42,6 @@ const Logo = (): JSX.Element => {
           transition={{
             duration: 1,
           }}
-          whileHover={whileChange}
-          whileTap={whileChange}
         >
           <motion.svg
             width="400"
