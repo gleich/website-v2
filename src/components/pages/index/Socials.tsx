@@ -20,7 +20,13 @@ const Socials = (): JSX.Element => {
           }
 
           a:hover svg {
-            fill: white;
+            fill: var(--darkmode-foreground);
+          }
+
+          @media (prefers-color-scheme: light) {
+            a:hover svg {
+              fill: var(--lightmode-foreground);
+            }
           }
         `}
       </style>

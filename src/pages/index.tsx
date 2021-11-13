@@ -6,6 +6,7 @@ import Logo from '@components/Logo'
 import TopText from '@components/pages/index/TopText'
 import Socials from '@components/pages/index/Socials'
 import Arrows from '@components/pages/index/Arrows'
+import Section from '@components/pages/index/Section'
 
 const Index: NextPage = () => (
   <>
@@ -19,7 +20,17 @@ const Index: NextPage = () => (
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 100vw;
+          width: 99vw;
+          height: 100vh;
+        }
+
+        .body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 99vw;
+          flex-direction: column;
+          margin-bottom: 50px;
         }
 
         .nameAndSocials {
@@ -50,6 +61,16 @@ const Index: NextPage = () => (
             <Socials />
           </div>
           <Arrows />
+        </div>
+        <div className="body">
+          <Section name="intro">
+            <p>
+              👋🏻 Hey, I&apos;m Matt Gleich. For the past 2.800000 years I’ve
+              been wondering around the world of programming. Outside of
+              programming enjoy photography, and cycling. You can find out more
+              about me on my about me page.
+            </p>
+          </Section>
         </div>
       </main>
     </Center>

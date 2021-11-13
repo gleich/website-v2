@@ -5,7 +5,7 @@
   --darkmode-foreground: #ffffff;
 
   --lightmode-background: #ffffff;
-  --lightmode-foreground: #0400b6;
+  --lightmode-foreground: #0400db;
 }
 
 body {
@@ -38,8 +38,19 @@ h1 {
   font-size: clamp(3rem, 8vw, 5rem);
 }
 
+h3 {
+  font-size: clamp(2.5rem, 6vw, 3rem);
+  font-family: 'Apple Garamond';
+  font-size: italic;
+  text-decoration: underline;
+}
+
 h5 {
   font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
 }
 
 *::-webkit-scrollbar {
@@ -78,6 +89,23 @@ h5 {
   path {
     stroke: var(--lightmode-foreground);
   }
+
+  h1,
+  h2 {
+    background-color: var(--lightmode-foreground);
+    color: var(--lightmode-background);
+  }
+
+  h1::selection,
+  h2::selection,
+  h3::selection {
+    background-color: var(--lightmode-background);
+    color: var(--lightmode-foreground);
+  }
+
+  p {
+    color: var(--darkmode-background);
+  }
 }
 
 .fadeUpAnimation,
@@ -108,4 +136,9 @@ ol {
 @font-face {
   font-family: 'Inter';
   src: url('/fonts/inter/regular.otf');
+}
+
+@font-face {
+  font-family: 'Apple Garamond';
+  src: url('/fonts/apple-garamond/italic.ttf');
 }
