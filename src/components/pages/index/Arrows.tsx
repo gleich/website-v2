@@ -35,6 +35,20 @@ const Arrows = (): JSX.Element => {
           .arrowSet {
             display: flex;
             flex-direction: row;
+            bottom: 20px;
+            position: absolute;
+          }
+
+          @media screen and (max-height: 670px) {
+            .arrowSet {
+              background-color: var(--darkmode-background);
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              bottom: 0;
+              padding-top: 10px;
+            }
           }
         `}
       </style>
