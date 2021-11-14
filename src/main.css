@@ -40,7 +40,7 @@ h1 {
 
 h3 {
   font-size: clamp(2.5rem, 6vw, 3rem);
-  font-family: 'Apple Garamond';
+  font-family: 'Newsreader';
   font-size: italic;
   text-decoration: underline;
 }
@@ -108,16 +108,7 @@ p {
   }
 }
 
-.fadeUpAnimation,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol {
+.fadeUpAnimation {
   animation: fadeUp 1s;
 }
 
@@ -139,6 +130,6 @@ ol {
 }
 
 @font-face {
-  font-family: 'Apple Garamond';
-  src: url('/fonts/apple-garamond/italic.ttf');
+  font-family: 'Newsreader';
+  src: url('/fonts/newsreader/italic.ttf');
 }

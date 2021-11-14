@@ -31,7 +31,7 @@ const TopText = (): JSX.Element => (
         }
       `}
     </style>
-    <div className="topText">
+    <div className="topText fadeUpAnimation">
       <h1>Matt Gleich</h1>
       <div className="description">
         <h5 className="age">{time.full}</h5>
