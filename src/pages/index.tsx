@@ -6,7 +6,7 @@ import Logo from '@components/Logo'
 import TopText from '@components/pages/index/TopText'
 import Socials from '@components/pages/index/Socials'
 import Arrows from '@components/pages/index/Arrows'
-import Section from '@components/pages/index/Section'
+import Intro from '@components/pages/index/Intro'
 
 const Index: NextPage = () => (
   <>
@@ -63,14 +63,7 @@ const Index: NextPage = () => (
           <Arrows />
         </div>
         <div className="body">
-          <Section name="intro">
-            <p>
-              👋🏻 Hey, I&apos;m Matt Gleich. For the past 2.800000 years I’ve
-              been wondering around the world of programming. Outside of
-              programming enjoy photography, and cycling. You can find out more
-              about me on my about me page.
-            </p>
-          </Section>
+          <Intro />
         </div>
       </main>
     </Center>

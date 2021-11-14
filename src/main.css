@@ -133,3 +133,8 @@ p {
   font-family: 'Newsreader';
   src: url('/fonts/newsreader/italic.ttf');
 }
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/fonts/ibm-plex-mono/regular.otf');
+}
