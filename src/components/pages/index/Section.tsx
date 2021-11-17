@@ -10,11 +10,7 @@ const Section = ({
       <style jsx>
         {`
           .section {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            flex-direction: column;
-            padding: 0 20px;
+            margin: 50px 0;
           }
 
           .name {

@@ -40,16 +40,20 @@ h1 {
 
 h3 {
   font-size: clamp(2.5rem, 6vw, 3rem);
+  width: fit-content;
   font-family: 'Newsreader';
   font-size: italic;
-  text-decoration: underline;
+  background-color: var(--darkmode-foreground);
+  color: var(--darkmode-background);
+  padding: 10px 15px 2.5px;
 }
 
 h5 {
   font-size: 1.5rem;
 }
 
-p {
+p,
+ul {
   font-size: 1.25rem;
 }
 
@@ -105,6 +109,10 @@ p {
 
   p {
     color: var(--darkmode-background);
+  }
+
+  h3 {
+    text-decoration: underline;
   }
 }
 

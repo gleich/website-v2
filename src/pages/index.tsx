@@ -7,6 +7,7 @@ import TopText from '@components/pages/index/TopText'
 import Socials from '@components/pages/index/Socials'
 import Arrows from '@components/pages/index/Arrows'
 import Intro from '@components/pages/index/Intro'
+import Links from '@components/pages/index/Links'
 
 const Index: NextPage = () => (
   <>
@@ -24,13 +25,14 @@ const Index: NextPage = () => (
           height: 100vh;
         }
 
-        .body {
+        main {
           display: flex;
           align-items: center;
           justify-content: center;
           width: 99vw;
           flex-direction: column;
           margin-bottom: 50px;
+          padding: 0 20px;
         }
 
         .nameAndSocials {
@@ -63,6 +65,7 @@ const Index: NextPage = () => (
           <Arrows />
         </div>
         <div className="body">
+          <Links />
           <Intro />
         </div>
       </main>
