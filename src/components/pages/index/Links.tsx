@@ -4,11 +4,6 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 
-interface Route {
-  name: string
-  description: string
-}
-
 const Links = (): JSX.Element => {
   const [routeDescription, setRouteDescription] = useState<string>(
     'Travel somewhere...'
@@ -23,58 +18,65 @@ const Links = (): JSX.Element => {
 
   return (
     <>
-      <style jsx>
+      <style jsx global>
         {`
-          .routes {
-            margin-top: 100px;
-            margin-left: 30px;
+          .indexRoutesContainer {
             display: flex;
-            height: min-content;
+            align-items: center;
+            flex-direction: column;
+            margin-right: 30px;
           }
 
-          .route {
-            position: sticky;
+          .indexRoutes {
+            margin-top: 100px;
+            display: flex;
+            gap: 0px;
+            height: min-content;
+            width: min-content;
+          }
+
+          .indexRoute {
             width: 20px;
             white-space: nowrap;
-            display: inline;
             text-align: left;
-            width: 50px;
+            width: 60px;
             transform: rotate(-30deg);
-            top: 0px;
-            bottom: 0px;
+            text-orientation: sideways-right;
           }
 
-          .routeDescription {
-            margin-top: 20px;
+          .indexRoute > a {
+            font-size: 1.4rem;
+          }
+
+          .indexRouteDescription {
+            margin-top: 50px;
           }
 
           @media not all and (min-resolution: 0.001dpcm) {
-            .routes {
+            .indexRoutes {
               gap: 35px;
             }
           }
         `}
       </style>
-      <Section name="routes">
-        <div className="routes">
-          {Object.keys(routes)
-            .sort()
-            .map((r: string) => (
+      <Section name="routes" style={{ alignItems: 'center' }}>
+        <div className="indexRoutesContainer">
+          <div className="indexRoutes">
+            {Object.keys(routes).map((r: string) => (
               <p
-                className="route"
+                className="indexRoute"
                 key={nanoid()}
                 onMouseEnter={() => setRouteDescription(routes[r])}
                 onMouseLeave={() => setRouteDescription('Travel somewhere...')}
               >
-                <motion.div>
-                  <Link href={'/' + r}>{'-> ' + r}</Link>
-                </motion.div>
+                <Link href={'/' + r}>{'-> ' + r}</Link>
               </p>
             ))}
+          </div>
+          <p className="indexRouteDescription">
+            {routeDescription ? routeDescription : <>&nbsp;</>}
+          </p>
         </div>
-        <p className="routeDescription">
-          {routeDescription ? routeDescription : <>&nbsp;</>}
-        </p>
       </Section>
     </>
   )
