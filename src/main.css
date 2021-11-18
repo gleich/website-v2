@@ -25,6 +25,10 @@ path {
   stroke: var(--darkmode-foreground);
 }
 
+a {
+  color: #49a4ff;
+}
+
 ul {
   list-style-type: '- ';
 }

@@ -2,48 +2,46 @@ import { nanoid } from 'nanoid'
 import Section from './Section'
 import Link from 'next/link'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 interface Route {
   name: string
-  paddingLeft: number
   description: string
 }
 
 const Links = (): JSX.Element => {
-  const [routeDescription, setRouteDescription] = useState<string>()
-  const routes: Route[] = [
-    {
-      name: 'about',
-      paddingLeft: 0,
-      description: 'About me',
-    },
-    {
-      name: 'projects',
-      paddingLeft: 0,
-      description: 'My projects',
-    },
-    {
-      name: 'photography',
-      paddingLeft: 15,
-      description: 'My photography work',
-    },
-  ]
+  const [routeDescription, setRouteDescription] = useState<string>(
+    'Travel somewhere...'
+  )
+  const routes: Record<string, string> = {
+    about: 'About me',
+    projects: 'My projects',
+    photography: 'My photography work',
+    blog: 'Articles I write from time to time',
+    skills: 'My skills in the world of programming, photography, and design',
+  }
+
   return (
     <>
       <style jsx>
         {`
           .routes {
-            display: flex;
-            align-items: flex-end;
-            gap: 25px;
+            margin-top: 100px;
             margin-left: 30px;
-            text-align: start;
+            display: flex;
+            height: min-content;
           }
 
           .route {
-            text-orientation: sideways-right;
-            writing-mode: vertical-rl;
-            transform: rotate(-130deg);
+            position: sticky;
+            width: 20px;
+            white-space: nowrap;
+            display: inline;
+            text-align: left;
+            width: 50px;
+            transform: rotate(-30deg);
+            top: 0px;
+            bottom: 0px;
           }
 
           .routeDescription {
@@ -59,23 +57,20 @@ const Links = (): JSX.Element => {
       </style>
       <Section name="routes">
         <div className="routes">
-          {routes.map((r: Route) => (
-            <div
-              key={nanoid()}
-              style={{
-                paddingLeft: r.paddingLeft + 'px',
-              }}
-            >
+          {Object.keys(routes)
+            .sort()
+            .map((r: string) => (
               <p
                 className="route"
                 key={nanoid()}
-                onMouseEnter={() => setRouteDescription(r.description)}
-                onMouseLeave={() => setRouteDescription(undefined)}
+                onMouseEnter={() => setRouteDescription(routes[r])}
+                onMouseLeave={() => setRouteDescription('Travel somewhere...')}
               >
-                <Link href={'/' + r}>{'-> ' + r.name}</Link>
+                <motion.div>
+                  <Link href={'/' + r}>{'-> ' + r}</Link>
+                </motion.div>
               </p>
-            </div>
-          ))}
+            ))}
         </div>
         <p className="routeDescription">
           {routeDescription ? routeDescription : <>&nbsp;</>}
