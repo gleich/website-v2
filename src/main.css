@@ -5,7 +5,7 @@
   --darkmode-foreground: #ffffff;
 
   --lightmode-background: #ffffff;
-  --lightmode-foreground: #0400db;
+  --lightmode-foreground: #0f0f0f;
 }
 
 body {
@@ -14,6 +14,7 @@ body {
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-feature-settings: 'zero';
+  font-size: 1.25rem;
 }
 
 ::selection {
@@ -55,11 +56,6 @@ h3 {
 
 h5 {
   font-size: 1.5rem;
-}
-
-p,
-a {
-  font-size: 1.25rem;
 }
 
 *::-webkit-scrollbar {
@@ -117,7 +113,8 @@ a {
   }
 
   h3 {
-    text-decoration: underline;
+    background-color: var(--darkmode-background);
+    color: var(--darkmode-foreground);
   }
 }
 
