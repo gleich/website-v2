@@ -13,6 +13,7 @@ body {
   color: var(--darkmode-foreground);
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-feature-settings: 'zero';
 }
 
 ::selection {

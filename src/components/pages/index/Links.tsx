@@ -51,12 +51,6 @@ const Links = (): JSX.Element => {
           .indexRouteDescription {
             margin-top: 50px;
           }
-
-          @media not all and (min-resolution: 0.001dpcm) {
-            .indexRoutes {
-              gap: 35px;
-            }
-          }
         `}
       </style>
       <Section name="routes" style={{ alignItems: 'center' }}>
