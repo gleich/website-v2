@@ -2,7 +2,6 @@ import { nanoid } from 'nanoid'
 import Section from './Section'
 import Link from 'next/link'
 import { useState } from 'react'
-import { motion } from 'framer-motion'
 
 const Links = (): JSX.Element => {
   const [routeDescription, setRouteDescription] = useState<string>(
