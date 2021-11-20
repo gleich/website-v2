@@ -1,15 +1,27 @@
-import { motion } from 'framer-motion'
+import { motion, useViewportScroll } from 'framer-motion'
 import { nanoid } from 'nanoid'
+import { useEffect, useState } from 'react'
 
 const Arrows = (): JSX.Element => {
   const arrows: JSX.Element[] = []
+  const { scrollYProgress } = useViewportScroll()
+  const [opacity, setOpacity] = useState('100%')
+
+  useEffect(() => {
+    return scrollYProgress.onChange((v) => {
+      console.log(`${30 - v * 100}%`)
+      setOpacity(`${30 - v * 100}%`)
+    })
+  }, [scrollYProgress])
+
   for (let i = 0; i < 6; i++) {
     arrows.push(
       <motion.div
         key={nanoid()}
-        initial={{ opacity: '0%', rotate: '180deg' }}
-        animate={{ opacity: '100%', rotate: '0deg' }}
+        initial={opacity === '100%' ? { opacity: '0%', rotate: '180deg' } : {}}
+        animate={opacity === '100%' ? { opacity: '100%', rotate: '0deg' } : {}}
         transition={{ duration: 2, delay: i * 0.2 + 15 }}
+        style={{ opacity }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

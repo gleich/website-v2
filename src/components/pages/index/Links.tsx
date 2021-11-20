@@ -4,11 +4,11 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 const Links = (): JSX.Element => {
-  const [routeDescription, setRouteDescription] = useState<string>(
+  const [routeDescription, setRouteDescription] = useState(
     'Travel somewhere...'
   )
   const routes: Record<string, string> = {
-    about: 'About me',
+    about: 'Get to know me a little',
     projects: 'My projects',
     photography: 'My photography work',
     blog: 'Articles I write from time to time',
@@ -29,7 +29,6 @@ const Links = (): JSX.Element => {
           .indexRoutes {
             margin-top: 100px;
             display: flex;
-            gap: 0px;
             height: min-content;
             width: min-content;
           }
@@ -43,6 +42,11 @@ const Links = (): JSX.Element => {
             text-orientation: sideways-right;
           }
 
+          .indexRouteIcon {
+            width: 19px;
+            height: auto;
+          }
+
           .indexRoute > a {
             font-size: 1.4rem;
           }
@@ -52,7 +56,7 @@ const Links = (): JSX.Element => {
           }
         `}
       </style>
-      <Section name="routes" style={{ alignItems: 'center' }}>
+      <Section name="routes">
         <div className="indexRoutesContainer">
           <div className="indexRoutes">
             {Object.keys(routes).map((r: string) => (
@@ -62,7 +66,23 @@ const Links = (): JSX.Element => {
                 onMouseEnter={() => setRouteDescription(routes[r])}
                 onMouseLeave={() => setRouteDescription('Travel somewhere...')}
               >
-                <Link href={'/' + r}>{'-> ' + r}</Link>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="indexRouteIcon"
+                >
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>{' '}
+                <Link href={'/' + r}>{r}</Link>
               </p>
             ))}
           </div>
