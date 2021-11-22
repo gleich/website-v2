@@ -8,8 +8,8 @@ const Links = (): JSX.Element => {
     'Travel somewhere...'
   )
   const routes: Record<string, string> = {
-    about: 'Get to know me a little',
-    projects: 'My projects',
+    about: 'Get to know me',
+    projects: 'A showcase of some of my best programming projects',
     photography: 'My photography work',
     blog: 'Articles I write from time to time',
     skills: 'My skills in the world of programming, photography, and design',

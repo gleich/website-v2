@@ -32,7 +32,7 @@ a {
 }
 
 ul {
-  list-style-type: '- ';
+  list-style-type: '-> ';
 }
 
 ul,
@@ -52,6 +52,12 @@ h3 {
   background-color: var(--darkmode-foreground);
   color: var(--darkmode-background);
   padding: 10px 15px 2.5px;
+}
+
+h4 {
+  font-size: clamp(2rem, 4vw, 2rem);
+  font-family: 'Newsreader';
+  text-decoration: underline;
 }
 
 h5 {
