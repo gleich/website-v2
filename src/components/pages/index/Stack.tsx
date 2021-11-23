@@ -1,6 +1,5 @@
 import { nanoid } from 'nanoid'
 import Section from './Section'
-import Image from 'next/image'
 
 interface Technology {
   name: string
@@ -24,13 +23,41 @@ const Stack = (): JSX.Element => {
         'Hardware',
       ],
     },
-
     {
       name: 'JS/TS',
       iconFileNames: ['javascript', 'typescript'],
       description:
-        'General purpose programming language; Powers the web and our world',
-      bullets: ['Websites'],
+        'JavaScript, and its superset called TypeScript, are JIT programming languages for modern UI applications.',
+      bullets: [
+        'Single-Page Websites',
+        'Application Extensions',
+        'APIs (REST)',
+        'Command Line Tools',
+      ],
+    },
+    {
+      name: 'Rust',
+      iconFileNames: ['rust'],
+      description:
+        'Low-level and fast systems programming language for the modern software developer.',
+      bullets: [
+        'Microservices',
+        'General Automation',
+        'Hardware',
+        'Command Line Tools',
+      ],
+    },
+    {
+      name: 'Python',
+      iconFileNames: ['python'],
+      description:
+        'High-level, JIT language for quick scripts with english-like syntax.',
+      bullets: [
+        'Automation Scripts',
+        'Build Scripts',
+        'Data Analysis',
+        'Computer Vision',
+      ],
     },
   ]
   return (
@@ -48,8 +75,13 @@ const Stack = (): JSX.Element => {
 
           .container {
             display: flex;
-            align-items: center;
-            flex-direction: column;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+
+          .technology {
+            width: 390px;
           }
 
           .title {
@@ -59,20 +91,24 @@ const Stack = (): JSX.Element => {
 
           .icon {
             height: 25px;
-            max-height: 30px;
             width: auto;
             padding-left: 20px;
+            filter: invert(100%) sepia(5%) saturate(7207%) hue-rotate(252deg)
+              brightness(116%) contrast(99%);
           }
 
-          path {
-            fill: var(--darkmode-background);
+          @media (prefers-color-scheme: light) {
+            .icon {
+              filter: invert(0%) sepia(61%) saturate(1476%) hue-rotate(342deg)
+                brightness(107%) contrast(88%);
+            }
           }
         `}
       </style>
-      <Section name="stack">
+      <Section name="main stack">
         <div className="container">
           {tech.map((t) => (
-            <div key={nanoid()}>
+            <div className="technology" key={nanoid()}>
               <div className="title">
                 <h4>{t.name}</h4>
                 {t.iconFileNames.map((n) => (
