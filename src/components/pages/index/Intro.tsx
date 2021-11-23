@@ -65,8 +65,8 @@ const Intro = (): JSX.Element => {
             {codingFor.toString().substring(0, 11)}
           </span>{' '}
           years I’ve been wondering around the world of programming. Outside of
-          programming I enjoy photography and cycling. You can find out more
-          about me on my about me page.
+          programming I enjoy photography and cycling. I&apos;m also an active
+          member of the hackclub community.
         </p>
       </Section>
     </>

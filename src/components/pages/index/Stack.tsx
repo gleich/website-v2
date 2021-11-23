@@ -65,7 +65,6 @@ const Stack = (): JSX.Element => {
       <style jsx>
         {`
           p {
-            max-width: 400px;
             padding: 20px 0;
           }
 
@@ -81,7 +80,7 @@ const Stack = (): JSX.Element => {
           }
 
           .technology {
-            width: 390px;
+            width: 350px;
           }
 
           .title {
@@ -95,6 +94,10 @@ const Stack = (): JSX.Element => {
             padding-left: 20px;
             filter: invert(100%) sepia(5%) saturate(7207%) hue-rotate(252deg)
               brightness(116%) contrast(99%);
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
           }
 
           @media (prefers-color-scheme: light) {
@@ -106,6 +109,9 @@ const Stack = (): JSX.Element => {
         `}
       </style>
       <Section name="main stack">
+        <p>
+          Some of my most used programming languages and what I use them for.
+        </p>
         <div className="container">
           {tech.map((t) => (
             <div className="technology" key={nanoid()}>
@@ -119,7 +125,7 @@ const Stack = (): JSX.Element => {
                   />
                 ))}
               </div>
-              <p>{t.description}</p>
+              <p className="description">{t.description}</p>
               <ul className="bullets">
                 {t.bullets.map((b) => (
                   <li key={nanoid()}>{b}</li>
