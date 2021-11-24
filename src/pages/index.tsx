@@ -9,6 +9,7 @@ import Arrows from '@components/pages/index/Arrows'
 import Intro from '@components/pages/index/Intro'
 import Links from '@components/pages/index/Links'
 import Stack from '@components/pages/index/Stack'
+import Photos from '@components/pages/index/Photos'
 
 const Index: NextPage = () => (
   <>
@@ -69,6 +70,7 @@ const Index: NextPage = () => (
           <Links />
           <Intro />
           <Stack />
+          <Photos />
         </div>
       </main>
     </Center>

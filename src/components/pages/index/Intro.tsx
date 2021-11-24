@@ -59,14 +59,14 @@ const Intro = (): JSX.Element => {
       </style>
       <Section name="intro">
         <p>
-          <span className="wave">👋🏼</span> Hey, I&apos;m Matt Gleich. For the
+          <span className="wave">👋🏼</span> Hey, I&apos;m Matt Gleich! For the
           past{' '}
           <span className="coding-for">
             {codingFor.toString().substring(0, 11)}
           </span>{' '}
           years I’ve been wondering around the world of programming. Outside of
-          programming I enjoy photography and cycling. I&apos;m also an active
-          member of the hackclub community.
+          programming I mainly enjoy photography and cycling. I&apos;m also an
+          active member of the hackclub community.
         </p>
       </Section>
     </>

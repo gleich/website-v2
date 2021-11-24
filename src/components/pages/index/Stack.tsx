@@ -20,7 +20,7 @@ const Stack = (): JSX.Element => {
         'APIs (REST & GraphQL)',
         'Microservices',
         'General Automation',
-        'Hardware',
+        'Hardware (IOT Devices)',
       ],
     },
     {
@@ -43,7 +43,7 @@ const Stack = (): JSX.Element => {
       bullets: [
         'Microservices',
         'General Automation',
-        'Hardware',
+        'Hardware (IOT Devices)',
         'Command Line Tools',
       ],
     },
@@ -64,10 +64,6 @@ const Stack = (): JSX.Element => {
     <>
       <style jsx>
         {`
-          p {
-            padding: 20px 0;
-          }
-
           ul {
             padding-left: 30px;
           }
@@ -77,6 +73,14 @@ const Stack = (): JSX.Element => {
             gap: 20px;
             flex-wrap: wrap;
             justify-content: center;
+          }
+
+          .mainDescription {
+            padding-bottom: 20px;
+          }
+
+          .description {
+            padding: 20px 0;
           }
 
           .technology {
@@ -109,7 +113,7 @@ const Stack = (): JSX.Element => {
         `}
       </style>
       <Section name="main stack">
-        <p>
+        <p className="mainDescription">
           Some of my most used programming languages and what I use them for.
         </p>
         <div className="container">
