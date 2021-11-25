@@ -65,6 +65,17 @@ const Photos = (): JSX.Element => {
               placeholder="blur"
             />
           ))}
+          <p>
+            View more in my{' '}
+            <a
+              href="https://lightroom.adobe.com/shares/e96b417d28384fe7b26b54b8809f5d08"
+              target="_blank"
+              rel="noreferrer"
+            >
+              library
+            </a>
+            .
+          </p>
         </div>
       </Section>
     </>

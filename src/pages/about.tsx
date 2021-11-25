@@ -1,0 +1,97 @@
+import Center from '@components/Center'
+import Meta from '@components/Meta'
+import { NextPage } from 'next'
+
+const About: NextPage = () => (
+  <>
+    <Meta title="About Me" description="A little bit about me" />
+    <style jsx>
+      {`
+        main {
+          margin-top: 10vh;
+        }
+
+        h1 {
+          font-size: 6rem;
+        }
+
+        .body {
+          margin-top: 30px;
+          max-width: 800px;
+        }
+
+        .body > ul {
+          margin-top: 30px;
+        }
+
+        li > ul {
+          list-style: '';
+        }
+
+        li {
+          margin-left: 35px;
+          margin-top: 10px;
+        }
+      `}
+    </style>
+    <Center root>
+      <main>
+        <h3>Hey, I&apos;m</h3>
+        <h1>Matt Gleich</h1>
+        <div className="body">
+          <p>
+            I&apos;m Matt Gleich, a developer from Goffstown New Hampshire in
+            the USA. Below are some questions that I think best describe me:
+          </p>
+          <ul>
+            <li>
+              What do you like to do outside of programming?{' '}
+              <ul>
+                <li>
+                  Photography: Before programming photography was my passion in
+                  life. I would spend hours everyday in my yard taking pictures
+                  of everything from water droplets to dragonflies. I mainly do
+                  nature and travel photography taking macro pictures and
+                  landscapes.
+                </li>
+                <li>
+                  Cycling: Cycling has always been a huge passion of mine as I
+                  feel like it&apos;s the most free form of exploration. You can
+                  go almost anywhere on you&apos;re bike, the only thing holding
+                  you back is your ability to put in the leg power. I mainly do
+                  road cycling.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Why did you get into programming?
+              <ul>
+                <li>
+                  I&apos;ve always had a fascination with technology. I simply
+                  saw programming as an extension of my regular love for
+                  technology. I find the fact that I can create so many things
+                  for free and with little to no equipment super freeing. The
+                  fact that I can work with tons of cool people from all around
+                  the world so easily is truly incredible.
+                </li>
+              </ul>
+            </li>
+            <li>
+              When do you find the time to code?
+              <ul>
+                <li>
+                  It depends on if school is in our out of session. During the
+                  school year I mainly code during little bits of free time
+                  during the day or late at night. When school is out I mainly
+                  code later in the day or a whole day one or two times a week.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </Center>
+  </>
+)
+
+export default About
