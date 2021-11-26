@@ -64,7 +64,7 @@ const Intro = (): JSX.Element => {
           <span className="coding-for">
             {codingFor.toString().substring(0, 11)}
           </span>{' '}
-          years I’ve been wondering around the world of programming. Outside of
+          years I’ve been wandering around the world of programming. Outside of
           programming I mainly enjoy photography and cycling. I&apos;m also an
           active member of the hackclub community.
         </p>
