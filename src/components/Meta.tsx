@@ -40,16 +40,16 @@ const Meta = ({
     <meta property="og:type" content="www" />
     <meta property="og:description" content={description} />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:image" content="/images/me.jpg" />
-    <meta property="og:image:width" content="700" />
-    <meta property="og:image:height" content="753" />
+    <meta property="og:image" content="/open-graph-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
     <meta property="og:site_name" content="Matt Gleich" />
 
     {/* Twitter */}
     <meta property="twitter:creator" content="@matt_gleich" />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content="/images/me.jpg" />
+    <meta property="twitter:image" content="/open-graph-image.png" />
     <meta property="twitter:url" content="https://mattglei.ch" />
     <meta property="twitter:label1" content={label1} />
     <meta property="twitter:label2" content={label2} />
