@@ -74,7 +74,6 @@ const Photos = (): JSX.Element => {
             >
               library
             </a>
-            .
           </p>
         </div>
       </Section>

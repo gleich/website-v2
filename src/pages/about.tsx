@@ -8,7 +8,7 @@ const About: NextPage = () => (
     <style jsx>
       {`
         main {
-          margin-top: 10vh;
+          margin: 10vh 0;
         }
 
         h1 {
@@ -45,21 +45,20 @@ const About: NextPage = () => (
           </p>
           <ul>
             <li>
-              What do you like to do outside of programming?{' '}
+              What do you like to do outside of programming?
               <ul>
                 <li>
-                  Photography: Before programming photography was my passion in
-                  life. I would spend hours everyday in my yard taking pictures
+                  Photography: Before programming, photography was my passion in
+                  life. I would spend hours every day in my yard taking pictures
                   of everything from water droplets to dragonflies. I mainly do
-                  nature and travel photography taking macro pictures and
-                  landscapes.
+                  nature and travel photography taking macro pictures (handheld
+                  ftw) and landscapes.
                 </li>
                 <li>
-                  Cycling: Cycling has always been a huge passion of mine as I
-                  feel like it&apos;s the most free form of exploration. You can
-                  go almost anywhere on you&apos;re bike, the only thing holding
-                  you back is your ability to put in the leg power. I mainly do
-                  road cycling.
+                  Cycling has always been a huge passion of mine as I feel like
+                  it&apos;s the freest form of exploration. You can go almost
+                  anywhere on your bike, the only thing holding you back is your
+                  ability to put in the leg power. I mainly do road cycling.
                 </li>
               </ul>
             </li>
@@ -80,10 +79,20 @@ const About: NextPage = () => (
               When do you find the time to code?
               <ul>
                 <li>
-                  It depends on if school is in our out of session. During the
-                  school year I mainly code during little bits of free time
+                  It depends on if school is in or out of session. During the
+                  school year, I mainly code during little bits of free time
                   during the day or late at night. When school is out I mainly
                   code later in the day or a whole day one or two times a week.
+                </li>
+              </ul>
+            </li>
+            <li>
+              What are you working on right now?
+              <ul>
+                <li>
+                  Right now I am mainly enjoying my senior year of school and
+                  learning web tech like Next.js (which this site is built with)
+                  and Svelte.
                 </li>
               </ul>
             </li>
