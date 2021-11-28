@@ -20,6 +20,11 @@ const Route = ({
           width: 20px;
           margin-left: 5px;
         }
+
+        path,
+        .icon {
+          stroke: var(--link-color);
+        }
       `}
     </style>
 

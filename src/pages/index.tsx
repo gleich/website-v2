@@ -34,6 +34,7 @@ const Index: NextPage = () => (
           align-items: center;
           justify-content: center;
           width: 99vw;
+          margin: 0 20px;
           flex-direction: column;
         }
 
@@ -53,10 +54,6 @@ const Index: NextPage = () => (
         @media screen and (max-width: 1000px) {
           .top {
             flex-direction: column;
-          }
-
-          main {
-            width: 90vw;
           }
 
           .nameAndSocials {

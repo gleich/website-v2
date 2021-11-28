@@ -8,6 +8,8 @@
   --lightmode-background: #ffffff;
   --lightmode-foreground: #0f0f0f;
   --lightmode-border: rgb(214, 214, 214);
+
+  --link-color: #49a4ff;
 }
 
 body {
@@ -30,7 +32,7 @@ path {
 }
 
 a {
-  color: #49a4ff;
+  color: var(--link-color);
   border: white 2px;
   border-radius: 20px;
   padding: 2px;
