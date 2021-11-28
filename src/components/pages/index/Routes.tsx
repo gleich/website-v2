@@ -19,6 +19,7 @@ const Routes = (): JSX.Element => {
     },
     photography: {
       description: 'My photography work',
+      href: 'https://lightroom.adobe.com/shares/e96b417d28384fe7b26b54b8809f5d08',
     },
     blog: {
       description: 'Articles I write from time to time',
@@ -60,7 +61,6 @@ const Routes = (): JSX.Element => {
 
           .indexRoute > div > a {
             font-size: 1.4rem;
-            width: 60px;
           }
 
           .indexRouteDescription {

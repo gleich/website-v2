@@ -11,6 +11,7 @@ import Routes from '@components/pages/index/Routes'
 import Stack from '@components/pages/index/Stack'
 import Photos from '@components/pages/index/Photos'
 import Contact from '@components/pages/index/Contact'
+import Copyright from '@components/pages/index/Copyright'
 
 const Index: NextPage = () => (
   <>
@@ -34,14 +35,19 @@ const Index: NextPage = () => (
           justify-content: center;
           width: 99vw;
           flex-direction: column;
-          margin-bottom: 50px;
-          padding: 0 20px;
         }
 
         .nameAndSocials {
           display: flex;
           flex-direction: column;
           margin-left: 100px;
+        }
+
+        .copyright {
+          bottom: 0;
+          width: 100%;
+          text-align: center;
+          padding-bottom: 30px;
         }
 
         @media screen and (max-width: 1000px) {
@@ -73,6 +79,9 @@ const Index: NextPage = () => (
           <Contact />
           <Stack />
           <Photos />
+        </div>
+        <div className="copyright">
+          <Copyright />
         </div>
       </main>
     </Center>

@@ -6,6 +6,7 @@ import MG8_2365 from '@data/photos/MG8_2365.jpg'
 import MG8_3764 from '@data/photos/MG8_3764.jpg'
 import MG8_5338 from '@data/photos/MG8_5338.jpg'
 import { nanoid } from 'nanoid'
+import Route from '@components/Route'
 
 interface Photo {
   data: StaticImageData
@@ -67,13 +68,9 @@ const Photos = (): JSX.Element => {
           ))}
           <p>
             View more in my{' '}
-            <a
-              href="https://lightroom.adobe.com/shares/e96b417d28384fe7b26b54b8809f5d08"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Route href="https://lightroom.adobe.com/shares/e96b417d28384fe7b26b54b8809f5d08">
               library
-            </a>
+            </Route>
           </p>
         </div>
       </Section>
