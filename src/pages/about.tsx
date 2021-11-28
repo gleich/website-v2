@@ -7,16 +7,11 @@ const About: NextPage = () => (
     <Meta title="About Me" description="A little bit about me" />
     <style jsx>
       {`
-        main {
-          margin: 10vh 0;
-        }
-
         h1 {
           font-size: 6rem;
         }
 
         .body {
-          margin-top: 30px;
           max-width: 800px;
         }
 
@@ -46,8 +41,8 @@ const About: NextPage = () => (
         <h1>Matt Gleich</h1>
         <div className="body">
           <p>
-            I&apos;m Matt Gleich, a developer from Goffstown New Hampshire in
-            the USA. Below are some questions that I think best describe me:
+            a developer from Goffstown New Hampshire in the USA. Below are some
+            questions that I think best describe me:
           </p>
           <ul>
             <li>
