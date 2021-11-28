@@ -42,8 +42,6 @@ const Routes = (): JSX.Element => {
           .indexRoutes {
             margin-top: 100px;
             display: flex;
-            height: min-content;
-            width: min-content;
           }
 
           .indexRoute {
@@ -60,7 +58,7 @@ const Routes = (): JSX.Element => {
             margin-right: 5px;
           }
 
-          .indexRoute > div {
+          .indexRoute > div > a {
             font-size: 1.4rem;
             width: 60px;
           }
@@ -74,7 +72,7 @@ const Routes = (): JSX.Element => {
         <div className="indexRoutesContainer">
           <div className="indexRoutes">
             {Object.keys(routes).map((r: string) => (
-              <p
+              <div
                 className="indexRoute"
                 key={nanoid()}
                 onMouseEnter={() => setRouteDescription(routes[r].description)}
@@ -98,7 +96,7 @@ const Routes = (): JSX.Element => {
                 <Route href={routes[r].href ? routes[r].href ?? '' : '/' + r}>
                   {r}
                 </Route>
-              </p>
+              </div>
             ))}
           </div>
           <p className="indexRouteDescription">
