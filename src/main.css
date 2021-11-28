@@ -3,9 +3,11 @@
 :root {
   --darkmode-background: #0f0f0f;
   --darkmode-foreground: #ffffff;
+  --darkmode-border: rgb(53, 53, 53);
 
   --lightmode-background: #ffffff;
   --lightmode-foreground: #0f0f0f;
+  --lightmode-border: rgb(214, 214, 214);
 }
 
 body {

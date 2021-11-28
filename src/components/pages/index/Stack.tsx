@@ -70,7 +70,7 @@ const Stack = (): JSX.Element => {
 
           .container {
             display: flex;
-            gap: 30px;
+            gap: 10px;
             flex-wrap: wrap;
             justify-content: center;
             margin: 25px 0;
@@ -86,6 +86,8 @@ const Stack = (): JSX.Element => {
 
           .technology {
             width: 350px;
+            border: 1px solid var(--darkmode-border);
+            padding: 15px;
           }
 
           .title {
@@ -110,12 +112,16 @@ const Stack = (): JSX.Element => {
               filter: invert(0%) sepia(61%) saturate(1476%) hue-rotate(342deg)
                 brightness(107%) contrast(88%);
             }
+
+            .technology {
+              border-color: var(--lightmode-border);
+            }
           }
         `}
       </style>
       <Section name="main stack">
         <p className="mainDescription">
-          Some of my most used programming languages and what I use them for.
+          Some of my most used programming languages and what I use them for:
         </p>
         <div className="container">
           {tech.map((t) => (
