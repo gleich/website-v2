@@ -66,7 +66,7 @@ const Logo = (): JSX.Element => {
               animate={{ rotate: 360 }}
               transition={{
                 repeat: Infinity,
-                duration: 20,
+                duration: 50,
                 delay: 20,
                 ease: 'linear',
               }}
