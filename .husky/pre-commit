@@ -1,6 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-pnpm run format
-pnpm run lint
-git add .
+npx lint-staged
