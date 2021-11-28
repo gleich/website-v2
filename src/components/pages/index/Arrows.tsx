@@ -8,10 +8,7 @@ const Arrows = (): JSX.Element => {
   const [opacity, setOpacity] = useState('100%')
 
   useEffect(() => {
-    return scrollYProgress.onChange((v) => {
-      console.log(`${30 - v * 100}%`)
-      setOpacity(`${30 - v * 100}%`)
-    })
+    return scrollYProgress.onChange((v) => setOpacity(`${30 - v * 100}%`))
   }, [scrollYProgress])
 
   for (let i = 0; i < 6; i++) {

@@ -55,6 +55,10 @@ const Index: NextPage = () => (
             flex-direction: column;
           }
 
+          main {
+            width: 90vw;
+          }
+
           .nameAndSocials {
             align-items: center;
             margin-left: 0;

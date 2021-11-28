@@ -23,7 +23,7 @@ const Route = ({
       `}
     </style>
 
-    <div className="link">
+    <span className="link">
       {href.toString().startsWith('/') ? (
         <NextLink href={href}>{children}</NextLink>
       ) : (
@@ -49,7 +49,7 @@ const Route = ({
           </svg>
         </>
       )}
-    </div>
+    </span>
   </>
 )
 

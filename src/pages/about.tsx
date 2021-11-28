@@ -28,9 +28,15 @@ const About: NextPage = () => (
           list-style: '';
         }
 
-        li {
+        li > ul > li {
           margin-left: 35px;
           margin-top: 10px;
+        }
+
+        .body > ul > li {
+          padding: 10px;
+          margin-bottom: 20px;
+          border: 1px solid var(--darkmode-border);
         }
       `}
     </style>
