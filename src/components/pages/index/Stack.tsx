@@ -70,9 +70,10 @@ const Stack = (): JSX.Element => {
 
           .container {
             display: flex;
-            gap: 20px;
+            gap: 30px;
             flex-wrap: wrap;
             justify-content: center;
+            margin: 25px 0;
           }
 
           .mainDescription {

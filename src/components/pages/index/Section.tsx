@@ -16,7 +16,7 @@ const Section = ({
           .section {
             display: flex;
             flex-direction: column;
-            margin: 50px 0;
+            margin: 100px 0;
           }
 
           .name {

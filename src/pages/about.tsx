@@ -90,9 +90,9 @@ const About: NextPage = () => (
               What are you working on right now?
               <ul>
                 <li>
-                  Right now I am mainly enjoying my senior year of school and
-                  learning web tech like Next.js (which this site is built with)
-                  and Svelte.
+                  Right now I&apos;m mainly enjoying my senior year of school
+                  and learning web tech like Next.js (which this site is built
+                  with) and Svelte.
                 </li>
               </ul>
             </li>

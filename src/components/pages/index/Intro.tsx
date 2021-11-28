@@ -1,4 +1,5 @@
 import Section from '@components/pages/index/Section'
+import Route from '@components/Route'
 import time from '@data/time'
 import { useState } from 'react'
 import useInterval from 'use-interval'
@@ -66,7 +67,8 @@ const Intro = (): JSX.Element => {
           </span>{' '}
           years I’ve been wandering around the world of programming. Outside of
           programming I mainly enjoy photography and cycling. I&apos;m also an
-          active member of the hackclub community.
+          active member of the{' '}
+          <Route href="https://hackclub.com">hackclub</Route> community.
         </p>
       </Section>
     </>

@@ -29,10 +29,14 @@ path {
 
 a {
   color: #49a4ff;
+  border: white 2px;
+  border-radius: 20px;
+  padding: 2px;
+  text-decoration: dotted underline;
 }
 
 ul {
-  list-style-type: '--> ';
+  list-style-type: '-> ';
 }
 
 ul,

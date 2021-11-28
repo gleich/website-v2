@@ -1,18 +1,32 @@
 import { nanoid } from 'nanoid'
 import Section from './Section'
-import Link from 'next/link'
+import Route from '@components/Route'
 import { useState } from 'react'
 
-const Links = (): JSX.Element => {
+interface RouteEntry {
+  description: string
+  href?: string
+}
+
+const Routes = (): JSX.Element => {
   const [routeDescription, setRouteDescription] = useState(
     'Travel somewhere...'
   )
-  const routes: Record<string, string> = {
-    about: 'Get to know me',
-    projects: 'A showcase of some of my best programming projects',
-    photography: 'My photography work',
-    blog: 'Articles I write from time to time',
-    skills: 'My skills in the world of programming, photography, and design',
+  const routes: Record<string, RouteEntry> = {
+    about: { description: 'Get to know me' },
+    projects: {
+      description: 'A showcase of some of my best programming projects',
+    },
+    photography: {
+      description: 'My photography work',
+    },
+    blog: {
+      description: 'Articles I write from time to time',
+    },
+    skills: {
+      description:
+        'My skills in the world of programming, photography, and design',
+    },
   }
 
   return (
@@ -23,7 +37,6 @@ const Links = (): JSX.Element => {
             display: flex;
             align-items: center;
             flex-direction: column;
-            margin-right: 30px;
           }
 
           .indexRoutes {
@@ -34,7 +47,6 @@ const Links = (): JSX.Element => {
           }
 
           .indexRoute {
-            width: 20px;
             white-space: nowrap;
             text-align: left;
             width: 60px;
@@ -45,10 +57,12 @@ const Links = (): JSX.Element => {
           .indexRouteIcon {
             width: 19px;
             height: auto;
+            margin-right: 5px;
           }
 
-          .indexRoute > a {
+          .indexRoute > div {
             font-size: 1.4rem;
+            width: 60px;
           }
 
           .indexRouteDescription {
@@ -63,7 +77,7 @@ const Links = (): JSX.Element => {
               <p
                 className="indexRoute"
                 key={nanoid()}
-                onMouseEnter={() => setRouteDescription(routes[r])}
+                onMouseEnter={() => setRouteDescription(routes[r].description)}
                 onMouseLeave={() => setRouteDescription('Travel somewhere...')}
               >
                 <svg
@@ -78,11 +92,12 @@ const Links = (): JSX.Element => {
                   strokeLinejoin="round"
                   className="indexRouteIcon"
                 >
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>{' '}
-                <Link href={'/' + r}>{r}</Link>
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+                <Route href={routes[r].href ? routes[r].href ?? '' : '/' + r}>
+                  {r}
+                </Route>
               </p>
             ))}
           </div>
@@ -95,4 +110,4 @@ const Links = (): JSX.Element => {
   )
 }
 
-export default Links
+export default Routes
