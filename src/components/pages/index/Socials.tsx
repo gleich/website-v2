@@ -12,21 +12,15 @@ const Socials = (): JSX.Element => {
           }
 
           a {
-            color: var(--darkmode-foreground);
+            color: var(--foreground);
           }
 
           a:visited {
-            color: var(--darkmode-foreground);
+            color: var(--foreground);
           }
 
           a:hover svg {
-            fill: var(--darkmode-foreground);
-          }
-
-          @media (prefers-color-scheme: light) {
-            a:hover svg {
-              fill: var(--lightmode-foreground);
-            }
+            fill: var(--foreground);
           }
         `}
       </style>

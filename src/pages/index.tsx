@@ -25,7 +25,7 @@ const Index: NextPage = () => (
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 99vw;
+          width: 100%;
           height: 100vh;
         }
 
@@ -33,8 +33,7 @@ const Index: NextPage = () => (
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 99vw;
-          margin: 0 20px;
+          width: 98vw;
           flex-direction: column;
         }
 
@@ -60,6 +59,10 @@ const Index: NextPage = () => (
             align-items: center;
             margin-left: 0;
             margin-top: 2vh;
+          }
+
+          main {
+            width: 90vw;
           }
         }
       `}

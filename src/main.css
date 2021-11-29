@@ -1,20 +1,25 @@
 @import url('https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css');
 
+/* darkmode colors */
 :root {
-  --darkmode-background: #0f0f0f;
-  --darkmode-foreground: #ffffff;
-  --darkmode-border: rgb(53, 53, 53);
-
-  --lightmode-background: #ffffff;
-  --lightmode-foreground: #0f0f0f;
-  --lightmode-border: rgb(214, 214, 214);
-
+  --background: #0f0f0f;
+  --foreground: #ffffff;
+  --border: rgb(53, 53, 53);
   --link-color: #49a4ff;
 }
 
+/* lightmode colors */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #0f0f0f;
+    --border: rgb(214, 214, 214);
+  }
+}
+
 body {
-  background-color: var(--darkmode-background);
-  color: var(--darkmode-foreground);
+  background-color: var(--background);
+  color: var(--foreground);
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-feature-settings: 'zero';
@@ -22,13 +27,13 @@ body {
 }
 
 ::selection {
-  background-color: var(--darkmode-foreground);
-  text-decoration-color: var(--darkmode-foreground);
-  color: var(--darkmode-background);
+  background-color: var(--foreground);
+  text-decoration-color: var(--background);
+  color: var(--background);
 }
 
 path {
-  stroke: var(--darkmode-foreground);
+  stroke: var(--foreground);
 }
 
 a {
@@ -57,9 +62,15 @@ h3 {
   width: fit-content;
   font-family: 'Newsreader';
   font-size: italic;
-  background-color: var(--darkmode-foreground);
-  color: var(--darkmode-background);
+  background-color: var(--foreground);
+  color: var(--background);
   padding: 10px 15px 2.5px;
+}
+
+h3::selection {
+  background-color: var(--background);
+  text-decoration-color: var(--foreground);
+  color: var(--foreground);
 }
 
 h4 {
@@ -78,58 +89,11 @@ h5 {
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--darkmode-background);
+  background: var(--background);
 }
 
 *::-webkit-scrollbar-thumb {
-  background: var(--darkmode-foreground);
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: var(--lightmode-background);
-    color: var(--lightmode-foreground);
-  }
-
-  ::selection {
-    background-color: var(--lightmode-foreground);
-    text-decoration-color: var(--lightmode-foreground);
-    color: var(--lightmode-background);
-  }
-
-  *::-webkit-scrollbar-track {
-    background: var(--lightmode-background);
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background: var(--lightmode-foreground);
-  }
-
-  path {
-    stroke: var(--lightmode-foreground);
-  }
-
-  h1,
-  h2 {
-    background-color: var(--lightmode-foreground);
-    color: var(--lightmode-background);
-  }
-
-  h1::selection,
-  h2::selection,
-  h3::selection {
-    background-color: var(--lightmode-background);
-    color: var(--lightmode-foreground);
-  }
-
-  p {
-    color: var(--darkmode-background);
-  }
-
-  h3 {
-    background-color: var(--darkmode-background);
-    color: var(--darkmode-foreground);
-  }
+  background: var(--foreground);
 }
 
 .fadeUpAnimation {

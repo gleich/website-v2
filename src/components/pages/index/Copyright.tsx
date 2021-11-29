@@ -6,7 +6,7 @@ const Copyright = (): JSX.Element => (
       {`
         .container {
           display: inline-block;
-          border: 1px solid var(--darkmode-border);
+          border: 1px solid var(--border);
           padding: 10px;
         }
 
@@ -16,7 +16,7 @@ const Copyright = (): JSX.Element => (
 
         @media (prefers-color-scheme: light) {
           .container {
-            border-color: var(--lightmode-border);
+            border-color: var(--border);
           }
         }
       `}

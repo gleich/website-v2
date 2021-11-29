@@ -86,7 +86,7 @@ const Stack = (): JSX.Element => {
 
           .technology {
             width: 350px;
-            border: 1px solid var(--darkmode-border);
+            border: 1px solid var(--border);
             padding: 15px;
           }
 
@@ -111,10 +111,6 @@ const Stack = (): JSX.Element => {
             .icon {
               filter: invert(0%) sepia(61%) saturate(1476%) hue-rotate(342deg)
                 brightness(107%) contrast(88%);
-            }
-
-            .technology {
-              border-color: var(--lightmode-border);
             }
           }
         `}

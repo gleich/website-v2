@@ -12,7 +12,7 @@ const Logo = (): JSX.Element => {
       <style jsx global>
         {`
           .logoPath {
-            stroke: var(--darkmode-foreground);
+            stroke: var(--foreground);
           }
 
           .logoPathName {
@@ -26,11 +26,6 @@ const Logo = (): JSX.Element => {
           }
 
           @media (prefers-color-scheme: light) {
-            .logoPath {
-              stroke: var(--lightmode-foreground);
-              fill: var(--darkmode-foreground);
-            }
-
             .logoPathRings {
               stroke-width: 4px;
             }

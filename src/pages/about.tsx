@@ -11,6 +11,11 @@ const About: NextPage = () => (
           font-size: 6rem;
         }
 
+        main {
+          margin: 10vh 5vw;
+          margin-bottom: 5vh;
+        }
+
         .body {
           max-width: 800px;
         }
@@ -31,7 +36,7 @@ const About: NextPage = () => (
         .body > ul > li {
           padding: 10px;
           margin-bottom: 20px;
-          border: 1px solid var(--darkmode-border);
+          border: 1px solid var(--border);
         }
       `}
     </style>
