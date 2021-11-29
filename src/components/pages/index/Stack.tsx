@@ -129,6 +129,7 @@ const Stack = (): JSX.Element => {
                     key={nanoid()}
                     className="icon"
                     src={`/images/logos/${n}.svg`}
+                    alt={n}
                   />
                 ))}
               </div>

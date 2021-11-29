@@ -7,9 +7,11 @@ import MG8_3764 from '@data/photos/MG8_3764.jpg'
 import MG8_5338 from '@data/photos/MG8_5338.jpg'
 import { nanoid } from 'nanoid'
 import Route from '@components/Route'
+import { isObject } from 'util'
 
 interface Photo {
   data: StaticImageData
+  alt: string
   height: number
   width: number
 }
@@ -18,26 +20,31 @@ const Photos = (): JSX.Element => {
   const photos: Photo[] = [
     {
       data: MG8_6604,
+      alt: 'Mountain in Switzerland',
       height: 524.5,
       width: 350,
     },
     {
       data: MG8_0021,
+      alt: 'Beach in Acadia National Park, Maine',
       height: 524.744,
       width: 350,
     },
     {
       data: MG8_2365,
+      alt: 'Misty rocks in Acadia National Park, Maine',
       height: 470,
       width: 720,
     },
     {
       data: MG8_3764,
+      alt: 'CRICKET',
       height: 470,
       width: 720,
     },
     {
       data: MG8_5338,
+      alt: 'Boat on super clear and teal water',
       height: 470,
       width: 720,
     },
@@ -64,6 +71,7 @@ const Photos = (): JSX.Element => {
               width={i.width}
               key={nanoid()}
               placeholder="blur"
+              alt={i.alt}
             />
           ))}
           <p>
