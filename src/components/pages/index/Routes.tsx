@@ -16,13 +16,11 @@ const Routes = (): JSX.Element => {
     about: { description: 'Get to know me' },
     projects: {
       description: 'A showcase of some of my best programming projects',
+      href: 'https://github.com/gleich?tab=repositories',
     },
     photography: {
       description: 'My photography work',
       href: 'https://lightroom.adobe.com/shares/e96b417d28384fe7b26b54b8809f5d08',
-    },
-    blog: {
-      description: 'Articles I write from time to time',
     },
     skills: {
       description:
