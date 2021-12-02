@@ -13,6 +13,8 @@ const TopText = (): JSX.Element => (
         .description {
           display: flex;
           flex-direction: row;
+          width: 300px;
+          overflow: hidden;
         }
 
         .age {
@@ -22,6 +24,10 @@ const TopText = (): JSX.Element => (
         @media screen and (max-width: 1000px) {
           .topText {
             align-items: center;
+          }
+
+          .description {
+            justify-content: center;
           }
 
           .description > h5 {
