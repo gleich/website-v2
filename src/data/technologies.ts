@@ -41,9 +41,9 @@ const technologies: Technology[] = [
     name: 'Rust',
     iconNames: ['rust'],
     shortDescription:
-      'Low-level and fast systems programming language for the modern software developer.',
+      'High-level and fast systems programming language for the modern software developer.',
     longDescription:
-      "It's currently my favorite language to write but I'm still quit new. The memory safety, speed, modern syntax, and amazing community make me believe it is a programming language for the future.",
+      "It's currently my favorite language to write but I'm still quite new. The memory safety, speed, modern syntax, and amazing community make me believe it is a programming language for the future.",
     projects: [
       'https://github.com/gleich/profile_stack',
       'https://github.com/gleich/auto_shorty',

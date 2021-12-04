@@ -17,7 +17,7 @@ const Arrows = (): JSX.Element => {
         key={nanoid()}
         initial={opacity === '100%' ? { opacity: '0%', rotate: '180deg' } : {}}
         animate={opacity === '100%' ? { opacity: '100%', rotate: '0deg' } : {}}
-        transition={{ duration: 2, delay: i * 0.2 + 15 }}
+        transition={{ duration: 2, delay: i * 0.2 + 5 }}
         style={{ opacity }}
       >
         <svg

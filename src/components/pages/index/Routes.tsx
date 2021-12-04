@@ -32,7 +32,7 @@ const Routes = (): JSX.Element => {
             display: flex;
             align-items: center;
             flex-direction: column;
-            margin-right: 80px;
+            margin-right: 100px;
           }
 
           .indexRoutes {
@@ -71,7 +71,7 @@ const Routes = (): JSX.Element => {
             <motion.div
               initial={{ marginRight: '25px', opacity: '0%' }}
               animate={{ marginRight: '0px', opacity: '100%' }}
-              transition={{ duration: 1.5, delay: 4 }}
+              transition={{ duration: 1.5 }}
               key={nanoid()}
             >
               <div className="indexRoute">
