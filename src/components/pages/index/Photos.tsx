@@ -7,7 +7,6 @@ import MG8_3764 from '@data/photos/MG8_3764.jpg'
 import MG8_5338 from '@data/photos/MG8_5338.jpg'
 import { nanoid } from 'nanoid'
 import Route from '@components/Route'
-import { isObject } from 'util'
 
 interface Photo {
   data: StaticImageData
