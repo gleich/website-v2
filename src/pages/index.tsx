@@ -74,11 +74,11 @@ const Index: NextPage = () => (
           <div className="nameAndSocials">
             <TopText />
             <Socials />
+            <Routes />
           </div>
           <Arrows />
         </div>
         <div className="body">
-          <Routes />
           <Intro />
           <Contact />
           <Stack />

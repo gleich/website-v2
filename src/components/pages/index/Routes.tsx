@@ -1,7 +1,6 @@
 import { nanoid } from 'nanoid'
-import Section from './Section'
 import Route from '@components/Route'
-import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 interface RouteEntry {
   description: string
@@ -9,9 +8,6 @@ interface RouteEntry {
 }
 
 const Routes = (): JSX.Element => {
-  const [routeDescription, setRouteDescription] = useState(
-    'Travel somewhere...'
-  )
   const routes: Record<string, RouteEntry> = {
     about: { description: 'Get to know me' },
     projects: {
@@ -36,10 +32,11 @@ const Routes = (): JSX.Element => {
             display: flex;
             align-items: center;
             flex-direction: column;
+            margin-right: 80px;
           }
 
           .indexRoutes {
-            margin-top: 100px;
+            margin-top: 50px;
             display: flex;
           }
 
@@ -61,21 +58,23 @@ const Routes = (): JSX.Element => {
             font-size: 1.4rem;
           }
 
-          .indexRouteDescription {
-            margin-top: 50px;
+          @media screen and (max-width: 1000px) {
+            .indexRoutesContainer {
+              margin-top: 20px;
+            }
           }
         `}
       </style>
-      <Section name="routes">
-        <div className="indexRoutesContainer">
-          <div className="indexRoutes">
-            {Object.keys(routes).map((r: string) => (
-              <div
-                className="indexRoute"
-                key={nanoid()}
-                onMouseEnter={() => setRouteDescription(routes[r].description)}
-                onMouseLeave={() => setRouteDescription('Travel somewhere...')}
-              >
+      <div className="indexRoutesContainer">
+        <div className="indexRoutes">
+          {Object.keys(routes).map((r: string) => (
+            <motion.div
+              initial={{ marginRight: '25px', opacity: '0%' }}
+              animate={{ marginRight: '0px', opacity: '100%' }}
+              transition={{ duration: 1.5, delay: 4 }}
+              key={nanoid()}
+            >
+              <div className="indexRoute">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -95,13 +94,10 @@ const Routes = (): JSX.Element => {
                   {r}
                 </Route>
               </div>
-            ))}
-          </div>
-          <p className="indexRouteDescription">
-            {routeDescription ? routeDescription : <>&nbsp;</>}
-          </p>
+            </motion.div>
+          ))}
         </div>
-      </Section>
+      </div>
     </>
   )
 }
