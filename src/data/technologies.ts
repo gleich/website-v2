@@ -5,7 +5,7 @@ export interface Technology {
   shortDescription: string
   longDescription: string
   projects: string[]
-  uses: string[]
+  uses?: string[]
 }
 
 const technologies: Technology[] = [
@@ -89,7 +89,7 @@ const technologies: Technology[] = [
     shortDescription:
       'High-level, JIT language for quick scripts with english-like syntax.',
     longDescription:
-      "It was my first language and is great for beginners. As I've grown as a developer I've discovered other languages that help me write better applications. I still use python all the time but mainly for writing scripts.",
+      "It was my first language and is great for beginners. As I've grown as a developer I've discovered other languages that help me write better applications. I still use python from time to time but mainly for writing scripts.",
     projects: [
       'https://github.com/gleich/Conribution-Hat',
       'https://github.com/gleich/Doc-Dockerfiles',
@@ -103,6 +103,37 @@ const technologies: Technology[] = [
       'Build Scripts',
       'Data Analysis',
       'Computer Vision',
+    ],
+  },
+  {
+    name: 'GraphQL',
+    iconNames: ['graphql'],
+    shortDescription:
+      'GraphQL is a query language for APIs. It allows the application to request exactly what it wants from the server.',
+    longDescription:
+      "I've both consumed and developed GraphQL APIs. I love its the approach to data fetching.",
+    projects: [
+      'https://github.com/gleich/api',
+      'https://github.com/gleich/fgh',
+      'https://github.com/gleich/contrihat',
+      'https://github.com/gleich/cihat',
+      'https://github.com/gleich/github_scraper',
+      'https://github.com/gleich/solar',
+    ],
+  },
+  {
+    name: 'Docker',
+    iconNames: ['docker'],
+    shortDescription:
+      'Used to package programs into isolated environments called containers',
+    longDescription:
+      "Since learning docker in 2019 I've used it on everything from personal applications to large enterprise applications as a Cloud Automation intern.",
+    projects: [
+      'https://github.com/gleich/api',
+      'https://github.com/gleich/gh_fsync',
+      'https://github.com/gleich/Dockerfiles',
+      'https://github.com/gleich/profile_stack',
+      'https://github.com/gleich/github_scraper',
     ],
   },
 ]

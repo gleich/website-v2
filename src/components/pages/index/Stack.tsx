@@ -73,7 +73,7 @@ const Stack = (): JSX.Element => (
           Some of my most used programming languages and what I use them for:
         </p>
         <div className="container">
-          {technologies.map((t) => (
+          {technologies.slice(0, 4).map((t) => (
             <div className="technology" key={nanoid()}>
               <div className="title">
                 <h4>{t.name}</h4>
@@ -88,7 +88,7 @@ const Stack = (): JSX.Element => (
               </div>
               <p className="description">{t.shortDescription}</p>
               <ul className="bullets">
-                {t.uses.map((b) => (
+                {t.uses?.map((b) => (
                   <li key={nanoid()}>{b}</li>
                 ))}
               </ul>
