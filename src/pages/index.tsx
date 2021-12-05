@@ -65,6 +65,12 @@ const Index: NextPage = () => (
             width: 90vw;
           }
         }
+
+        @media screen and (max-height: 400px) {
+          .top {
+            margin-bottom: 100px;
+          }
+        }
       `}
     </style>
     <Center root>

@@ -61,7 +61,6 @@ const Routes = (): JSX.Element => {
           @media screen and (max-width: 1000px) {
             .indexRoutesContainer {
               margin-top: 20px;
-              margin-bottom: 300px;
             }
           }
         `}
