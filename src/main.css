@@ -1,68 +1,86 @@
 @import url('https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css');
 
+/* darkmode colors */
+:root {
+  --background: #0f0f0f;
+  --foreground: #ffffff;
+  --border: rgb(53, 53, 53);
+  --link-color: #49a4ff;
+}
+
+/* lightmode colors */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #0f0f0f;
+    --border: rgb(214, 214, 214);
+  }
+}
+
 body {
-  background-color: black;
-  color: white;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-feature-settings: 'zero';
+  font-size: 1.25rem;
 }
 
 ::selection {
-  background-color: white;
-  color: black;
-  text-decoration-color: black;
+  background-color: var(--foreground);
+  text-decoration-color: var(--background);
+  color: var(--background);
 }
 
-h1 {
-  font-size: clamp(6.25rem, 15vw, 8.125rem);
+path {
+  stroke: var(--foreground);
 }
 
-h2 {
-  font-size: clamp(4.375rem, 11vw, 6.25rem);
-}
-
-h3 {
-  font-size: clamp(3.4375rem, 8vw, 4.375rem);
-}
-
-h4 {
-  font-size: clamp(2.375rem, 4.5vw, 2.1875rem);
-}
-
-h5 {
-  font-size: clamp(1.75rem, 4vw, 1.875rem);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Space Mono';
-  font-style: italic;
-}
-
-a,
-a:visited {
-  color: #49a4ff;
-}
-
-p,
-li {
-  font-size: 1.5rem;
-}
-
-button {
-  font-size: clamp(1.25rem, 3vw, 1.5625rem);
+a {
+  color: var(--link-color);
+  border: white 2px;
+  border-radius: 20px;
+  padding: 2px;
+  text-decoration: dotted underline;
 }
 
 ul {
-  list-style-type: '- ';
+  list-style-type: '-> ';
 }
 
 ul,
 ol {
   list-style-position: inside;
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 5rem);
+}
+
+h3 {
+  font-size: clamp(2.5rem, 6vw, 3rem);
+  width: fit-content;
+  font-family: 'Newsreader';
+  font-size: italic;
+  background-color: var(--foreground);
+  color: var(--background);
+  padding: 10px 15px 2.5px;
+}
+
+h3::selection {
+  background-color: var(--background);
+  text-decoration-color: var(--foreground);
+  color: var(--foreground);
+}
+
+h4 {
+  font-size: clamp(2rem, 4vw, 2rem);
+  font-family: 'Newsreader';
+  text-decoration: underline;
+}
+
+h5 {
+  font-size: 1.5rem;
 }
 
 *::-webkit-scrollbar {
@@ -71,54 +89,40 @@ ol {
 }
 
 *::-webkit-scrollbar-track {
-  background: black;
+  background: var(--background);
 }
 
 *::-webkit-scrollbar-thumb {
-  background: white;
+  background: var(--foreground);
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: white;
-    color: black;
-  }
-
-  ::selection {
-    background-color: black;
-    color: white;
-    text-decoration-color: white;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: white;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background: black;
-  }
+.fadeUpAnimation {
+  animation: fadeUp 1s;
 }
 
-/* fonts */
-@font-face {
-  font-family: 'Victor Mono';
-  src: url('/fonts/victormono/mediumItalic.otf');
-  font-style: italic;
-  font-weight: 600;
-  font-display: swap;
+@keyframes fadeUp {
+  from {
+    opacity: 0%;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
 }
 
 @font-face {
-  font-family: 'Victor Mono';
-  src: url('/fonts/victormono/medium.otf');
-  font-weight: 600;
-  font-display: swap;
+  font-family: 'Inter';
+  src: url('/fonts/inter/regular.otf');
 }
 
 @font-face {
-  font-family: 'Space Mono';
-  src: url('/fonts/spacemono/italic.ttf');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
+  font-family: 'Newsreader';
+  src: url('/fonts/newsreader/italic.ttf');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/fonts/ibm-plex-mono/regular.otf');
 }

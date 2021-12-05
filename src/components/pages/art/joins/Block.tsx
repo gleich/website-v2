@@ -20,7 +20,6 @@ const LogoBlock = ({
             animation: spin 10s infinite forwards alternate;
             animation-delay: 2s;
           }
-
           .block:after {
             position: absolute;
             left: 0;
@@ -32,48 +31,39 @@ const LogoBlock = ({
             animation: extend 10s infinite alternate;
             animation-delay: 2s;
           }
-
           @keyframes spin {
             from {
               transform: rotate(0deg);
             }
-
             to {
               transform: rotate(
                 ${index % 2 === 1 ? '-' : ''} ${(360 / total) * index + 1}deg
               );
             }
           }
-
           @keyframes extend {
             from {
               width: 0%;
             }
-
             to {
               width: 100%;
             }
           }
-
           @keyframes fadeIn {
             0% {
               opacity: 10%;
             }
-
             50% {
               opacity: 100%;
             }
-
             100% {
               opacity: 10%;
             }
           }
-
           @media (prefers-color-scheme: light) {
             .block {
               border: solid 2px black;
             }
-
             .block:after {
               background: black;
             }

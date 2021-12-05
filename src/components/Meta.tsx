@@ -29,41 +29,27 @@ const Meta = ({
     <meta charSet="utf-8" />
 
     {/* Icons */}
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/icons/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="icon" href="/icons/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
 
     {/* Open Graph */}
     <meta property="og:title" content={title} />
     <meta property="og:type" content="www" />
     <meta property="og:description" content={description} />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:image" content="/images/me.jpg" />
-    <meta property="og:image:width" content="700" />
-    <meta property="og:image:height" content="753" />
+    <meta property="og:image" content="/open-graph-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
     <meta property="og:site_name" content="Matt Gleich" />
 
     {/* Twitter */}
-    <meta property="twitter:creator" content="@matthewgleich" />
+    <meta property="twitter:creator" content="@matt_gleich" />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content="/images/me.jpg" />
+    <meta property="twitter:image" content="/open-graph-image.png" />
     <meta property="twitter:url" content="https://mattglei.ch" />
     <meta property="twitter:label1" content={label1} />
     <meta property="twitter:label2" content={label2} />

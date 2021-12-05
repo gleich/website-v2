@@ -1,148 +1,101 @@
 import Center from '@components/Center'
-import Copyright from '@components/Copyright'
 import Meta from '@components/Meta'
-import getSocials, { SocialMediaAccount } from '@data/socials'
-import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
-import Top from '@components/pages/index/Top'
-import Name from '@components/pages/index/Name'
-import Description from '@components/pages/index/Description'
-import AccountIcon from '@components/pages/index/AccountIcon'
+import type { NextPage } from 'next'
 import time from '@data/time'
-import Button from '@components/Button'
+import Logo from '@components/Logo'
+import TopText from '@components/pages/index/TopText'
+import Socials from '@components/pages/index/Socials'
+import Arrows from '@components/pages/index/Arrows'
+import Intro from '@components/pages/index/Intro'
+import Routes from '@components/pages/index/Routes'
+import Stack from '@components/pages/index/Stack'
+import Photos from '@components/pages/index/Photos'
+import Contact from '@components/pages/index/Contact'
+import Copyright from '@components/pages/index/Copyright'
 
-const Index: NextPage = ({
-  accounts,
-}: InferGetStaticPropsType<typeof getStaticProps>) => (
+const Index: NextPage = () => (
   <>
-    <style jsx>
-      {`
-        main {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .top {
-          display: flex;
-          flex-direction: row;
-        }
-
-        .left {
-          display: flex;
-          flex-direction: column;
-        }
-
-        .right {
-          display: flex;
-          flex-direction: row;
-          flex-direction: row;
-          align-items: center;
-        }
-
-        .accounts {
-          display: flex;
-          flex-direction: column;
-          margin-left: 3vw;
-          margin-top: 4.5vh;
-        }
-
-        .links {
-          margin-top: 4vh;
-          display: flex;
-          flex-wrap: wrap;
-          align-items: space-between;
-          gap: 20px;
-          justify-content: center;
-          flex-basis: 25%;
-        }
-
-        .accounts > div {
-          margin-bottom: 15px !important;
-        }
-
-        .accounts:first-child {
-          margin-bottom: 0 !important;
-        }
-
-        @media screen and (max-width: 850px) {
-          main {
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 10vh;
-          }
-
-          .links {
-            width: 80vw;
-          }
-
-          .top {
-            flex-direction: column;
-            margin-top: 10vh;
-          }
-
-          .right {
-            justify-content: center;
-          }
-
-          .accounts {
-            flex-direction: row;
-          }
-
-          .accounts > div {
-            margin-right: 20px !important;
-            margin-bottom: 0;
-          }
-
-          .accounts:first-child {
-            margin-right: 0 !important;
-          }
-        }
-      `}
-    </style>
     <Meta
       title="Matt Gleich"
       description={time.full + ' open-source developer from New Hampshire'}
     />
+    <style jsx>
+      {`
+        .top {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100vh;
+        }
+
+        main {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 98vw;
+          flex-direction: column;
+        }
+
+        .nameAndSocials {
+          display: flex;
+          flex-direction: column;
+          margin-left: 100px;
+        }
+
+        .copyright {
+          bottom: 0;
+          width: 100%;
+          text-align: center;
+          padding-bottom: 30px;
+        }
+
+        @media screen and (max-width: 1000px) {
+          .top {
+            flex-direction: column;
+          }
+
+          .nameAndSocials {
+            align-items: center;
+            margin-left: 0;
+            margin-top: 2vh;
+          }
+
+          main {
+            width: 90vw;
+          }
+        }
+
+        @media screen and (max-height: 400px) {
+          .top {
+            margin-bottom: 100px;
+          }
+        }
+      `}
+    </style>
     <Center root>
       <main>
         <div className="top">
-          <div className="left">
-            <Top />
-            <Name />
-            <Description />
+          <Logo />
+          <div className="nameAndSocials">
+            <TopText />
+            <Socials />
+            <Routes />
           </div>
-          <div className="right">
-            <div className="accounts">
-              {accounts.map((account: SocialMediaAccount) => (
-                <div key={account.name}>
-                  <AccountIcon {...account} />
-                </div>
-              ))}
-            </div>
-          </div>
+          <Arrows />
         </div>
-        <div className="links">
-          <Button href="/about">About</Button>
-          <Button href="https://github.com/gleich?tab=repositories">
-            Projects
-          </Button>
-          <Button href="https://lightroom.adobe.com/shares/e96b417d28384fe7b26b54b8809f5d08">
-            Photography
-          </Button>
-          <Button href="/blog">Blog</Button>
-          <Button href="/wip">Skills</Button>
+        <div className="body">
+          <Intro />
+          <Contact />
+          <Stack />
+          <Photos />
+        </div>
+        <div className="copyright">
+          <Copyright />
         </div>
       </main>
     </Center>
-    <footer>
-      <Copyright repoLink stick />
-    </footer>
   </>
 )
-
-export const getStaticProps: GetStaticProps = async () => ({
-  props: { accounts: await getSocials() },
-  revalidate: 300, // Every five minutes
-})
 
 export default Index

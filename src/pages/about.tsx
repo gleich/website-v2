@@ -1,194 +1,112 @@
 import Center from '@components/Center'
 import Meta from '@components/Meta'
-import time from '@data/time'
 import { NextPage } from 'next'
-import { useState } from 'react'
-import useInterval from 'use-interval'
-import Link from 'next/link'
-import Image from 'next/image'
-import QNA from '@components/pages/about/QNA'
-import pictureOfMe from '@data/me.jpeg'
 
-const About: NextPage = (): JSX.Element => {
-  const [codingFor, setCodingFor] = useState(0)
+const About: NextPage = () => (
+  <>
+    <Meta title="About Me" description="A little bit about me" />
+    <style jsx>
+      {`
+        h1 {
+          font-size: 6rem;
+        }
 
-  useInterval(() => {
-    setCodingFor(time.yearsSince(time.startedCoding))
-  }, 10)
+        main {
+          margin: 10vh 5vw;
+          margin-bottom: 5vh;
+        }
 
-  return (
-    <>
-      <style jsx>
-        {`
-          main {
-            margin: 0 20px;
-            margin-bottom: 50px;
-          }
+        .body {
+          max-width: 800px;
+        }
 
-          .img {
-            position: relative;
-            -moz-user-select: -moz-none;
-            -khtml-user-select: none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            border-radius: 50%;
-            padding-top: 50px;
-            padding-bottom: 20px;
-          }
+        .body > ul {
+          margin-top: 30px;
+        }
 
-          .img > p {
-            font-size: 1rem;
-          }
+        li > ul {
+          list-style: '';
+        }
 
-          h3 {
-            padding-top: 30px;
-            text-decoration: underline;
-          }
+        li > ul > li {
+          margin-left: 35px;
+          margin-top: 10px;
+        }
 
-          main {
-            max-width: 800px;
-          }
-
-          .coding-for {
-            display: inline-block;
-            font-family: 'Victor Mono';
-            font-size: 1.35rem;
-            font-feature-settings: 'ss01';
-          }
-
-          .answer {
-            margin-left: 40px;
-          }
-
-          .contact {
-            margin-top: 20px;
-          }
-        `}
-      </style>
-      <Meta title="About Me" description="About Matt Gleich" />
-      <Center root>
-        <main>
-          <div className="img">
-            <Image
-              src={pictureOfMe}
-              placeholder="blur"
-              width="330"
-              height="400"
-            />
-            <p>
-              Me (right) and{' '}
-              <a
-                href="https://twitter.com/mojombo"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Tom Preston Werner
-              </a>{' '}
-              (left) on the{' '}
-              <a
-                href="https://zephyr.hackclub.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                hacker zephyr
-              </a>
-              .
-            </p>
-          </div>
+        .body > ul > li {
+          padding: 10px;
+          margin-bottom: 20px;
+          border: 1px solid var(--border);
+        }
+      `}
+    </style>
+    <Center root>
+      <main>
+        <h3>Hey, I&apos;m</h3>
+        <h1>Matt Gleich</h1>
+        <div className="body">
           <p>
-            Hello and welcome to my website! For the past{' '}
-            <span className="coding-for">
-              {codingFor.toString().substring(0, 11)}
-            </span>{' '}
-            years I&apos;ve been exploring the art of writing useful, clean, and
-            efficient applications. Almost all of my personal work is over on my{' '}
-            <a
-              href="https://github.com/gleich"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub page
-            </a>
-            . Outside of writing software I enjoy{' '}
-            <Link href="/wip">photography</Link> &{' '}
-            <a
-              href="https://www.strava.com/athletes/30124266"
-              target="_blank"
-              rel="noreferrer"
-            >
-              cycling
-            </a>
-            .
+            a developer from Goffstown New Hampshire in the USA. Below are some
+            questions that I think best describe me:
           </p>
-          <h3>Contact</h3>
-          <p className="contact">
-            I would love to hear from you! <br /> The best way to get in contact
-            with me is via <a href="mailto:email@mattglei.ch">email</a> or{' '}
-            <a
-              href="https://twitter.com/matt_gleich"
-              target="_blank"
-              rel="noreferrer"
-            >
-              twitter
-            </a>
-            .
-          </p>
-          <h3>Q&A</h3>
-          <QNA question="When did you start coding?">
-            <p>
-              I started programming on my high school&apos;s robotics team my
-              freshman year of high school. I started as the lead computer
-              vision programmer and worked on{' '}
-              <a
-                href="https://github.com/Team-501-The-PowerKnights/Vision2019"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {' '}
-                software
-              </a>{' '}
-              to help guide our robot using a camera.
-            </p>
-          </QNA>
-          <QNA question="Why do you code?">
-            <p>
-              Coding is this rate activity where there is no ceiling. No matter
-              how much work you put in there will always be more to learn. This
-              ability to be able to learn forever and create almost anything I
-              want is why I code.
-            </p>
-          </QNA>
-          <QNA question="What type of software do you write?">
-            <p>
-              Because I don&apos;t need to focus on something right now
-              I&apos;ve kinda been jumping all over the place. I&apos;ve done
-              some work with mobile apps, web apps, backend services, and CLIs
-              (command line interfaces). Most of my time has been on the backend
-              and with CLIs but I also love working on the frontend. Checkout
-              some of my work on my{' '}
-              <a
-                href="https://github.com/gleich"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub account.
-              </a>
-            </p>
-          </QNA>
-          <QNA question="What type of photos do you take?">
-            <p>
-              I&apos;ve been taking macro, landscape, and travel photos for the
-              past 5 years. Before coding this was my passion in life. Even
-              though I don&apos;t spend as much time on it in recent years I
-              still love photography and love to bring my camera whenever I
-              travel.
-            </p>
-          </QNA>
-        </main>
-      </Center>
-    </>
-  )
-}
+          <ul>
+            <li>
+              What do you like to do outside of programming?
+              <ul>
+                <li>
+                  Photography: Before programming, photography was my passion in
+                  life. I would spend hours every day in my yard taking pictures
+                  of everything from water droplets to dragonflies. I mainly do
+                  nature and travel photography taking macro pictures (handheld
+                  ftw) and landscapes.
+                </li>
+                <li>
+                  Cycling has always been a huge passion of mine as I feel like
+                  it&apos;s the freest form of exploration. You can go almost
+                  anywhere on your bike, the only thing holding you back is your
+                  ability to put in the leg power. I mainly do road cycling.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Why did you get into programming?
+              <ul>
+                <li>
+                  I&apos;ve always had a fascination with technology. I simply
+                  saw programming as an extension of my regular love for
+                  technology. I find the fact that I can create so many things
+                  for free and with little to no equipment super freeing. The
+                  fact that I can work with tons of cool people from all around
+                  the world so easily is truly incredible.
+                </li>
+              </ul>
+            </li>
+            <li>
+              When do you find the time to code?
+              <ul>
+                <li>
+                  It depends on if school is in or out of session. During the
+                  school year, I mainly code during little bits of free time
+                  during the day or late at night. When school is out I mainly
+                  code later in the day or a whole day one or two times a week.
+                </li>
+              </ul>
+            </li>
+            <li>
+              What are you working on right now?
+              <ul>
+                <li>
+                  Right now I&apos;m mainly enjoying my senior year of school
+                  and learning web tech like Next.js (which this site is built
+                  with) and Svelte.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </Center>
+  </>
+)
 
 export default About

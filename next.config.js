@@ -6,6 +6,7 @@ module.exports = {
     config.resolve.alias['~'] = path.resolve('./src')
     return config
   },
+  compression: false,
   async redirects() {
     return [
       {

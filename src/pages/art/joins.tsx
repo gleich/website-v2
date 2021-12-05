@@ -24,11 +24,9 @@ const Logo: NextPage = (): JSX.Element => {
             min-width: 50vw;
             padding: 20px;
           }
-
           main {
             max-height: 98vh;
           }
-
           p {
             position: absolute;
             right: 20px;
