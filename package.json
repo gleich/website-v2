@@ -42,6 +42,6 @@
     "typescript": "4.4.4"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "*.tsx": "eslint --cache --fix"
   }
 }
