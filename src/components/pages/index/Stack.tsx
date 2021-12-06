@@ -96,7 +96,7 @@ const Stack = (): JSX.Element => (
           ))}
         </div>
         <p className="seeMore">
-          See more on my <Route href="/skills">skills page</Route>.
+          See more on my <Route href="/skills">skills page</Route>
         </p>
       </div>
     </Section>

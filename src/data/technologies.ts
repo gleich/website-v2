@@ -125,7 +125,7 @@ const technologies: Technology[] = [
     name: 'Docker',
     iconNames: ['docker'],
     shortDescription:
-      'Used to package programs into isolated environments called containers',
+      'Used to package programs into isolated environments called containers.',
     longDescription:
       "Since learning docker in 2019 I've used it on everything from personal applications to large enterprise applications as a Cloud Automation intern.",
     projects: [
