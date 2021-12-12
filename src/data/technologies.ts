@@ -136,6 +136,19 @@ const technologies: Technology[] = [
       'https://github.com/gleich/github_scraper',
     ],
   },
+  {
+    name: 'LaTeX',
+    iconNames: ['latex'],
+    shortDescription:
+      'Powerful markup language used for writing research papers and mathematics programmatically.',
+    longDescription:
+      "Over the last few years I've developed a number of tools and packages to customize/automate the process of writing LaTeX documents.",
+    projects: [
+      'https://github.com/gleich/kiwi',
+      'https://github.com/gleich/explain-math',
+      'https://github.com/gleich/texsci',
+    ],
+  },
 ]
 
 export default technologies

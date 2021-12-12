@@ -62,12 +62,14 @@ const Skills: NextPage = (): JSX.Element => (
           display: flex;
           max-width: 300px;
           flex-wrap: wrap;
+          align-items: center;
         }
 
         .project {
           border: 1px solid var(--border);
           padding: 5px;
           margin: 5px;
+          height: 40px;
         }
 
         @media (prefers-color-scheme: light) {
