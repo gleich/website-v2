@@ -69,6 +69,13 @@ const Skills: NextPage = (): JSX.Element => (
           padding: 5px;
           margin: 5px;
         }
+
+        @media (prefers-color-scheme: light) {
+          img {
+            filter: invert(0%) sepia(61%) saturate(1476%) hue-rotate(342deg)
+              brightness(107%) contrast(88%);
+          }
+        }
       `}
     </style>
     <Center root>
