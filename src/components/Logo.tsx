@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 const Logo = (): JSX.Element => {
   const pathInitial = { pathLength: 0 }
   const pathAnimate = { pathLength: 1 }
-  const whileChange = { rotate: 2880 }
   function getDuration(index: number): Record<string, number> {
     return { duration: index ** 2 * 3 }
   }
@@ -53,8 +52,6 @@ const Logo = (): JSX.Element => {
             transition={{
               duration: 6,
             }}
-            whileHover={whileChange}
-            whileTap={whileChange}
           >
             <motion.g
               filter="url(#filter0_d_52_198)"
