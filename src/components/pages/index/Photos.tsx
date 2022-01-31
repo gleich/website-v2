@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import Section from './Section'
-import MG8_6604 from '@data/photos/MG8_6604.jpg'
 import MG8_0021 from '@data/photos/MG8_0021.jpg'
-import MG8_2365 from '@data/photos/MG8_2365.jpg'
-import MG8_3764 from '@data/photos/MG8_3764.jpg'
-import MG8_5338 from '@data/photos/MG8_5338.jpg'
+import MG8_0296 from '@data/photos/MG8_0296.jpg'
+import MG8_0431 from '@data/photos/MG8_0431.jpg'
+import MG8_4720 from '@data/photos/MG8_4720.jpg'
+import MG8_5124 from '@data/photos/MG8_5124.jpg'
+import MG8_5433 from '@data/photos/MG8_5433.jpg'
 import { nanoid } from 'nanoid'
 import Route from '@components/Route'
 
@@ -18,34 +19,40 @@ interface Photo {
 const Photos = (): JSX.Element => {
   const photos: Photo[] = [
     {
-      data: MG8_6604,
-      alt: 'Mountain in Switzerland',
-      height: 524.5,
-      width: 350,
+      data: MG8_5433,
+      alt: 'Fuzzy Insect',
+      width: 1056,
+      height: 705,
     },
     {
       data: MG8_0021,
-      alt: 'Beach in Acadia National Park, Maine',
-      height: 524.744,
-      width: 350,
+      alt: 'Beach in Acadia National Park',
+      width: 600,
+      height: 899,
     },
     {
-      data: MG8_2365,
-      alt: 'Misty rocks in Acadia National Park, Maine',
-      height: 470,
-      width: 720,
+      data: MG8_0296,
+      alt: 'Ladybug',
+      width: 600,
+      height: 899,
     },
     {
-      data: MG8_3764,
-      alt: 'CRICKET',
-      height: 470,
-      width: 720,
+      data: MG8_0431,
+      alt: 'Dragonfly',
+      width: 744,
+      height: 899,
     },
     {
-      data: MG8_5338,
-      alt: 'Boat on super clear and teal water',
-      height: 470,
-      width: 720,
+      data: MG8_4720,
+      alt: 'Architecture',
+      width: 600,
+      height: 899,
+    },
+    {
+      data: MG8_5124,
+      alt: 'Yellow Flower',
+      width: 1056,
+      height: 705,
     },
   ]
   return (
