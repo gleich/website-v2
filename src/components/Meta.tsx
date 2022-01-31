@@ -27,7 +27,6 @@ const Meta = ({
     />
     <meta name="author" content="Matt Gleich" />
     <meta charSet="utf-8" />
-    <meta name="cf-2fa-verify" content="5eXByAB1UX3GlwdgDTQd32wn9aOmPr" />
 
     {/* Icons */}
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
