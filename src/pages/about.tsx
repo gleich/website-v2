@@ -1,5 +1,6 @@
 import Center from '@components/Center'
 import Meta from '@components/Meta'
+import Route from '@components/Route'
 import { NextPage } from 'next'
 
 const About: NextPage = () => (
@@ -96,9 +97,14 @@ const About: NextPage = () => (
               What are you working on right now?
               <ul>
                 <li>
-                  Right now I&apos;m mainly enjoying my senior year of school
-                  and learning web tech like Next.js (which this site is built
-                  with) and Svelte.
+                  Right now I&apos;m learning about embedded development in rust
+                  and more things in the hardware world. Check out some of my{' '}
+                  <Route href="https://github.com/gleich/pcbs">pcbs</Route> and
+                  the{' '}
+                  <Route href="https://github.com/gleich/is31fl3731/">
+                    IS31FL3731 IC driver
+                  </Route>{' '}
+                  I&apos;m writing in rust.
                 </li>
               </ul>
             </li>
