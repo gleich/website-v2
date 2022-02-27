@@ -1,4 +1,3 @@
-import time from '@data/time'
 import Head from 'next/head'
 
 const Meta = ({
@@ -23,7 +22,7 @@ const Meta = ({
     <meta name="description" content={description} />
     <meta
       name="keywords"
-      content={`Matt, Gleich, ${time.full}, photography, coding, cycling, hampshire, golang, github`}
+      content={`Matt, Gleich, photography, coding, cycling, hampshire, golang, github`}
     />
     <meta name="author" content="Matt Gleich" />
     <meta charSet="utf-8" />

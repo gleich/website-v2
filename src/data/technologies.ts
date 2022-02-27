@@ -43,20 +43,21 @@ const technologies: Technology[] = [
     shortDescription:
       'High-level and fast systems programming language for the modern software developer.',
     longDescription:
-      "It's currently my favorite language to write but I'm still quite new. The memory safety, speed, modern syntax, and amazing community make me believe it is a programming language for the future.",
+      "It's currently my favorite language to write. The memory safety, speed, modern syntax, and amazing community make me believe it is a programming language for the future.",
     projects: [
+      'https://github.com/gleich/optic',
+      'https://github.com/gleich/daily_poll',
+      'https://github.com/gleich/is31fl3731',
       'https://github.com/gleich/profile_stack',
       'https://github.com/gleich/auto_shorty',
-      'https://github.com/gleich/rust_template',
-      'https://github.com/gleich/full-tilt-sort',
+      'https://github.com/gleich/microbit',
       'https://github.com/gleich/resin',
-      'https://github.com/gleich/kiwi',
-      'https://github.com/gleich/daily_poll',
     ],
     uses: [
       'Microservices',
       'General Automation',
       'Hardware (IOT Devices)',
+      'Microcontroller Firmware',
       'Command Line Tools',
     ],
   },

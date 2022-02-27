@@ -21,7 +21,6 @@ export default {
   bday: bday,
   age: yearsSince(bday),
   today: isToday(),
-  full: Math.trunc(yearsSince(bday)) + '-year-old',
   startedCoding: startedCoding,
   yearsSince: yearsSince,
 }
