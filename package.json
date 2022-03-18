@@ -14,10 +14,10 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "dayjs": "^1.10.7",
+    "dayjs": "^1.11.0",
     "framer-motion": "^5.6.0",
     "gray-matter": "^4.0.3",
-    "nanoid": "^3.2.0",
+    "nanoid": "^3.3.1",
     "next": "12.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -33,7 +33,7 @@
     "@typescript-eslint/eslint-plugin": "5.2.0",
     "@typescript-eslint/parser": "5.2.0",
     "eslint": "8.1.0",
-    "eslint-config-next": "^12.0.9",
+    "eslint-config-next": "^12.1.0",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.26.1",
     "husky": "^7.0.4",
