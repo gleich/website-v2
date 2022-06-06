@@ -1,12 +1,12 @@
 <!-- DO NOT REMOVE - contributor_list:data:start:["gleich", "ImgBotApp", "cjdenio"]:end -->
 
-# www
+# www11
 
-🏡 My home on the world wide web
+🏡 My second personal website written in Next.js
 
-![format](https://github.com/gleich/www/workflows/format/badge.svg)
-![lint](https://github.com/gleich/www/workflows/lint/badge.svg)
-![GitHub deployments](https://img.shields.io/github/deployments/gleich/www/production?label=Deployment&logo=vercel)
+![format](https://github.com/gleich/www11/workflows/format/badge.svg)
+![lint](https://github.com/gleich/www11/workflows/lint/badge.svg)
+![GitHub deployments](https://img.shields.io/github/deployments/gleich/www1/production?label=Deployment&logo=vercel)
 
 <!-- DO NOT REMOVE - contributor_list:start -->
 

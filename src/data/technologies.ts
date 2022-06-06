@@ -69,7 +69,7 @@ const technologies: Technology[] = [
     longDescription:
       "It's an essential part of this website and other websites I've worked on over the past year. I've also used it for writing extensions for applications like vscode and raycast.",
     projects: [
-      'https://github.com/gleich/www',
+      'https://github.com/gleich/www1',
       'https://github.com/gleich/emojicast',
       'https://github.com/gleich/vercast',
       'https://github.com/gleich/cratecast',

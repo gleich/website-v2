@@ -25,7 +25,7 @@ const Copyright = (): JSX.Element => (
       <p>
         &copy; 2004-{new Date().getFullYear()} Matt Gleich{' '}
         <span className="repoLink">
-          <Route href="https://github.com/gleich/www">gleich/www</Route>
+          <Route href="https://github.com/gleich/www1">gleich/www1</Route>
         </span>
       </p>
     </div>
