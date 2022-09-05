@@ -17,7 +17,13 @@ module.exports = {
       {
         source: '/photography',
         destination:
-          'https://lightroom.adobe.com/shares/e96b417d28384fe7b26b54b8809f5d08',
+          'https://lightroom.adobe.com/shares/cce6349aee1b4687a2ebef28031dd37f',
+        permanent: true,
+      },
+      {
+        source: '/sports-photography',
+        destination:
+          'https://lightroom.adobe.com/shares/ecfb72de4208447f82b35f486dda3a59',
         permanent: true,
       },
       {
