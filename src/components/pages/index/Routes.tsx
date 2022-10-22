@@ -20,7 +20,7 @@ const Routes = (): JSX.Element => {
     },
     photography: {
       description: 'My photography work',
-      href: 'https://lightroom.adobe.com/shares/e96b417d28384fe7b26b54b8809f5d08',
+      href: 'https://lightroom.adobe.com/shares/cce6349aee1b4687a2ebef28031dd37f',
     },
   }
 
