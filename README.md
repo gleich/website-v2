@@ -1,21 +1,7 @@
-<!-- DO NOT REMOVE - contributor_list:data:start:["gleich", "ImgBotApp", "cjdenio"]:end -->
-
 # www1
 
-🏡 My second personal website written in Next.js
+My second website written in Next.js, a framework for react.
 
 ![format](https://github.com/gleich/www1/workflows/format/badge.svg)
 ![lint](https://github.com/gleich/www1/workflows/lint/badge.svg)
 ![GitHub deployments](https://img.shields.io/github/deployments/gleich/www1/production?label=Deployment&logo=vercel)
-
-<!-- DO NOT REMOVE - contributor_list:start -->
-
-## 👥 Contributors
-
-- **[@gleich](https://github.com/gleich)**
-
-- **[@ImgBotApp](https://github.com/ImgBotApp)**
-
-- **[@cjdenio](https://github.com/cjdenio)**
-
-<!-- DO NOT REMOVE - contributor_list:end -->
